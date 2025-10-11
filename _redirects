@@ -1,0 +1,8 @@
+# WWW + HTTPS
+http://cashsystem.be/*            https://www.cashsystem.be/:splat   301!
+http://www.cashsystem.be/*        https://www.cashsystem.be/:splat   301!
+https://cashsystem.be/*           https://www.cashsystem.be/:splat   301!
+
+# Slug ancien -> nouveau
+/caisseautomatique                /caisse-automatique/               301!
+/caisseautomatique/*              /caisse-automatique/:splat         301!

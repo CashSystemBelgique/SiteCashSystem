@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CashSystem — Le kiosque de paiement en espèces pensé pour le commerçant.</title>
+  <meta name="theme-color" content="#ffffff">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --card-radius:16px; --rail-gutter:14px; --mobile-peek:56px }
+    @media(min-width:640px){ :root{ --rail-gutter:20px } }
+    @media(max-width:639px){ :root{ --card-radius:12px } }
+    .no-scrollbar::-webkit-scrollbar{ display:none }
+    .no-scrollbar{ -ms-overflow-style:none; scrollbar-width:none }
+    .rail-apple{ margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw) }
+    .rail-inner{ position:relative; padding-left:var(--rail-gutter); padding-right:var(--rail-gutter); padding-bottom:56px; margin-bottom:-56px }
+    .card-w{ width:420px }
+    @media(max-width:639px){ .card-w{ width:calc(100vw - (var(--rail-gutter)*2) - var(--mobile-peek)) } }
+    .apple-shadow{ box-shadow:0 16px 32px rgba(0,0,0,.06),0 1px 0 rgba(0,0,0,.04) }
+    .card{ border-radius:var(--card-radius); overflow:hidden }
+/* Snap centré sur mobile */
+@media (max-width:639px){
+  .rail-inner{ scroll-snap-type:x mandatory; scroll-padding-left: calc(var(--rail-gutter) + (var(--mobile-peek)/2)); scroll-padding-right: calc(var(--rail-gutter) + (var(--mobile-peek)/2)); }
+  .rail-inner::before, .rail-inner::after{ content:""; flex:0 0 calc(var(--rail-gutter) + (var(--mobile-peek)/2)); }
+}
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+<header class="bg-white fixed inset-x-0 top-0 z-50 border-b border-gray-100/70">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+    <img src="assets/logo.png" class="h-10" alt="CashSystem">
+    <nav class="hidden md:flex gap-8 text-sm font-medium">
+      <a href="#produits">Produits</a><a href="#solutions">Solutions</a><a href="#maintenance">Maintenance</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="hidden md:flex items-center gap-2">
+  <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-[#00C58E] text-white px-4 py-2 text-sm font-medium hover:bg-[#00AC7C] transition"><span>Commander</span></a>
+  <span class="rounded-full bg-white text-gray-900 px-2.5 py-[2px] text-xs font-semibold whitespace-nowrap">13 700&nbsp;€ HTVA</span>
+</div>
+  </div>
+</header>
+
+<section class="pt-24 pb-10 sm:py-28 text-center">
+  <h1 class="text-5xl font-bold tracking-tight mb-6">Le kiosque de paiement en espèces pensé pour le commerçant.</h1>
+  <div class="mx-auto max-w-5xl px-6 sm:px-0 mt-2">
+    <div class="rounded-2xl overflow-hidden apple-shadow">
+      <video class="w-full h-auto block" autoplay muted playsinline loop preload="metadata" poster="assets/banniere-poster.jpg">
+        <source src="assets/banniere.webm" type="video/webm" />
+        <source src="assets/banniere.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+  <p class="max-w-2xl mx-auto text-gray-700 px-6 sm:px-0 leading-relaxed mt-4">La solution moderne qui sécurise vos encaissements et renforce votre image</p>
+  <p class="max-w-3xl mx-auto mt-2 text-gray-600 px-6 sm:px-0 leading-relaxed">Un design minimaliste, des performances maximales. Entièrement personnalisable, avec écran publicitaire intégré et gestion complète des espèces.</p>
+  <img src="assets/prototype.jpg" alt="Prototype" class="mx-auto mt-8 w-auto max-h-[420px] sm:max-h-[520px] object-contain">
+  <div class="mt-6 flex items-center justify-center gap-3">
+  <a href="#contact" class="group inline-flex items-center gap-3 rounded-full bg-[#00C58E] text-white px-6 py-3 hover:bg-[#00AC7C] active:scale-[.99] transition">
+    <span class="font-semibold">Commander</span>
+    <svg aria-hidden="true" class="h-4 w-4 opacity-80 group-hover:translate-x-0.5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+  </a>
+  <span class="rounded-full bg-white text-gray-900 px-3 py-1 text-sm font-bold leading-none whitespace-nowrap">13 700&nbsp;€ HTVA</span>
+</div>
+</section>
+
+<section id="produits" class="bg-[#f5f5f7] py-14"><div class="max-w-7xl mx-auto px-4">
+  <h2 class="text-xl sm:text-3xl font-semibold tracking-tight">Les dernières nouveautés. <span class="text-gray-500 block sm:inline">Coup d’œil sur ce qui vient de sortir.</span></h2>
+  <div class="relative mt-8 rail-apple">
+    <div class="rail-inner flex gap-6 overflow-x-auto snap-x snap-mandatory sm:snap-proximity no-scrollbar">
+      <article class="snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card relative overflow-hidden apple-shadow">
+        <img src="assets/kiosk-white-1.webp" class="absolute inset-0 w-full h-full object-cover" alt="CashSystem">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/25 to-transparent"></div>
+        <div class="relative z-10 p-6 flex flex-col h-full text-white">
+          <h3 class="text-2xl sm:text-3xl font-semibold tracking-tight">CashSystem</h3>
+          <div class="mt-2 w-fit whitespace-nowrap inline-flex items-center rounded-full bg-emerald-50/80 text-emerald-700 px-2.5 py-[3px] text-xs font-medium ring-1 ring-inset ring-emerald-200/70">Leasing possible — sans acompte</div>
+          <div class="mt-auto text-sm text-white/90"><p>Écran tactile 14” • 33 cm largeur/profondeur.</p><p>30 billets/recycleur • 2 500 billets • 1 200–1 500 pièces.</p></div>
+        </div>
+      </article>
+
+      <article id="card-frida" class="group snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card relative overflow-hidden apple-shadow">
+        <!-- Image de base -->
+        <img src="assets/frida.jpg" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" alt="Frida Kalho">
+        <!-- Vidéo au survol (desktop only) -->
+        <video class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100" muted playsinline webkit-playsinline loop preload="metadata">
+          <source src="assets/frida.webm" type="video/webm" />
+          <source src="assets/frida.mp4" type="video/mp4" />
+        </video>
+        <!-- Voile + contenu -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/25 to-transparent"></div>
+        <div class="relative z-10 p-6 flex flex-col h-full text-white">
+          <div class="text-xs font-semibold text-purple-300">Édition personnalisée</div>
+          <h3 class="mt-1 text-2xl sm:text-3xl font-semibold tracking-tight">Frida Kalho</h3>
+          <div class="mt-2 w-fit whitespace-nowrap inline-flex items-center rounded-full bg-emerald-50/80 text-emerald-700 px-2.5 py-[3px] text-xs font-medium ring-1 ring-inset ring-emerald-200/70">Leasing possible — sans acompte</div>
+          <div class="mt-auto text-sm text-white/90"><p>Habillage personnalisé. Mêmes capacités que le modèle standard.</p></div>
+        </div>
+      </article>
+
+      <article class="snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card relative overflow-hidden apple-shadow">
+        <img src="assets/tulipe.jpg" class="absolute inset-0 w-full h-full object-cover" alt="La Tulipe">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/25 to-transparent"></div>
+        <div class="relative z-10 p-6 flex flex-col h-full text-white">
+          <div class="text-xs font-semibold text-purple-300">Édition personnalisée</div>
+          <h3 class="mt-1 text-2xl sm:text-3xl font-semibold tracking-tight">La Tulipe</h3>
+          <div class="mt-2 w-fit whitespace-nowrap inline-flex items-center rounded-full bg-emerald-50/80 text-emerald-700 px-2.5 py-[3px] text-xs font-medium ring-1 ring-inset ring-emerald-200/70">Leasing possible — sans acompte</div>
+          <div class="mt-auto text-sm text-white/90"><p>Habillage premium doré. 14” • 33 cm • 30 billets/recycleur • 2 500 billets • 1 200–1 500 pièces.</p></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div></section>
+
+<section id="solutions" class="bg-[#f5f5f7] py-14"><div class="max-w-7xl mx-auto px-4">
+  <h2 class="text-xl sm:text-3xl font-semibold tracking-tight">Solutions <span class="text-gray-500 block sm:inline">— Outils complémentaires</span></h2>
+  <div class="relative mt-8 rail-apple">
+    <div class="rail-inner flex gap-6 overflow-x-auto snap-x snap-mandatory sm:snap-proximity no-scrollbar">
+      <article class="snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card bg-white text-gray-900 p-6 apple-shadow border border-gray-200">
+        <div class="flex flex-col h-full">
+          <div>
+            <div class="text-xs font-semibold text-blue-600">Solution tablette</div>
+            <h3 class="mt-1 text-xl sm:text-3xl font-semibold tracking-tight">Tablette de gestion</h3>
+            <p class="mt-1 text-sm text-gray-600">Pilotage du kiosque, affichage, commandes à distance, maintenance simplifiée.</p>
+            <div class="mt-2 inline-flex items-center rounded-full bg-gray-900/5 px-3 py-1 text-xs font-medium text-gray-700 ring-1 ring-inset ring-gray-300">Compatible Windows/Android</div>
+          </div>
+          <img src="assets/tablet.png" class="mt-auto mb-4 max-w-full h-auto max-h-[280px] sm:max-h-[360px] self-center object-contain rounded-2xl shadow">
+        </div>
+      </article>
+      <article class="snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card bg-black text-white p-6 apple-shadow">
+        <div class="flex flex-col h-full">
+          <div>
+            <div class="text-xs font-semibold text-purple-400">OCR + Intégration</div>
+            <h3 class="mt-1 text-xl sm:text-3xl font-semibold tracking-tight">Module OCR & API</h3>
+            <p class="mt-1 text-sm text-gray-300">Lecture automatique et interface avec tout logiciel existant.</p>
+            <div class="mt-2 inline-flex items-center rounded-full bg-emerald-50/80 text-emerald-700 px-3 py-[3px] text-xs font-medium ring-1 ring-inset ring-emerald-200/70">Interfaçable universellement</div>
+          </div>
+          <div class="mt-auto mb-4 text-[84px] leading-none self-end">🔎</div>
+        </div>
+      </article>
+      <article class="snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card bg-white text-gray-900 p-6 apple-shadow border border-gray-200">
+        <div class="flex flex-col h-full">
+          <div>
+            <div class="text-xs font-semibold text-emerald-600">Application mobile</div>
+            <h3 class="mt-1 text-xl sm:text-3xl font-semibold tracking-tight">CashSystem Mobile</h3>
+            <p class="mt-1 text-sm text-gray-600">État en temps réel des billets & pièces. Contrôle total des sorties d’argent.</p>
+            <p class="text-sm text-gray-600">Tout retrait passe obligatoirement par une autorisation dans l’app (traçabilité).</p>
+            <div class="mt-2 inline-flex items-center rounded-full bg-emerald-600/10 px-3 py-1 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/20">iOS & Android</div>
+          </div>
+          <div class="mt-auto flex items-center justify-center gap-6">
+            <img src="assets/mobile-1.jpg" class="h-[260px] sm:h-[340px] w-auto object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.25)]">
+            <img src="assets/mobile-2.jpg" class="h-[260px] sm:h-[340px] w-auto object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.25)]">
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div></section>
+
+<section id="maintenance" class="bg-[#f5f5f7] py-14"><div class="max-w-7xl mx-auto px-4">
+  <h2 class="text-xl sm:text-3xl font-semibold tracking-tight">Maintenance <span class="text-gray-500 block sm:inline">— Assistance Platinum</span></h2>
+  <div class="relative mt-8 rail-apple">
+    <div class="rail-inner flex gap-6 overflow-x-auto snap-x snap-mandatory sm:snap-proximity no-scrollbar">
+      <article class="snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card bg-white text-gray-900 p-6 apple-shadow border border-gray-200">
+        <div class="flex flex-col h-full">
+          <div>
+            <div class="text-xs font-semibold text-indigo-600">Assistance Platinum</div>
+            <h3 class="mt-1 text-xl sm:text-3xl font-semibold tracking-tight">Maintenance CashSystem</h3>
+            <ul class="mt-2 text-sm text-gray-700 list-disc list-inside space-y-1">
+              <li>Couverture totale de la machine en cas de panne.</li>
+              <li>Remplacement par <span class="font-medium">pièce neuve</span> en cas de composant défectueux.</li>
+              <li>Assistance en ligne via WhatsApp.</li>
+              <li>Guidage pas à pas en cas de panne ou de question.</li>
+            </ul>
+          </div>
+          <div class="mt-auto flex items-center gap-3">
+            <a href="https://wa.me/32456407362?text=Bonjour%2C%20j%27ai%20besoin%20d%27assistance%20CashSystem" target="_blank" rel="noopener" class="inline-flex items-center rounded-full bg-[#00C58E] text-white px-4 py-2 hover:bg-[#00AC7C] transition">Contacter l’assistance</a>
+            <a href="#contact" class="inline-flex items-center rounded-full border border-gray-300 px-4 py-2 text-gray-700">Demander des infos</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact" class="py-20"><div class="max-w-3xl mx-auto px-4">
+  <h2 class="text-3xl font-bold mb-4 text-center">Contact</h2>
+  <p class="text-gray-500 mb-8 text-center">Intéressé par nos solutions ? Envoyez-nous un message ou utilisez l'adresse ci-dessous.</p>
+  <div class="mb-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+    <a href="mailto:sales@cashsystem.be" class="inline-flex items-center justify-center rounded-full bg-[#00C58E] text-white px-6 py-3 hover:bg-[#00AC7C] transition">Ouvrir votre e-mail</a>
+    <a href="https://wa.me/32456407362?text=Bonjour%2C%20je%20souhaite%20un%20devis%20CashSystem" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-full bg-green-600 text-white px-6 py-3">WhatsApp</a>
+    <button type="button" class="inline-flex items-center justify-center rounded-full border border-gray-300 px-6 py-3 text-gray-700" onclick="navigator.clipboard.writeText('sales@cashsystem.be'); this.innerText='Copié !'; setTimeout(()=>this.innerText='Copier l’adresse',1500);">Copier l’adresse</button>
+  </div>
+  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="bg-white shadow-sm rounded-2xl p-6 grid gap-4">
+    <input type="hidden" name="form-name" value="contact"><p class="hidden"><label>Ne pas remplir si vous êtes humain: <input name="bot-field"></label></p>
+    <div><label class="block text-sm font-medium text-gray-700 mb-1">Nom complet</label><input name="nom" required class="w-full rounded-xl border-gray-300" placeholder="Votre nom"></div>
+    <div class="grid sm:grid-cols-2 gap-4"><div><label class="block text-sm font-medium text-gray-700 mb-1">E-mail</label><input type="email" name="email" required class="w-full rounded-xl border-gray-300" placeholder="vous@exemple.com"></div><div><label class="block text-sm font-medium text-gray-700 mb-1">Téléphone (optionnel)</label><input name="telephone" class="w-full rounded-xl border-gray-300" placeholder="+32 ..."></div></div>
+    <div><label class="block text-sm font-medium text-gray-700 mb-1">Message</label><textarea name="message" rows="5" required class="w-full rounded-xl border-gray-300" placeholder="Votre demande..."></textarea></div>
+    <div class="flex items-center justify-center"><button type="submit" class="inline-flex items-center justify-center rounded-full bg-[#00C58E] text-white px-8 py-3 hover:bg-[#00AC7C] transition">Envoyer</button></div>
+    <p class="text-center text-sm text-gray-500">Ou écrivez-nous à <span class="font-medium">sales@cashsystem.be</span></p>
+  </form>
+</div></section>
+<script>
+  // Lecture/Pause de la vidéo Frida au survol (désactivé sur appareils sans hover)
+  (function(){
+  const card = document.getElementById('card-frida');
+  if(!card) return;
+  const video = card.querySelector('video');
+  const img = card.querySelector('img');
+  if(!video || !img) return;
+
+  const mqHover = window.matchMedia('(hover:hover)');
+  if(mqHover.matches){
+    // Desktop: lecture au survol
+    card.addEventListener('mouseenter', () => { try { video.currentTime = 0; video.play(); } catch(e){} });
+    card.addEventListener('mouseleave', () => { try { video.pause(); video.currentTime = 0; } catch(e){} });
+  } else {
+    // Mobile/iPhone: lecture auto quand la carte est bien visible
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting && e.intersectionRatio > 0.6){
+          video.muted = true; video.playsInline = true; video.setAttribute('playsinline',''); video.setAttribute('webkit-playsinline','');
+          video.play().then(()=>{ video.style.opacity='1'; img.style.opacity='0'; }).catch(()=>{});
+        } else {
+          video.pause(); video.currentTime = 0; video.style.opacity='0'; img.style.opacity='1';
+        }
+      });
+    }, {threshold:[0,0.4,0.6,1]});
+    io.observe(card);
+  }
+})();
+</script>
+</body>
+</html>

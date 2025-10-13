@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.cashsystem.be/sitemap.xml
+Sitemap: https://www.cashsystem.be/sitemap-images.xml
+Sitemap: https://www.cashsystem.be/sitemap-images-full.xml

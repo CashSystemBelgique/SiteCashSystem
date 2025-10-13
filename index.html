@@ -512,7 +512,7 @@
           method="POST"
           data-netlify="true"
           netlify-honeypot="bot-field"
-          action="/merci.html">
+          action="/merci">
       <input type="hidden" name="form-name" value="contact"/><p class="hidden"><label>Ne pas remplir si vous êtes humain: <input name="bot-field"/></label></p>
       <div><label class="block text-sm font-medium text-gray-700 mb-1">Nom complet</label><input class="w-full rounded-xl border-gray-300" name="nom" placeholder="Votre nom" required/></div>
       <div class="grid sm:grid-cols-2 gap-4">
@@ -526,50 +526,9 @@
   </div>
 </section>
 
-<form class="bg-white shadow-sm rounded-2xl p-6 grid gap-4"
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
-      action="/merci">
-  <input type="hidden" name="form-name" value="contact" />
-  <p class="hidden"><label>Ne pas remplir si vous êtes humain: <input name="bot-field" /></label></p>
+<!-- duplicate Netlify form removed -->
 
-  <!-- … tes champs … -->
-
-  <div class="flex items-center justify-center">
-    <button class="inline-flex items-center justify-center rounded-full bg-[#00C58E] text-white px-8 py-3 hover:bg-[#00AC7C] transition" type="submit">Envoyer</button>
-  </div>
-  <p class="text-center text-sm text-gray-500">Ou écrivez-nous à <span class="font-medium">sales@cashsystem.be</span></p>
-</form>
-
-<script>
-(function () {
-  const form = document.querySelector('form[name="contact"]');
-  if (!form) return;
-
-  async function handleSubmit(e) {
-    e.preventDefault();
-    const data = new FormData(form);
-
-    try {
-      // Important: encodage x-www-form-urlencoded pour Netlify Forms
-      await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(data).toString(),
-      });
-      // Redirection "merci" (fonctionne même en SPA grâce à ta règle _redirects)
-      window.location.assign("/merci");
-    } catch (err) {
-      // Fallback si quelque chose bloque
-      window.location.assign("/merci");
-    }
-  }
-
-  form.addEventListener("submit", handleSubmit);
-})();
-</script>
+<!-- custom JS submit handler removed to let Netlify handle the POST natively -->
 
 
 <!-- JS (identiques à ta version) -->

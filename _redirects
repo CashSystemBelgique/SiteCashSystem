@@ -1,11 +1,28 @@
-# WWW + HTTPS
+# Netlify _redirects — cleaned on 2025-10-13
+
+# WWW + HTTPS canonical
 http://cashsystem.be/*            https://www.cashsystem.be/:splat   301!
 http://www.cashsystem.be/*        https://www.cashsystem.be/:splat   301!
 https://cashsystem.be/*           https://www.cashsystem.be/:splat   301!
 
-# Slug ancien -> nouveau
+# Allow SEO files (bypass SPA fallback)
+/robots.txt                       /robots.txt                        200
+/sitemap.xml                      /sitemap.xml                       200
+/sitemap-index.xml                /sitemap-index.xml                 200
+/sitemap-images.xml               /sitemap-images.xml                200
+/sitemap-images-full.xml          /sitemap-images-full.xml           200
+
+# Legacy slugs → new paths
 /caisseautomatique                /caisse-automatique/               301!
 /caisseautomatique/*              /caisse-automatique/:splat         301!
-/merci      /merci.html   200
-/*          /index.html   200
 
+# Static pages (direct serves)
+/merci      /merci.html   200
+
+# Other custom redirects (kept)
+# WWW + HTTPS
+# Slug ancien -> nouveau
+
+# Catch-all SPA (must be last)
+*/?*                              /index.html                        200
+/*                                /index.html                        200

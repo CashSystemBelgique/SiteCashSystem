@@ -219,6 +219,71 @@
   <p class="cs-footnote" style="margin-top:40px;margin-bottom:0">* Prix hors TVA, calculé à titre indicatif sur base d’un financement en leasing ou renting financier sur une durée de 60 mois. Offre soumise à l’acceptation du dossier par l’organisme de financement. Le montant peut varier en fonction des taux d’intérêt et des conditions du marché.</p>
 </section>
 
+
+
+<!-- SECTION : Différence CashSystem vs Revendeurs (version animée) -->
+<section id="difference" class="max-w-6xl mx-auto px-6 py-20 text-center">
+  <div class="opacity-0 translate-y-10 transition-all duration-700 ease-out" data-animate>
+    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-6">
+      CashSystem vs les revendeurs&nbsp;: la différence est énorme.
+    </h2>
+    <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-10">
+      💡 <strong>Nous ne revendons pas&nbsp;— nous produisons.</strong><br/>
+      Chaque kiosque CashSystem est <strong>conçu, assemblé et testé en Belgique</strong>,
+      sans intermédiaires ni marges cachées.<br/>
+      Résultat&nbsp;: <strong>plus de fiabilité, moins d’attente, et un service après-vente direct.</strong>
+    </p>
+  </div>
+
+  <div class="grid sm:grid-cols-2 gap-8 text-left">
+    <div class="p-6 rounded-2xl bg-gray-50 shadow-sm hover:shadow-md transition opacity-0 translate-y-8 duration-700" data-animate>
+      <h3 class="text-xl font-semibold mb-3 text-emerald-700">
+        ⚙️ Nos concurrents importent. Nous, on innove.
+      </h3>
+      <p class="text-gray-700">
+        Pendant que d’autres installent des machines venues d’ailleurs,
+        nous <strong>créons les nôtres</strong> — adaptées aux commerces belges
+        et à la réalité du terrain.
+      </p>
+    </div>
+    <div class="p-6 rounded-2xl bg-gray-50 shadow-sm hover:shadow-md transition opacity-0 translate-y-8 duration-700" data-animate>
+      <h3 class="text-xl font-semibold mb-3 text-emerald-700">
+        💶 Une caisse automatique au juste prix.
+      </h3>
+      <p class="text-gray-700">
+        Pas de marge de distributeur, pas de licences absurdes.
+        Vous payez <strong>le produit, pas la chaîne de revente</strong>.
+      </p>
+    </div>
+    <div class="p-6 rounded-2xl bg-gray-50 shadow-sm hover:shadow-md transition opacity-0 translate-y-8 duration-700" data-animate>
+      <h3 class="text-xl font-semibold mb-3 text-emerald-700">
+        🤝 Un partenaire, pas un vendeur.
+      </h3>
+      <p class="text-gray-700">
+        Chez CashSystem, votre contact technique est aussi celui qui conçoit la machine.
+        Vous parlez <strong>directement au producteur</strong> — et ça change tout.
+      </p>
+    </div>
+    <div class="p-6 rounded-2xl bg-gray-50 shadow-sm hover:shadow-md transition opacity-0 translate-y-8 duration-700" data-animate>
+      <h3 class="text-xl font-semibold mb-3 text-emerald-700">
+        💚 Fabriqué en Belgique, soutenu par la Belgique.
+      </h3>
+      <p class="text-gray-700">
+        Nous faisons vivre l’économie locale tout en garantissant une
+        <strong>maintenance rapide, des pièces disponibles et un suivi Platinum</strong>.
+      </p>
+    </div>
+  </div>
+
+  <div class="mt-14 opacity-0 translate-y-10 transition-all duration-700" data-animate>
+    <p class="text-lg font-medium text-gray-800">
+      🏆 <strong>CashSystem</strong>&nbsp;: la seule marque belge de caisses automatiques —<br class="sm:hidden"/>
+      <span class="text-emerald-700 font-semibold">produite ici, pensée pour ici.</span>
+    </p>
+  </div>
+</section>
+<!-- FIN SECTION animée -->
+
 <!-- Produits -->
 <section class="bg-[#f5f5f7] py-14" id="produits">
   <div class="max-w-7xl mx-auto px-4">
@@ -756,6 +821,25 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+</script>
+
+
+<script>
+// Déclenche des animations légères au scroll pour les éléments marqués [data-animate]
+(function(){
+  function onScroll(){
+    document.querySelectorAll('[data-animate]').forEach(function(el){
+      var r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight * 0.85){
+        el.classList.remove('opacity-0','translate-y-10','translate-y-8');
+        el.classList.add('opacity-100','translate-y-0');
+      }
+    });
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('load', onScroll, {passive:true});
+  onScroll();
+})();
 </script>
 
 </body>

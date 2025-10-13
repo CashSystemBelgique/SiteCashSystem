@@ -110,7 +110,6 @@
 </script>
 </head>
 
-<body class="bg-white text-gray-900">
 <!-- Bouton WhatsApp flottant -->
 <a href="https://wa.me/32456407362" 
    class="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50"
@@ -122,8 +121,7 @@
 </a>
 
 
-
-
+<body class="bg-white text-gray-900">
 <!-- GTM (noscript) -->
 <noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NSFKT4JV" style="display:none;visibility:hidden" width="0"></iframe></noscript>
 <!-- End GTM (noscript) -->
@@ -509,7 +507,7 @@
       <a class="inline-flex items-center justify-center rounded-full bg-green-600 text-white px-6 py-3" href="https://wa.me/32456407362?text=Bonjour%2C%20je%20souhaite%20un%20devis%20CashSystem" rel="noopener" target="_blank">WhatsApp</a>
       <button class="inline-flex items-center justify-center rounded-full border border-gray-300 px-6 py-3 text-gray-700" type="button" onclick="navigator.clipboard.writeText('sales@cashsystem.be'); this.innerText='Copié !'; setTimeout(()=>this.innerText='Copier l&#39;adresse',1500);">Copier l’adresse</button>
     </div>
-    <form class="bg-white shadow-sm rounded-2xl p-6 grid gap-4" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/merci">
+    <form class="bg-white shadow-sm rounded-2xl p-6 grid gap-4" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="contact"/><p class="hidden"><label>Ne pas remplir si vous êtes humain: <input name="bot-field"/></label></p>
       <div><label class="block text-sm font-medium text-gray-700 mb-1">Nom complet</label><input class="w-full rounded-xl border-gray-300" name="nom" placeholder="Votre nom" required/></div>
       <div class="grid sm:grid-cols-2 gap-4">

@@ -195,35 +195,40 @@
       >Je prends RDV</a>
       <span class="inline-flex items-center rounded-full bg-white text-gray-900 px-2.5 py-[2px] text-xs font-semibold whitespace-nowrap">9 900 € ou 170€ /mois*</span>
     </div>
-  <!-- Menu mobile (caché par défaut) -->
-  <nav id="mobileMenu"
-       class="md:hidden hidden border-t border-gray-100 bg-white"
-       aria-label="Navigation principale mobile">
-    <ul class="px-4 py-3 space-y-2 text-sm font-medium">
-      <li><a class="block py-2" href="#produits">Produits</a></li>
-      <li><a class="block py-2" href="#solutions">Solutions</a></li>
-      <li><a class="block py-2" href="#maintenance">Maintenance</a></li>
-      <li><a class="block py-2" href="#about">À propos de nous</a></li>
-      <li><a class="block py-2" href="#contact">Contact</a></li>
-      <li><a class="block py-2" href="/monnayeur-automatique-belgique">Monnayeur Belgique</a></li>
-      <li class="pt-2 flex items-center gap-2">
-        <a
-          href="https://cashsystem.odoo.com/book/88d15a4c"
-          target="_blank" rel="noopener"
-          class="inline-flex items-center gap-2 rounded-full bg-[#43d6b5] text-white px-4 py-2"
-          data-rdv="header"
-          aria-label="Je prends RDV">
-          Je prends RDV
-        </a>
-        <span class="inline-flex items-center rounded-full bg-white text-gray-900 px-2.5 py-[2px] text-xs font-semibold whitespace-nowrap">
-          9 900 € ou 170€ /mois*
-        </span>
+</div>
+</header>
+<!-- Menu mobile (en dessous de la barre principale) -->
+<nav id="mobileMenu"
+     class="md:hidden hidden w-full border-t border-gray-100 bg-white shadow-sm"
+     aria-label="Navigation principale mobile">
+  <div class="max-w-7xl mx-auto px-4">
+    <ul class="py-3 space-y-1 text-base font-medium">
+      <li><a class="block py-3" href="#produits">Produits</a></li>
+      <li><a class="block py-3" href="#solutions">Solutions</a></li>
+      <li><a class="block py-3" href="#maintenance">Maintenance</a></li>
+      <li><a class="block py-3" href="#about">À propos de nous</a></li>
+      <li><a class="block py-3" href="#contact">Contact</a></li>
+      <li><a class="block py-3" href="#tarifs">Tarifs</a></li>
+      <li><a class="block py-3" href="/caisse-automatique">Caisse automatique</a></li>
+      <li class="pt-2">
+        <div class="flex flex-wrap items-center gap-3">
+          <a
+            href="https://cashsystem.odoo.com/book/88d15a4c"
+            target="_blank" rel="noopener"
+            class="inline-flex items-center gap-2 rounded-full bg-[#43d6b5] text-white px-5 py-2.5"
+            data-rdv="header"
+            aria-label="Je prends RDV">
+            Je prends RDV
+          </a>
+          <span class="inline-flex items-center rounded-full bg-white text-gray-900 px-3 py-1 text-sm font-semibold whitespace-nowrap ring-1 ring-gray-200">
+            9 900 € ou 170 € /mois*
+          </span>
+        </div>
       </li>
     </ul>
-  </nav>
-
   </div>
-</header>
+</nav>
+
 
 <!-- Hero -->
 <section class="pt-24 pb-10 sm:pt-28 sm:pb-12 text-center">
@@ -933,6 +938,23 @@ document.addEventListener('DOMContentLoaded', function () {
   } else if (mql.addListener) { // Safari
     mql.addListener(e => { if (e.matches) menu.classList.add('hidden'); });
   }
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  try {
+    const candidates = Array.from(document.querySelectorAll('a, button'));
+    candidates.forEach(el => {
+      const txt = (el.textContent || '').trim().toLowerCase();
+      if (txt === 'voir la caisse automatique') {
+        // Hide the closest button or the element itself
+        const btn = el.closest('a,button') || el;
+        btn.style.display = 'none';
+      }
+    });
+  } catch (e) { /* noop */ }
 });
 </script>
 

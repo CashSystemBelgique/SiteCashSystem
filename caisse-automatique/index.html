@@ -198,8 +198,10 @@
 </div>
 </header>
 <!-- Menu mobile (en dessous de la barre principale) -->
+<!-- Menu mobile (overlay sous le header) -->
 <nav id="mobileMenu"
-     class="md:hidden hidden w-full border-t border-gray-100 bg-white shadow-sm"
+     class="md:hidden hidden fixed inset-x-0 z-40 border-t border-gray-100 bg-white shadow-xl"
+     style="top: var(--header-h); max-height: calc(100vh - var(--header-h)); overflow-y: auto;"
      aria-label="Navigation principale mobile">
   <div class="max-w-7xl mx-auto px-4">
     <ul class="py-3 space-y-1 text-base font-medium">
@@ -917,19 +919,24 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!btn || !menu) return;
 
   function toggle() {
-    const isOpen = !menu.classList.contains('hidden');
-    menu.classList.toggle('hidden', isOpen);
-    btn.setAttribute('aria-expanded', String(!isOpen));
+  const isOpen = !menu.classList.contains('hidden');
+  menu.classList.toggle('hidden', isOpen);
+  btn.setAttribute('aria-expanded', String(!isOpen));
+  // Bloque le scroll du body quand le menu est ouvert
+  document.body.classList.toggle('overflow-hidden', !isOpen);
   }
 
   btn.addEventListener('click', toggle, { passive: true });
 
   // Fermer le menu après un clic sur un lien
   menu.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      if (!menu.classList.contains('hidden')) toggle();
-    }, { passive: true });
-  });
+  a.addEventListener('click', () => {
+    if (!menu.classList.contains('hidden')) {
+      toggle();
+      document.body.classList.remove('overflow-hidden'); // réactive le scroll
+    }
+  }, { passive: true });
+});
 
   // Fermer si on resize au-dessus de md
   const mql = window.matchMedia('(min-width: 768px)');

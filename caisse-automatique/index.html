@@ -163,7 +163,20 @@
       "
     />
 
-    <nav class="hidden md:flex gap-8 text-sm font-medium">
+    
+    <!-- Bouton hamburger (mobile only) -->
+    <button
+      id="menuBtn"
+      class="md:hidden inline-flex items-center justify-center p-2 rounded-lg border border-gray-200"
+      aria-expanded="false"
+      aria-controls="mobileMenu"
+      aria-label="Ouvrir le menu"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+<nav class="hidden md:flex gap-8 text-sm font-medium">
       <!-- ✅ Produits pointe vers /caisseautomatique + ancre -->
       <a href="#produits">Produits</a>
       <!-- ✅ Les autres sections restent des ancres sur cette page principale -->
@@ -182,6 +195,33 @@
       >Je prends RDV</a>
       <span class="inline-flex items-center rounded-full bg-white text-gray-900 px-2.5 py-[2px] text-xs font-semibold whitespace-nowrap">9 900 € ou 170€ /mois*</span>
     </div>
+  <!-- Menu mobile (caché par défaut) -->
+  <nav id="mobileMenu"
+       class="md:hidden hidden border-t border-gray-100 bg-white"
+       aria-label="Navigation principale mobile">
+    <ul class="px-4 py-3 space-y-2 text-sm font-medium">
+      <li><a class="block py-2" href="#produits">Produits</a></li>
+      <li><a class="block py-2" href="#solutions">Solutions</a></li>
+      <li><a class="block py-2" href="#maintenance">Maintenance</a></li>
+      <li><a class="block py-2" href="#about">À propos de nous</a></li>
+      <li><a class="block py-2" href="#contact">Contact</a></li>
+      <li><a class="block py-2" href="/monnayeur-automatique-belgique">Monnayeur Belgique</a></li>
+      <li class="pt-2 flex items-center gap-2">
+        <a
+          href="https://cashsystem.odoo.com/book/88d15a4c"
+          target="_blank" rel="noopener"
+          class="inline-flex items-center gap-2 rounded-full bg-[#43d6b5] text-white px-4 py-2"
+          data-rdv="header"
+          aria-label="Je prends RDV">
+          Je prends RDV
+        </a>
+        <span class="inline-flex items-center rounded-full bg-white text-gray-900 px-2.5 py-[2px] text-xs font-semibold whitespace-nowrap">
+          9 900 € ou 170€ /mois*
+        </span>
+      </li>
+    </ul>
+  </nav>
+
   </div>
 </header>
 
@@ -862,6 +902,38 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('load', onScroll, {passive:true});
   onScroll();
 })();
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  if (!btn || !menu) return;
+
+  function toggle() {
+    const isOpen = !menu.classList.contains('hidden');
+    menu.classList.toggle('hidden', isOpen);
+    btn.setAttribute('aria-expanded', String(!isOpen));
+  }
+
+  btn.addEventListener('click', toggle, { passive: true });
+
+  // Fermer le menu après un clic sur un lien
+  menu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      if (!menu.classList.contains('hidden')) toggle();
+    }, { passive: true });
+  });
+
+  // Fermer si on resize au-dessus de md
+  const mql = window.matchMedia('(min-width: 768px)');
+  if (mql.addEventListener) {
+    mql.addEventListener('change', e => { if (e.matches) menu.classList.add('hidden'); });
+  } else if (mql.addListener) { // Safari
+    mql.addListener(e => { if (e.matches) menu.classList.add('hidden'); });
+  }
+});
 </script>
 
 </body>

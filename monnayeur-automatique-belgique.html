@@ -99,6 +99,10 @@
     margin-left:.4rem;
   }
   .cs-footnote{font-size:.85rem;color:#6b7280;margin-top:.5rem;max-width:72ch;margin-left:auto;margin-right:auto;text-align:center;line-height:1.5}
+
+  /* Prevent menu item text from wrapping */
+  header nav a{ white-space: nowrap; }
+
 </style>
 
 <!-- JSON-LD (WebSite + Organization) -->
@@ -150,7 +154,7 @@
 
 <!-- Header -->
 <header class="bg-white fixed inset-x-0 top-0 z-50 border-b border-gray-100/70">
-  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16 relative">
     <img
       alt="CashSystem"
       class="h-10 w-auto"
@@ -176,7 +180,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
       </svg>
     </button>
-<nav class="hidden md:flex gap-8 text-sm font-medium">
+<nav class="hidden md:flex gap-8 text-sm font-medium absolute left-1/2 -translate-x-1/2 flex-nowrap whitespace-nowrap">
       <!-- ✅ Produits pointe vers /caisseautomatique + ancre -->
       <a href="#produits">Produits</a>
       <!-- ✅ Les autres sections restent des ancres sur cette page principale -->
@@ -186,15 +190,15 @@
       <a href="#contact">Contact</a>
       <a class="text-sm hover:opacity-80" href="/monnayeur-automatique-belgique">Monnayeur Belgique</a>
     </nav>
-    <div class="hidden md:flex items-center gap-2">
-      <a
-        href="https://cashsystem.odoo.com/book/88d15a4c"
-        target="_blank" rel="noopener"
-        class="inline-flex items-center gap-2 rounded-full bg-[#43d6b5] text-white px-4 py-2 text-sm font-medium hover:bg-[#43d6b5] transition"
-        data-rdv="header" aria-label="Je prends RDV"
-      >Je prends RDV</a>
-      <span class="inline-flex items-center rounded-full bg-white text-gray-900 px-2.5 py-[2px] text-xs font-semibold whitespace-nowrap">9 900 € ou 170€ /mois*</span>
-    </div>
+    <!-- <div class="hidden md:flex items-center gap-2"> -->
+      <!-- <a -->
+        <!-- href="https://cashsystem.odoo.com/book/88d15a4c" -->
+        <!-- target="_blank" rel="noopener" -->
+        <!-- class="inline-flex items-center gap-2 rounded-full bg-[#43d6b5] text-white px-4 py-2 text-sm font-medium hover:bg-[#43d6b5] transition" -->
+        <!-- data-rdv="header" aria-label="Je prends RDV" -->
+      <!-- >Je prends RDV</a> -->
+      <!-- <span class="inline-flex items-center rounded-full bg-white text-gray-900 px-2.5 py-[2px] text-xs font-semibold whitespace-nowrap">9 900 € ou 170€ /mois*</span> -->
+    <!-- </div> -->
 </div>
 </header>
 <!-- Menu mobile (en dessous de la barre principale) -->

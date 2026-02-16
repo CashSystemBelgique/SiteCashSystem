@@ -167,11 +167,6 @@
   gtag('event', 'conversion', {'send_to': 'AW-17599407948/ShzECOe386kbEMzOhshB'});
 </script>
 
-<script>
-  var e = 'sales' + '@' + 'cashsystem.be';
-  var el = document.getElementById('contact-email');
-  if(el) { var a = document.createElement('a'); a.href = 'mai'+'lto:' + e; a.textContent = e; el.appendChild(a); }
-</script>
 
 <body class="bg-white text-gray-900">
 <!-- GTM (noscript) -->
@@ -809,8 +804,9 @@
     <h2 class="text-3xl font-bold mb-4 text-center">Contact</h2>
     <p class="text-gray-500 mb-8 text-center">Intéressé par nos solutions ? Envoyez-nous un message ou utilisez l'adresse ci-dessous.</p>
     <div class="mb-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-<a class="inline-flex items-center justify-center rounded-full bg-[#00C58E] text-white px-6 py-3 hover:bg-[#00AC7C] transition" href="#" onclick="window.location.href='mai'+'lto:'+'sales'+'@'+'cashsystem.be'; return false;">Ouvrir votre e-mail</a>      <a class="inline-flex items-center justify-center rounded-full bg-green-600 text-white px-6 py-3" href="https://wa.me/32456407362?text=Bonjour%2C%20je%20souhaite%20un%20devis%20CashSystem" rel="noopener" target="_blank">WhatsApp</a>
-      <button class="inline-flex items-center justify-center rounded-full border border-gray-300 px-6 py-3 text-gray-700" type="button" onclick="navigator.clipboard.writeText('sales@cashsystem.be'); this.innerText='Copié !'; setTimeout(()=>this.innerText='Copier l&#39;adresse',1500);">Copier l’adresse</button>
+      <a class="inline-flex items-center justify-center rounded-full bg-[#00C58E] text-white px-6 py-3 hover:bg-[#00AC7C] transition" href="#" id="email-btn">Ouvrir votre e-mail</a>
+      <a class="inline-flex items-center justify-center rounded-full bg-green-600 text-white px-6 py-3" href="https://wa.me/32456407362?text=Bonjour%2C%20je%20souhaite%20un%20devis%20CashSystem" rel="noopener" target="_blank">WhatsApp</a>
+      <button class="inline-flex items-center justify-center rounded-full border border-gray-300 px-6 py-3 text-gray-700" type="button" id="copy-btn">Copier l'adresse</button>
     </div>
     <form class="bg-white shadow-sm rounded-2xl p-6 grid gap-4"
           name="contact"
@@ -826,7 +822,8 @@
       </div>
       <div><label class="block text-sm font-medium text-gray-700 mb-1">Message</label><textarea class="w-full rounded-xl border-gray-300" name="message" placeholder="Votre demande..." required rows="5"></textarea></div>
       <div class="flex items-center justify-center"><button class="inline-flex items-center justify-center rounded-full bg-[#00C58E] text-white px-8 py-3 hover:bg-[#00AC7C] transition" type="submit">Envoyer</button></div>
-<p class="text-center text-sm text-gray-500">Ou écrivez-nous à <span class="font-medium" id="contact-email"></span></p>    </form>
+      <p class="text-center text-sm text-gray-500">Ou écrivez-nous à <span class="font-medium" id="contact-email"></span></p>
+    </form>
   </div>
 </section>
 
@@ -1233,6 +1230,19 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   } catch (e) { /* noop */ }
 });
+</script>
+
+<script>
+(function(){
+  var p = [115,97,108,101,115,64,99,97,115,104,115,121,115,116,101,109,46,98,101];
+  var e = p.map(function(c){return String.fromCharCode(c)}).join('');
+  var btn = document.getElementById('email-btn');
+  if(btn) btn.addEventListener('click', function(ev){ ev.preventDefault(); window.location.href = 'mai'+'lto:' + e; });
+  var cp = document.getElementById('copy-btn');
+  if(cp) cp.addEventListener('click', function(){ navigator.clipboard.writeText(e); cp.innerText='Copié !'; setTimeout(function(){cp.innerText="Copier l'adresse"},1500); });
+  var sp = document.getElementById('contact-email');
+  if(sp){ var a = document.createElement('a'); a.href = 'mai'+'lto:' + e; a.textContent = e; sp.appendChild(a); }
+})();
 </script>
 
 </body>

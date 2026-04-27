@@ -30,7 +30,7 @@ Document de contexte pour Claude Code. À lire en premier à chaque session sur 
 **Marque** : CashSystem
 **Entité** : fabricant belge (unique) de monnayeurs automatiques et logiciels de caisse associés
 **Produit principal** : monnayeur automatique (accepte pièces + billets, rend la monnaie)
-**Produit logiciel** : CashSystem Suite — POS Blazor Server (landing dédiée : `https://suiteplatform.com`)
+**Produit logiciel** : Suite Platform — POS Blazor Server (landing dédiée : `https://suiteplatform.com`). ⚠️ Le nom commercial sur le site web et en communication client est **Suite Platform** (et non "CashSystem Suite", qui est le nom interne du repo `CashSystemSuite`).
 **Siège / zone d'action** : Belgique
 **Base clients actuelle** : 65+ établissements (affiché sur le site)
 **Tarification indicative** (affichée sur le site) : Suite 50 €/mois, leasing ~170 €/mois HT

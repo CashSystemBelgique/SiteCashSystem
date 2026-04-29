@@ -32,98 +32,145 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3">
 <link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#00C58E">
 
-<title>Automatisch kassasysteem België | CashSystem — Belgische fabrikant</title>
+<title>CashSystem — De automatische muntautomaat gemaakt in België</title>
 <link rel="canonical" href="https://www.cashsystem.be/nl/">
-<link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/">
 <link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/">
-<link rel="alternate" hreflang="x-default" href="https://www.cashsystem.be/">
 <link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/">
-<link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/">
 <link rel="alternate" hreflang="x-default" href="https://www.cashsystem.be/">
-<meta name="description" content="Le seul fabricant belge de monnayeurs automatiques et caisses automatiques. Hardware + logiciel Suite Platform, support Platinum 24/7, leasing dès 170€/mois. 65+ commerces équipés.">
+<meta name="description" content="De enige Belgische fabrikant van automatische muntautomaten en kassasystemen. Hardware + Suite Platform-software, 24/7 Platinum-ondersteuning, leasing vanaf 170 €/maand. 65+ winkels uitgerust.">
 
 <!-- Open Graph -->
 <meta property="og:site_name" content="CashSystem">
-<meta property="og:title" content="Automatisch kassasysteem België | CashSystem — Belgische fabrikant">
-<meta property="og:description" content="De enige Belgische fabrikant van automatische muntautomaten. Hardware + geïntegreerde software, Platinum onderhoud, leasing vanaf 170€/maand. 65+ winkels uitgerust in België.">
+<meta property="og:title" content="CashSystem — De automatische muntautomaat gemaakt in België">
+<meta property="og:description" content="De enige Belgische fabrikant van automatische muntautomaten. Geïntegreerde hardware + software, 24/7 Platinum-onderhoud, leasing vanaf 170 €/maand. 65+ winkels uitgerust in België.">
 <meta property="og:url" content="https://www.cashsystem.be/nl/">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://www.cashsystem.be/assets/banniere-poster.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<!-- OG image details -->
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="CashSystem automatische muntautomaat — Belgische fabrikant">
+<meta property="og:image:alt" content="Automatische muntautomaat CashSystem — Belgische fabrikant">
 <meta property="og:locale" content="nl_BE">
-<meta property="og:locale:alternate" content="fr_BE">
 
 <!-- Twitter equivalents -->
-<meta name="twitter:title" content="Automatisch kassasysteem België | CashSystem — Belgische fabrikant">
-<meta name="twitter:description" content="De enige Belgische fabrikant van automatische muntautomaten. Hardware + geïntegreerde software, Platinum onderhoud, leasing vanaf 170€/maand. 65+ winkels uitgerust in België.">
+<meta name="twitter:title" content="CashSystem — De automatische muntautomaat gemaakt in België">
+<meta name="twitter:description" content="De enige Belgische fabrikant van automatische muntautomaten. Geïntegreerde hardware + software, 24/7 Platinum-onderhoud, leasing vanaf 170 €/maand. 65+ winkels uitgerust in België.">
 <meta name="twitter:image" content="https://www.cashsystem.be/assets/banniere-poster.jpg">
 
 <meta content="#ffffff" name="theme-color"/>
+
 <script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <!-- Preload banner video for faster start -->
 <link as="video" href="https://www.cashsystem.be/assets/banniere-nl.mp4" rel="preload" type="video/mp4"/>
 <link as="image" href="https://www.cashsystem.be/assets/banniere-poster.jpg" rel="preload"/>
 
 <style>
-  :root{ --card-radius:16px; --rail-gutter:14px; --mobile-peek:56px }
-  @media(min-width:640px){ :root{ --rail-gutter:20px } }
-  @media(max-width:639px){ :root{ --card-radius:12px } }
+  :root{
+    --ink:#0a0e0d;
+    --paper:#fafaf7;
+    --accent:#00C58E;
+    --accent-deep:#009d72;
+    --muted:#6b7280;
+    --line:rgba(10,14,13,.08);
+  }
+  *{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale }
   html{ scroll-behavior:smooth }
-  /* Smooth anchor offset so the fixed header doesn't cover titles */
-  :root { --header-h: 56px; } /* header.h-16 = 64px; adjust if you change header size */
-  section[id] { scroll-margin-top: var(--header-h); }
-  @media (max-width: 640px) {
-    :root { --header-h: 72px; } /* a bit taller on mobile */
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    font-feature-settings:"ss01","cv11";
+    zoom:0.75;
   }
-
-  .no-scrollbar::-webkit-scrollbar{ display:none }
-  .no-scrollbar{ -ms-overflow-style:none; scrollbar-width:none }
-  .rail-apple{ margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw) }
-  .rail-inner{ position:relative; padding-bottom:56px; margin-bottom:-56px;
-    padding-left: max(2.5rem, calc((100vw - 1280px) / 2 + 1rem));
-    padding-right: max(2.5rem, calc((100vw - 1280px) / 2 + 1rem));
+  .display{ font-weight:800; letter-spacing:-0.035em; line-height:.98 }
+  .display-md{ font-weight:700; letter-spacing:-0.025em; line-height:1.05 }
+  .eyebrow{
+    font-size:.8125rem; font-weight:600; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent-deep);
   }
-  .card-w{ width:420px }
-  @media(max-width:639px){ .card-w{ width:calc(100vw - (var(--rail-gutter)*2) - var(--mobile-peek)) } }
-  .apple-shadow{ box-shadow:0 16px 32px rgba(0,0,0,.06),0 1px 0 rgba(0,0,0,.04) }
-  .card{ border-radius:var(--card-radius); overflow:hidden }
-  .cs-slide{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity .7s ease}
-  .cs-slide.active{opacity:1}
-  @media(max-width:639px){ .rail-inner{ padding-left: calc(var(--rail-gutter) + (var(--mobile-peek)/2)); padding-right: calc(var(--rail-gutter) + (var(--mobile-peek)/2)); } }
-
-  .px-safe{
-    padding-left:max(16px, env(safe-area-inset-left));
-    padding-right:max(16px, env(safe-area-inset-right));
+  .ink{ background:var(--ink); color:#f5f5f0 }
+  .accent-dot{
+    display:inline-block; width:.55rem; height:.55rem; border-radius:9999px;
+    background:var(--accent); box-shadow:0 0 0 4px rgba(0,197,142,.18);
+    animation: pulse 2s ease-in-out infinite;
   }
-
-  /* Badge & footnote */
-  .cs-badge{
-    display:inline-block;padding:.25rem .6rem;border-radius:9999px;
-    font-size:.72rem;font-weight:600;line-height:1;vertical-align:middle;
-    background:rgba(34,197,94,.12); color:#16a34a; border:1px solid rgba(22,163,74,.25);
-    margin-left:.4rem;
+  @keyframes pulse{
+    0%,100%{ box-shadow:0 0 0 4px rgba(0,197,142,.18) }
+    50%{ box-shadow:0 0 0 8px rgba(0,197,142,.08) }
   }
-  .cs-footnote{font-size:.85rem;color:#6b7280;margin-top:.5rem;max-width:72ch;margin-left:auto;margin-right:auto;text-align:center;line-height:1.5}
-
-  /* Prevent menu item text from wrapping */
-  header nav a{ white-space: nowrap; }
+  .hairline{ border-color:var(--line) }
+  .grain{
+    background-image:
+      radial-gradient(ellipse 800px 400px at 80% 20%, rgba(0,197,142,.10), transparent 60%),
+      radial-gradient(ellipse 600px 300px at 0% 100%, rgba(0,197,142,.06), transparent 60%);
+  }
+  .ticker{
+    display:flex; gap:3rem; animation:scroll 40s linear infinite; width:max-content;
+  }
+  @keyframes scroll{ from{transform:translateX(0)} to{transform:translateX(-50%)} }
+  .card-elevated{
+    background:#fff; border:1px solid var(--line);
+    border-radius:20px; transition:transform .35s ease, box-shadow .35s ease;
+  }
+  .card-elevated:hover{ transform:translateY(-4px); box-shadow:0 24px 48px -20px rgba(10,14,13,.18) }
+  .badge{
+    display:inline-flex; align-items:center; gap:.4rem;
+    padding:.35rem .75rem; border-radius:9999px;
+    font-size:.78rem; font-weight:500;
+    background:rgba(0,197,142,.08); color:var(--accent-deep);
+    border:1px solid rgba(0,197,142,.18);
+  }
+  .btn-primary{
+    display:inline-flex; align-items:center; gap:.5rem;
+    padding:.85rem 1.4rem; border-radius:9999px;
+    background:var(--ink); color:#fff; font-weight:600;
+    transition:transform .2s ease, background .2s ease;
+  }
+  .btn-primary:hover{ background:#1a1f1d; transform:translateY(-1px) }
+  .btn-ghost{
+    display:inline-flex; align-items:center; gap:.5rem;
+    padding:.85rem 1.4rem; border-radius:9999px;
+    border:1px solid var(--line); font-weight:600;
+    transition:background .2s ease;
+  }
+  .btn-ghost:hover{ background:rgba(10,14,13,.04) }
+  .btn-accent{
+    display:inline-flex; align-items:center; gap:.5rem;
+    padding:.95rem 1.6rem; border-radius:9999px;
+    background:var(--accent); color:var(--ink); font-weight:700;
+    transition:transform .2s ease, background .2s ease;
+  }
+  .btn-accent:hover{ background:#00d99d; transform:translateY(-1px) }
+  .num-big{
+    font-size:clamp(2.5rem,5.5vw,4rem); font-weight:800;
+    letter-spacing:-0.04em; line-height:1;
+  }
+  .compare-row > div{ padding:1rem 1.25rem }
+  .compare-row + .compare-row{ border-top:1px solid var(--line) }
+  details summary{ cursor:pointer; list-style:none }
+  details summary::-webkit-details-marker{ display:none }
+  details[open] summary .chev{ transform:rotate(45deg) }
+  .chev{ transition:transform .25s ease }
+  .reveal{ opacity:0; transform:translateY(20px); transition:opacity .8s ease, transform .8s ease }
+  .reveal.in{ opacity:1; transform:none }
 </style>
 
-<!-- JSON-LD : WebSite + Organization/LocalBusiness unifié -->
+<!-- JSON-LD : WebSite + Organization/LocalBusiness + Product -->
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","@id":"https://www.cashsystem.be/#website","url":"https://www.cashsystem.be/","name":"CashSystem","alternateName":"CashSystem België","inLanguage":"nl-BE","publisher":{"@id":"https://www.cashsystem.be/#organization"}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":["Organization","LocalBusiness"],"@id":"https://www.cashsystem.be/#organization","name":"CashSystem","alternateName":"CashSystem België","url":"https://www.cashsystem.be/","logo":"https://www.cashsystem.be/assets/logo.png","image":"https://www.cashsystem.be/assets/logo.png","telephone":"+32456407362","email":"sales@cashsystem.be","vatID":"BE1023776996","priceRange":"€€€","description":"Belgische fabrikant van automatische muntautomaten en kassa's. Premium Platinum service 24/7 via WhatsApp.","slogan":"Nooit ver van u","address":{"@type":"PostalAddress","streetAddress":"Leuvensesteenweg 21/L","postalCode":"3070","addressLocality":"Kortenberg","addressCountry":"BE"},"areaServed":["België","Luxemburg","Frankrijk","Nederland"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"sameAs":["https://www.youtube.com/@cashsystem","https://www.linkedin.com/in/kaanyilmaz-cashsystem"]}
+{"@context":"https://schema.org","@type":["Organization","LocalBusiness"],"@id":"https://www.cashsystem.be/#organization","name":"CashSystem","alternateName":"CashSystem België","url":"https://www.cashsystem.be/","logo":"https://www.cashsystem.be/assets/logo.png","image":"https://www.cashsystem.be/assets/logo.png","telephone":"+32456407362","email":"sales@cashsystem.be","vatID":"BE1023776996","priceRange":"€€€","description":"Belgische fabrikant van automatische muntautomaten en kassasystemen voor contante betalingen. 24/7 Platinum-ondersteuning via WhatsApp.","slogan":"Nooit ver van u vandaan","address":{"@type":"PostalAddress","streetAddress":"Leuvensesteenweg 21/L","postalCode":"3070","addressLocality":"Kortenberg","addressCountry":"BE"},"areaServed":["België","Luxemburg","Frankrijk","Nederland"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"sameAs":["https://www.youtube.com/@cashsystem","https://www.linkedin.com/in/kaanyilmaz-cashsystem"]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Product","name":"CashSystem automatische muntautomaat — Volledige kit","description":"Volledige kit kant-en-klaar: in België vervaardigde muntautomaat, tablet 10\", op maat afgewerkt, installatie, opleiding, technische ondersteuning en Platinum onderhoud 1 jaar inbegrepen. Suite Platform software in optie (5 jaar gratis met onderhoudspakket).","brand":{"@type":"Brand","name":"CashSystem"},"manufacturer":{"@id":"https://www.cashsystem.be/#organization"},"image":"https://www.cashsystem.be/assets/banniere-poster.jpg","category":"Automatische muntautomaat","countryOfOrigin":"BE","offers":{"@type":"Offer","priceCurrency":"EUR","price":"9900","availability":"https://schema.org/InStock","url":"https://www.cashsystem.be/","seller":{"@id":"https://www.cashsystem.be/#organization"},"areaServed":"BE"}}
+{"@context":"https://schema.org","@type":"Product","name":"CashSystem automatische muntautomaat — Volledig pakket","description":"Volledig kant-en-klaar pakket: automatische muntautomaat gemaakt in België, 10\"-tablet, gepersonaliseerde afwerking, installatie, opleiding, technische ondersteuning en 3 jaar Platinum-onderhoud inbegrepen. Suite Platform-software gratis het 1e jaar.","brand":{"@type":"Brand","name":"CashSystem"},"manufacturer":{"@id":"https://www.cashsystem.be/#organization"},"image":"https://www.cashsystem.be/assets/banniere-poster.jpg","category":"Automatische muntautomaat","countryOfOrigin":"BE","offers":{"@type":"Offer","priceCurrency":"EUR","price":"9900","availability":"https://schema.org/InStock","url":"https://www.cashsystem.be/nl/","seller":{"@id":"https://www.cashsystem.be/#organization"},"areaServed":"BE"}}
 </script>
+
+<!-- Microsoft Clarity -->
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -131,1347 +178,806 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "tpyxaeb76z");
 </script>
-
 </head>
+<body>
 
-<!-- Bouton WhatsApp flottant -->
-<a href="https://wa.me/32456407362" 
-   class="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50"
-   target="_blank" 
-   aria-label="Contactez-nous sur WhatsApp">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-6 h-6 fill-current">
-    <path d="M16.003 2.002a13.91 13.91 0 0 0-11.59 21.805L2 30l6.385-2.376A13.918 13.918 0 1 0 16.003 2.002zm0 25.07a11.13 11.13 0 0 1-5.664-1.563l-.404-.24-3.785 1.411 1.413-3.688-.263-.424a11.125 11.125 0 1 1 8.703 4.504zm6.132-8.346c-.334-.167-1.97-.972-2.276-1.082-.305-.112-.528-.168-.75.168-.223.334-.863 1.081-1.058 1.305-.195.222-.39.25-.724.083-.334-.166-1.41-.52-2.688-1.66-.993-.884-1.663-1.974-1.858-2.309-.195-.334-.02-.515.147-.682.152-.15.334-.39.5-.584.166-.195.223-.334.334-.556.111-.223.056-.417-.027-.584-.083-.167-.75-1.805-1.027-2.476-.27-.65-.545-.562-.75-.573-.194-.01-.417-.012-.64-.012-.222 0-.584.084-.89.417-.305.334-1.17 1.143-1.17 2.786 0 1.643 1.198 3.232 1.367 3.457.167.222 2.356 3.602 5.713 5.051.8.345 1.424.551 1.91.706.8.255 1.526.219 2.103.133.642-.096 1.97-.805 2.247-1.582.277-.778.277-1.446.194-1.583-.083-.138-.305-.222-.639-.389z"/>
-  </svg>
-</a>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17599407948"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17599407948');
-</script>
-
-<!-- Event snippet for Envoi de formulaire pour leads conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-17599407948/ShzECOe386kbEMzOhshB'});
-</script>
-
-
-<body class="bg-white text-gray-900">
-<!-- GTM (noscript) -->
-<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NSFKT4JV" style="display:none;visibility:hidden" width="0"></iframe></noscript>
-<!-- End GTM (noscript) -->
-
-<!-- Header -->
-<header class="bg-white fixed inset-x-0 top-0 z-50 border-b border-gray-100/70">
-  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16 relative">
-    <img
-      alt="CashSystem"
-      class="h-10 w-auto"
-      src="https://www.cashsystem.be/assets/logo.png?v=3"
-      width="132" height="40"
-      loading="eager" decoding="async"
-      onerror="
-        this.onerror=null;
-        this.src='https://cashsystem.be/assets/logo.png?v=3';
-      "
-    />
-
-    
-    <!-- Bouton hamburger (mobile only) -->
-    <button
-      id="menuBtn"
-      class="md:hidden inline-flex items-center justify-center p-2 rounded-lg border border-gray-200"
-      aria-expanded="false"
-      aria-controls="mobileMenu"
-      aria-label="Menu openen"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
-<nav class="hidden md:flex gap-8 text-sm font-medium absolute left-1/2 -translate-x-1/2 flex-nowrap whitespace-nowrap">
-      <a href="#producten">Producten</a>
-      <a href="#oplossingen">Oplossingen</a>
-      <a href="/suite" class="font-semibold inline-flex items-center gap-1.5"><img src="/assets/suite/logoSuitePetit.png" alt="" class="h-5 w-auto">Suite</a>
-      <a href="#onderhoud">Onderhoud</a>
-      <a href="#contact">Contact</a>
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-[rgba(250,250,247,.85)] backdrop-blur-md border-b hairline">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <img src="/assets/logo-h.png"
+           alt="CashSystem — Belgische fabrikant van automatische muntautomaten"
+           class="h-9 w-auto"
+           width="160" height="36"
+           loading="eager" decoding="async"/>
+      <span class="hidden sm:inline-flex badge">Made in Belgium</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-base font-medium">
+      <a href="#service" class="hover:text-[var(--accent-deep)]">Service</a>
+      <a href="#produits" class="hover:text-[var(--accent-deep)]">Producten</a>
+      <a href="#galerie" class="hover:text-[var(--accent-deep)]">Galerij</a>
+      <a href="#vs" class="hover:text-[var(--accent-deep)]">Vergelijking</a>
+      <a href="#prix" class="hover:text-[var(--accent-deep)]">Prijzen</a>
+      <a href="#faq" class="hover:text-[var(--accent-deep)]">FAQ</a>
     </nav>
-    <!-- <div class="hidden md:flex items-center gap-2"> -->
-      <!-- <a -->
-        <!-- href="https://cashsystem.odoo.com/book/88d15a4c" -->
-        <!-- target="_blank" rel="noopener" -->
-        <!-- class="inline-flex items-center gap-2 rounded-full bg-[#43d6b5] text-white px-4 py-2 text-sm font-medium hover:bg-[#43d6b5] transition" -->
-        <!-- data-rdv="header" aria-label="Je prends RDV" -->
-      <!-- >Je prends RDV</a> -->
-      <!-- <span class="inline-flex items-center rounded-full bg-white text-gray-900 px-2.5 py-[2px] text-xs font-semibold whitespace-nowrap">170€ /mois*</span> -->
-    <!-- </div> -->
-</div>
-</header>
-<!-- Menu mobile (en dessous de la barre principale) -->
-<!-- Menu mobile (overlay sous le header) -->
-<nav id="mobileMenu"
-     class="md:hidden hidden fixed inset-x-0 z-40 border-t border-gray-100 bg-white shadow-xl"
-     style="top: var(--header-h); max-height: calc(100vh - var(--header-h)); overflow-y: auto;"
-     aria-label="Hoofdnavigatie mobiel">
-  <div class="max-w-7xl mx-auto px-4">
-    <ul class="py-3 space-y-1 text-base font-medium">
-      <li><a class="block py-3" href="#producten">Producten</a></li>
-      <li><a class="block py-3" href="#oplossingen">Oplossingen</a></li>
-      <li><a class="py-3 font-semibold inline-flex items-center gap-1.5" href="/suite"><img src="/assets/suite/logoSuitePetit.png" alt="" class="h-5 w-auto">Suite</a></li>
-      <li><a class="block py-3" href="#onderhoud">Onderhoud</a></li>
-      <li><a class="block py-3" href="#contact">Contact</a></li>
-      <li class="pt-2">
-        <!-- <div class="flex flex-wrap items-center gap-3"> -->
-          <!-- <a -->
-            <!-- href="https://cashsystem.odoo.com/book/88d15a4c" -->
-            <!-- target="_blank" rel="noopener" -->
-            <!-- class="inline-flex items-center gap-2 rounded-full bg-[#43d6b5] text-white px-5 py-2.5" -->
-            <!-- data-rdv="header" -->
-            <!-- aria-label="Je prends RDV"> -->
-            <!-- Je prends RDV -->
-          <!-- </a> -->
-          <!-- <span class="inline-flex items-center rounded-full bg-white text-gray-900 px-3 py-1 text-sm font-semibold whitespace-nowrap ring-1 ring-gray-200"> -->
-            <!-- 170 € /mois* -->
-          <!-- </span> -->
-        <!-- </div> -->
-      </li>
-    </ul>
+    <a href="#contact" class="btn-primary text-sm lg:text-base whitespace-nowrap px-3 lg:px-5 py-2 lg:py-3">
+      <span class="lg:hidden">Offerte</span>
+      <span class="hidden lg:inline">Vraag een offerte</span>
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
   </div>
-</nav>
+</header>
 
+<!-- HERO -->
+<section class="relative grain overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 pt-10 pb-14 lg:pt-16 lg:pb-20 grid lg:grid-cols-12 gap-10 items-center">
+    <div class="lg:col-span-7 reveal">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="accent-dot"></span>
+        <span class="text-base font-medium text-[var(--muted)]">
+          <span class="text-[var(--ink)] font-semibold">65 winkels</span> uitgerust in België
+        </span>
+      </div>
 
-<!-- Hero -->
-<section class="pt-24 pb-10 sm:pt-28 sm:pb-12 text-center">
-  <h1 class="text-5xl font-bold tracking-tight mb-6 px-4 sm:px-5">Het automatische kassasysteem dat uw winkel transformeert.</h1>
-  <div class="mx-auto max-w-5xl px-6 sm:px-0 mt-2">
-    <div class="rounded-2xl overflow-hidden apple-shadow">
+      <h1 class="display text-[clamp(2rem,4.5vw,3.5rem)] mb-4">
+        De automatische muntautomaat<br/>
+        <span class="text-[var(--accent-deep)]">gemaakt in België.</span>
+      </h1>
+
+      <p class="text-[1.125rem] lg:text-[1.25rem] text-[var(--muted)] max-w-xl mb-6 leading-relaxed">
+        Hardware en software ontworpen in België. Een storing&nbsp;? U spreekt met de ingenieur die de machine in elkaar heeft gezet, niet met een callcenter.
+      </p>
+
+      <div class="flex flex-wrap gap-3 mb-8">
+        <a href="#prix" class="btn-accent">
+          Bekijk het volledige pakket — 9 900 €
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://wa.me/32456407362" class="btn-ghost">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.6 6.3A8 8 0 0 0 4 12.4c0 1.4.4 2.8 1 4L4 21l4.7-1.2a8 8 0 0 0 11.7-7c0-2.1-.8-4.1-2.3-5.6Zm-5.6 12.3a6.6 6.6 0 0 1-3.4-.9l-.2-.1-2.8.7.8-2.7-.2-.3a6.7 6.7 0 1 1 5.8 3.3Z"/></svg>
+          Praten via WhatsApp
+        </a>
+      </div>
+
+      <div class="grid grid-cols-3 gap-6 max-w-lg pt-8 border-t hairline">
+        <div>
+          <div class="text-3xl font-bold">&lt; 24u</div>
+          <div class="text-sm text-[var(--muted)] mt-1">Interventie in België</div>
+        </div>
+        <div>
+          <div class="text-3xl font-bold">7d/7</div>
+          <div class="text-sm text-[var(--muted)] mt-1">Platinum-ondersteuning WhatsApp</div>
+        </div>
+        <div class="relative bg-[var(--accent)]/10 rounded-2xl px-3 lg:px-4 py-2 lg:py-3 ring-1 ring-[var(--accent)]/30">
+          <span class="absolute -top-3 left-2 lg:left-3 inline-flex items-center gap-1 bg-[var(--accent)] text-[var(--ink)] text-[9px] lg:text-[11px] font-bold uppercase tracking-wider px-2 lg:px-2.5 py-0.5 lg:py-1 rounded-full whitespace-nowrap shadow-md">
+            <span class="lg:hidden">★ Uniek</span>
+            <span class="hidden lg:inline">★ Uniek in België</span>
+          </span>
+          <div class="text-3xl font-bold text-[var(--accent-deep)]">3 jaar</div>
+          <div class="text-sm text-[var(--muted)] mt-1">Platinum-onderhoud gratis</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:col-span-5 reveal">
+      <div class="relative">
+        <div class="absolute -inset-6 bg-gradient-to-br from-[var(--accent)]/25 via-transparent to-[var(--accent)]/10 rounded-[32px] blur-3xl"></div>
+        <div class="relative rounded-[28px] overflow-hidden shadow-[0_40px_80px_-20px_rgba(10,14,13,.35)] ring-1 ring-black/5">
+          <img src="/assets/monnayeur-hero.jpg"
+               alt="Automatische muntautomaat CashSystem geïnstalleerd in een Belgische winkel — witte kiosk met touchscreen en biljettenlade"
+               class="w-full h-auto block"
+               width="900" height="1200"
+               loading="eager" decoding="async"
+               fetchpriority="high"/>
+        </div>
+        <div class="absolute -bottom-5 -left-5 bg-white rounded-2xl px-5 py-3.5 shadow-[0_20px_40px_-12px_rgba(10,14,13,.25)] ring-1 ring-black/5">
+          <div class="text-[11px] uppercase tracking-wider text-[var(--muted)] font-semibold">Ontworpen &amp; geassembleerd in</div>
+          <div class="font-bold flex items-center gap-2 mt-0.5">
+            <span class="text-lg">🇧🇪</span> Kortenberg, België
+          </div>
+        </div>
+        <div class="absolute -top-5 -right-5 bg-[var(--ink)] text-white rounded-2xl px-4 py-3 shadow-xl">
+          <div class="flex items-center gap-2">
+            <span class="accent-dot"></span>
+            <span class="text-sm font-semibold tracking-wide">PLATINUM-ONDERSTEUNING</span>
+          </div>
+          <div class="text-[11px] text-white/60 mt-0.5">7d/7 via WhatsApp</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANDEAU VIDÉO PUB -->
+<section class="py-8 lg:py-12 bg-[var(--paper)]">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="rounded-[28px] overflow-hidden shadow-[0_40px_80px_-20px_rgba(10,14,13,.35)] ring-1 ring-black/5 reveal">
       <video autoplay class="w-full h-auto block hero-banniere" loop muted playsinline poster="https://www.cashsystem.be/assets/banniere-poster.jpg" preload="auto" webkit-playsinline>
         <source src="https://www.cashsystem.be/assets/banniere-nl.mp4" type="video/mp4"/>
       </video>
     </div>
   </div>
-  <p class="max-w-2xl mx-auto text-gray-700 px-6 sm:px-0 leading-relaxed mt-4">La solution moderne qui sécurise vos encaissements et renforce votre image</p>
-  <p class="max-w-3xl mx-auto mt-1 text-gray-600 px-6 sm:px-0 leading-relaxed">Un design minimaliste, des performances maximales. Entièrement personnalisable, avec reclamescherm intégré et gestion complète des espèces.</p>
-
-  <!-- Image prototype -->
-  <picture>
-    <source media="(min-width: 641px)" srcset="https://www.cashsystem.be/assets/prototype.jpg">
-    <img alt="Monnayeur automatique CashSystem — prototype kiosque (België)" class="mx-auto mt-5 w-auto max-h-[420px] sm:max-h-[520px] object-contain" src="/assets/prototype_mobile.jpg" loading="lazy" decoding="async">
-  </picture>
-
-<!-- CTA + Prix -->
-<div class="mt-6 flex flex-wrap items-center justify-center gap-3 px-safe sm:px-0">
-  <a href="#pricing"
-    class="inline-flex items-center gap-2 rounded-full bg-[#43d6b5] text-white px-4 py-2.5 sm:px-6 sm:py-3 hover:brightness-95 active:scale-[.99] transition w-auto justify-center whitespace-nowrap"
-    aria-label="Bekijk de volledige kit 9 900 €">
-    <span class="font-semibold">Bekijk de kit&nbsp;9&nbsp;900&nbsp;€</span>
-    <svg aria-hidden="true" class="h-4 w-4 opacity-80 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-      <path d="M5 12h14M13 5l7 7-7 7"></path>
-    </svg>
-  </a>
-  <a href="https://cashsystem.odoo.com/book/88d15a4c" target="_blank" rel="noopener"
-    class="inline-flex items-center gap-2 rounded-full border border-gray-300 px-4 py-2.5 sm:px-6 sm:py-3 hover:bg-gray-50 transition w-auto justify-center whitespace-nowrap"
-    data-rdv="hero" aria-label="Maak afspraak">
-    <span class="font-semibold">Maak&nbsp;afspraak</span>
-  </a>
-</div>
-<p class="mt-4 text-sm text-gray-500 max-w-2xl mx-auto px-safe">
-  Aankoop kant-en-klaar <strong class="text-gray-900">9&nbsp;900&nbsp;€&nbsp;excl. BTW</strong> · of leasing vanaf <strong class="text-gray-900">170&nbsp;€&nbsp;excl. BTW/maand</strong><sup>*</sup> via onze financieringspartners.
-</p>
-  <!-- Image mobile-only au-dessus de la mention légale -->
-  <div class="sm:hidden px-safe mt-6">
-    <img
-      src="/assets/prototype_mobile2.jpg?v=1"
-      alt="Monnayeur automatique CashSystem — prototype mobile (vue verticale)"
-      class="w-full max-w-[520px] mx-auto rounded-2xl shadow-sm"
-      loading="lazy" decoding="async"
-      sizes="(max-width: 640px) 100vw, 520px"
-    >
-  </div>
-  <p class="cs-footnote" style="margin-top:40px;margin-bottom:0">* Prix hors TVA, calculé à titre indicatif sur base d’un financement en leasing ou renting financier sur une durée de 60 mois. Offre soumise à l’acceptation du dossier par l’organisme de financement. Le montant peut varier en fonction des taux d’intérêt et des conditions du marché.</p>
 </section>
 
-
-
-<!-- SECTION : Différence CashSystem vs Revendeurs (version animée) -->
-<section id="difference" class="max-w-6xl mx-auto px-6 py-20 text-center">
-  <div class="opacity-0 translate-y-10 transition-all duration-700 ease-out" data-animate>
-    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-6">
-      CashSystem vs verkopers: het verschil is enorm.
-    </h2>
-    <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-10">
-       <strong>Wij verkopen niet door — wij produceren.</strong><br/>
-      Elke CashSystem kiosk wordt <strong>ontworpen, geassembleerd en getest in België</strong>,
-      zonder tussenpersonen of verborgen marges.<br/>
-      Resultaat: <strong>meer betrouwbaarheid, minder wachttijd en directe service.</strong>
-    </p>
-  </div>
-
-  <div class="grid sm:grid-cols-2 gap-8 text-left">
-    <div class="p-6 rounded-2xl bg-gray-50 shadow-sm hover:shadow-md transition opacity-0 translate-y-8 duration-700" data-animate>
-      <h3 class="text-xl font-semibold mb-3 text-emerald-700">
-         Onze concurrenten importeren. Wij innoveren.
-      </h3>
-      <p class="text-gray-700">
-        Terwijl anderen machines uit het buitenland installeren,
-        ontwerpen wij <strong>onze eigen machines</strong> — aangepast aan Belgische winkels
-        en de realiteit op het terrein.
-      </p>
-    </div>
-    <div class="p-6 rounded-2xl bg-gray-50 shadow-sm hover:shadow-md transition opacity-0 translate-y-8 duration-700" data-animate>
-      <h3 class="text-xl font-semibold mb-3 text-emerald-700">
-         Een automatische kassa tegen de juiste prijs.
-      </h3>
-      <p class="text-gray-700">
-        Geen distributeursmarge, geen absurde licenties.
-        U betaalt <strong>het product, niet de doorverkoopketen</strong>.
-      </p>
-    </div>
-    <div class="p-6 rounded-2xl bg-gray-50 shadow-sm hover:shadow-md transition opacity-0 translate-y-8 duration-700" data-animate>
-      <h3 class="text-xl font-semibold mb-3 text-emerald-700">
-         Een partner, geen verkoper.
-      </h3>
-      <p class="text-gray-700">
-        Bij CashSystem is uw technische contact ook degene die de machine ontwerpt.
-        U spreekt <strong>direct met de producent</strong> — en dat maakt het verschil.
-      </p>
-    </div>
-    <div class="p-6 rounded-2xl bg-gray-50 shadow-sm hover:shadow-md transition opacity-0 translate-y-8 duration-700" data-animate>
-      <h3 class="text-xl font-semibold mb-3 text-emerald-700">
-         In België gemaakt, ondersteund vanuit België.
-      </h3>
-      <p class="text-gray-700">
-        Wij steunen de lokale economie en garanderen
-        <strong>snelle service, beschikbare onderdelen en Platinum opvolging</strong>.
-      </p>
-    </div>
-  </div>
-
-  <div class="mt-14 opacity-0 translate-y-10 transition-all duration-700" data-animate>
-    <p class="text-lg font-medium text-gray-800">
-       <strong>CashSystem</strong>: het enige Belgische merk van automatische kassa's —<br class="sm:hidden"/>
-      <span class="text-emerald-700 font-semibold">hier geproduceerd, voor hier ontworpen.</span>
-    </p>
-  </div>
-</section>
-<!-- FIN SECTION animée -->
-
-
-<!-- Produits -->
-<section class="bg-[#f5f5f7] py-14" id="producten">
-  <div class="max-w-7xl mx-auto px-4">
-    <h2 class="text-xl sm:text-3xl font-semibold tracking-tight">De laatste nieuwigheden. <span class="text-gray-500 block sm:inline">Een kijkje op wat net uit is.</span></h2>
-    <div class="relative mt-8 rail-apple">
-      <div class="rail-inner flex gap-6 overflow-x-auto snap-x snap-mandatory sm:snap-proximity no-scrollbar">
-        
-        <!-- Carte : OneNight -->
-        <article class="group snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card relative overflow-hidden apple-shadow" id="card-onenight">
-          <div class="absolute inset-0" id="onenight-carousel">
-            <img src="/assets/onenight-1.jpg"
-                 alt="Monnayeur automatique CashSystem OneNight — kiosque noir avec LED cyan, night shop België"
-                 class="cs-slide active" loading="lazy" decoding="async"/>
-            <img src="/assets/onenight-2.jpg"
-                 alt="Caisse automatique OneNight installée dans un night shop en België"
-                 class="cs-slide" loading="lazy" decoding="async"/>
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-[#0a1a1a]/80 via-[#001a1a]/40 to-transparent pointer-events-none"></div>
-          <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#00C58E]/20 to-transparent pointer-events-none"></div>
-          <div class="relative z-10 p-6 flex flex-col h-full text-white">
-            <div class="text-xs font-semibold text-[#43d6b5]">Editie nachtwinkel</div>
-            <h3 class="mt-1 text-2xl sm:text-3xl font-semibold tracking-tight">OneNight</h3>
-            <div class="mt-2 w-fit whitespace-nowrap inline-flex items-center rounded-full bg-emerald-50/80 text-emerald-700 px-2.5 py-[3px] text-xs font-medium ring-1 ring-inset ring-emerald-200/70">Leasing mogelijk — zonder voorschot</div>
-            <div class="mt-auto text-sm text-white/90">
-              <p>Mat zwart design met cyaan LED-verlichting. Ontworpen voor nachtwinkels, kruideniers en nachtelijke winkels.</p>
-              <p class="mt-1 opacity-80">Écran 14" • Billets &amp; pièces • LED d'ambiance personnalisable.</p>
-            </div>
-          </div>
-        </article>
-
-        <!-- Carte : NewDelicia -->
-        <article class="group snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card relative overflow-hidden apple-shadow" id="card-newdelicia">
-          <div class="absolute inset-0" id="newdelicia-carousel">
-            <img src="/assets/newdelicia-1.jpg"
-                 alt="Monnayeur automatique CashSystem NewDelicia — habillage bois, boulangerie België"
-                 class="cs-slide active" loading="lazy" decoding="async"/>
-            <img src="/assets/newdelicia-2.jpg"
-                 alt="Caisse automatique NewDelicia installée dans une boulangerie en België"
-                 class="cs-slide" loading="lazy" decoding="async"/>
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-[#3d1a00]/70 via-[#2a1000]/30 to-transparent"></div>
-          <div class="relative z-10 p-6 flex flex-col h-full text-white">
-            <div class="text-xs font-semibold text-yellow-300">Editie bakkerij</div>
-            <h3 class="mt-1 text-2xl sm:text-3xl font-semibold tracking-tight">NewDelicia</h3>
-            <div class="mt-2 w-fit whitespace-nowrap inline-flex items-center rounded-full bg-emerald-50/80 text-emerald-700 px-2.5 py-[3px] text-xs font-medium ring-1 ring-inset ring-emerald-200/70">Leasing possible — sans apport</div>
-            <div class="mt-auto text-sm text-white/90">
-              <p>Premium houten afwerking. Natuurlijke integratie in bakkerij, theesalon en ambachtelijke winkel.</p>
-              <p class="mt-1 opacity-80">Touchscreen 14" • Geïntegreerde reclame • Compact en warm design.</p>
-            </div>
-          </div>
-        </article>
-
-        <!-- Olea kaart — Nieuwe klant -->
-        <article class="snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card relative overflow-hidden apple-shadow" id="card-olea">
-          <div class="absolute inset-0" id="olea-carousel">
-            <img alt="Monnayeur CashSystem installé chez Olea Zaventem — vue tablette Suite" class="cs-slide active" src="/assets/olea/olea-1.jpg" loading="lazy" decoding="async"/>
-            <img alt="Monnayeur CashSystem chez Olea — habillage bois chêne" class="cs-slide" src="/assets/olea/olea-2.jpg" loading="lazy" decoding="async"/>
-            <img alt="Caisse automatique CashSystem chez Olea — reclamescherm" class="cs-slide" src="/assets/olea/olea-3.jpg" loading="lazy" decoding="async"/>
-            <img alt="Monnayeur automatique Olea Zaventem — intégration commerce" class="cs-slide" src="/assets/olea/olea-4.jpg" loading="lazy" decoding="async"/>
-            <img alt="Installation CashSystem complète chez Olea — vue ensemble" class="cs-slide" src="/assets/olea/olea-5.jpg" loading="lazy" decoding="async"/>
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/25 to-transparent"></div>
-          <div class="relative z-10 p-6 flex flex-col h-full text-white">
-            <div class="text-xs font-semibold text-amber-300">Nouvelle installation</div>
-            <h3 class="mt-1 text-2xl sm:text-3xl font-semibold tracking-tight">Olea</h3>
-            <div class="mt-2 flex flex-wrap gap-2">
-              <span class="w-fit whitespace-nowrap inline-flex items-center rounded-full bg-[#722F5A]/90 text-white px-2.5 py-[3px] text-xs font-medium">Suite inclus</span>
-              <span class="w-fit whitespace-nowrap inline-flex items-center rounded-full bg-white/90 text-gray-700 px-2.5 py-[3px] text-xs font-medium">Habillage chêne</span>
-            </div>
-            <div class="mt-auto text-sm text-white/90">
-              <p>Café brunch à Zaventem. Monnayeur + tablette Suite Platform pour la prise de commande.</p>
-            </div>
-          </div>
-        </article>
-
-        <!-- cartes (identiques à ta version) -->
-		<!-- Carte : Nouveauté — Paiement par carte + Suite Platform -->
-<article class="snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card relative overflow-hidden apple-shadow" id="card-card-suite">
-  
-  <!-- Image -->
-  <img
-    src="/assets/monnayeur.jpeg"
-    alt="Nouveauté CashSystem : monnayeur avec paiement par carte et Suite Platform"
-    class="absolute inset-0 w-full h-full object-cover"
-    loading="lazy"
-    decoding="async"
-  />
-
-  <!-- Overlay -->
-  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/35 to-transparent"></div>
-
-  <!-- Contenu -->
-  <div class="relative z-10 p-6 flex flex-col h-full text-white">
-    
-    <!-- Haut -->
-    <div>
-      <div class="text-xs font-semibold text-emerald-200">
-        Nouveauté
+<!-- LOGOS / SOCIAL PROOF TICKER -->
+<section class="border-y hairline bg-white py-8 overflow-hidden">
+  <p class="text-center text-sm uppercase tracking-[0.2em] text-[var(--muted)] mb-6 font-semibold">
+    Zij vertrouwen ons
+  </p>
+  <div class="overflow-hidden">
+    <div class="ticker">
+      <!-- list 1 -->
+      <div class="flex items-center gap-12 text-2xl font-semibold text-[var(--muted)] whitespace-nowrap">
+        <span>Olea Zaventem</span><span>•</span>
+        <span>NewDelicia</span><span>•</span>
+        <span>OneNight</span><span>•</span>
+        <span>Boulangerie Léonard</span><span>•</span>
+        <span>Frida Kahlo Café</span><span>•</span>
+        <span>Le Comptoir</span><span>•</span>
+        <span>Kebab Royal</span><span>•</span>
       </div>
-
-      <h3 class="mt-1 text-2xl sm:text-3xl font-semibold tracking-tight">
-        Cash + Carte, enfin réunis
-      </h3>
-
-      <div class="mt-3 flex flex-wrap gap-2">
-        <span class="inline-flex items-center rounded-full bg-white/15 px-3 py-[3px] text-xs font-medium ring-1 ring-inset ring-white/20">
-          Paiement par carte intégré
-        </span>
-        <span class="inline-flex items-center rounded-full bg-emerald-50/80 text-emerald-700 px-3 py-[3px] text-xs font-medium ring-1 ring-inset ring-emerald-200/70">
-          Suite Platform inclus
-        </span>
-      </div>
-    </div>
-
-    <!-- Bas : texte déplacé ici -->
-    <p class="mt-auto text-sm text-white/90 max-w-[32rem]">
-      Nos monnayeurs sont désormais dotés du paiement par carte,
-      en plus du cash. Pilotez l’ensemble via
-      <strong>Suite Platform</strong> :
-      gestion complète, centralisée et simple!.
-    </p>
-
-  </div>
-</article>
-
-
-
-        <!-- Carte 1 -->
-        <article class="snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card relative overflow-hidden apple-shadow" id="card-cashsystem">
-          <div class="absolute inset-0" id="cashsystem-carousel">
-            <img alt="Monnayeur automatique CashSystem — kiosque blanc, vue frontale (België)" class="cs-slide active" src="https://www.cashsystem.be/assets/kiosk-white-1.webp" loading="lazy" decoding="async"/>
-            <img alt="Monnayeur automatique CashSystem — kiosque blanc, vue 3/4 (België)" class="cs-slide" src="https://www.cashsystem.be/assets/kiosk-white-2.webp" loading="lazy" decoding="async"/>
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/25 to-transparent"></div>
-          <div class="relative z-10 p-6 flex flex-col h-full text-white">
-            <h3 class="text-2xl sm:text-3xl font-semibold tracking-tight">CashSystem</h3>
-            <div class="mt-2 w-fit whitespace-nowrap inline-flex items-center rounded-full bg-emerald-50/80 text-emerald-700 px-2.5 py-[3px] text-xs font-medium ring-1 ring-inset ring-emerald-200/70">Leasing possible — sans apport</div>
-            <div class="mt-auto text-sm text-white/90"><p>Écran tactile 14” • 33 cm largeur/profondeur.</p><p>30 billets/recycleur • 2 500 billets • 1 200–1 500 pièces.</p></div>
-          </div>
-        </article>
-        <!-- Carte 2 (Frida) — 3 IMAGES + VIDEO AU SURVOL -->
-		<article class="group snap-center sm:snap-start snap-always card-w flex-none h-[420px] sm:h-[520px] card relative overflow-hidden apple-shadow" id="card-frida">
-
-		  <!-- CARROUSEL IMAGES -->
-		  <div class="absolute inset-0" id="frida-carousel">
-			<img src="https://www.cashsystem.be/assets/monnayeur-automatique-belgique.jpeg"
-				 alt="Monnayeur automatique CashSystem édition Frida Kahlo — covering personnalisé"
-				 class="cs-slide active" loading="lazy" decoding="async"/>
-
-			<img src="https://www.cashsystem.be/assets/caisse_automatique-belgique.jpeg"
-				 alt="Caisse automatique Frida Kahlo installée dans un commerce en België"
-				 class="cs-slide" loading="lazy" decoding="async"/>
-
-			<img src="https://www.cashsystem.be/assets/monnayeur-automatique.jpeg"
-				 alt="Monnayeur automatique Frida Kahlo — intégration point de vente"
-				 class="cs-slide" loading="lazy" decoding="async"/>
-		  </div>
-
-		  <!-- VIDEO SUR HOVER -->
-		  <video
-			class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 pointer-events-none group-hover:opacity-100"
-			loop muted playsinline preload="metadata">
-			<source src="https://www.cashsystem.be/assets/frida.webm" type="video/webm"/>
-			<source src="https://www.cashsystem.be/assets/meilleur-monnayeur.mp4" type="video/mp4"/>
-		  </video>
-
-		  <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/25 to-transparent"></div>
-
-		  <!-- TEXTE -->
-		  <div class="relative z-10 p-6 flex flex-col h-full text-white">
-			<div class="text-xs font-semibold text-purple-300">Édition personnalisée</div>
-			<h3 class="mt-1 text-2xl sm:text-3xl font-semibold tracking-tight">Frida Kahlo</h3>
-			<div class="mt-2 w-fit whitespace-nowrap inline-flex items-center rounded-full bg-emerald-50/80 text-emerald-700 px-2.5 py-[3px] text-xs font-medium ring-1 ring-inset ring-emerald-200/70">
-			  Leasing possible — sans apport
-			</div>
-			<div class="mt-auto text-sm text-white/90">
-			  <p>Habillage personnalisé. Mêmes capacités que le modèle standard.</p>
-			</div>
-		  </div>
-		</article>
-
-
-		<!-- Carte 4 : KR-10 avec vidéo au survol -->
-		<article class="group snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card relative overflow-hidden apple-shadow" id="card-ironbox">
-		  <!-- Image statique (affichée par défaut) -->
-		  <img
-			alt="Monnayeur automatique KR-10 — coffre-fort intégré"
-			class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
-			src="https://www.cashsystem.be/assets/monnayeur-automatique-coffre-fort.jpg"
-			loading="lazy"
-			decoding="async"
-		  />
-
-		  <!-- Vidéo au survol (comme Frida) -->
-		  <video
-			class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 pointer-events-none group-hover:opacity-100"
-			loop
-			muted
-			playsinline
-			preload="metadata"
-		  >
-			<!-- 🔧 adapte le chemin ci-dessous selon où tu mets le fichier sur le serveur -->
-			<source src="https://www.cashsystem.be/assets/monnayeur-automatique-coffrefort-belgique.mp4" type="video/mp4" />
-		  </video>
-
-		  <!-- Overlay dégradé + contenu texte -->
-		  <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/25 to-transparent"></div>
-		  <div class="relative z-10 p-6 flex flex-col h-full text-white">
-			<div class="text-xs font-semibold text-gray-300">Beveiligde editie</div>
-			<div class="mt-1 flex items-center gap-2">
-			  <h3 class="text-2xl sm:text-3xl font-semibold tracking-tight">KR-10</h3>
-			  <span class="text-xs sm:text-sm font-medium opacity-90">
-				Performance & capacité accrues
-			  </span>
-			</div>
-			<div class="mt-2 flex flex-wrap gap-2">
-			  <span class="inline-flex items-center rounded-full bg-emerald-50/80 text-emerald-700 px-2.5 py-[3px] text-xs font-medium ring-1 ring-inset ring-emerald-200/70">
-				Coffre-fort intégré
-			  </span>
-			</div>
-
-
-			<div class="mt-auto text-sm text-white/90">
-			  <p>Sécurisation avancée du cash, pensée pour les points de vente à fort flux.</p>
-			  <div class="mt-3 flex flex-wrap gap-2">
-				<a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-[#00C58E] text-white px-4 py-2 text-sm font-medium hover:bg-[#00AC7C]">
-				  Demander un devis
-				  <svg aria-hidden="true" class="h-4 w-4 opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-					<path d="M5 12h14M13 5l7 7-7 7"/>
-				  </svg>
-				</a>
-			  </div>
-			</div>
-		  </div>
-		</article>
-		
-				<!-- Carte : Compact Wood -->
-		<article class="group snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card relative overflow-hidden apple-shadow" id="card-compactwood">
-
-		  <!-- CARROUSEL IMAGES -->
-		  <div class="absolute inset-0" id="compactwood-carousel">
-			<img src="/assets/compactwood-1.jpeg"
-				 alt="Monnayeur automatique CashSystem Compact Wood — design bois"
-				 class="cs-slide active" loading="lazy" decoding="async"/>
-
-			<img src="/assets/compactwood-2.jpeg"
-				 alt="Caisse automatique Compact Wood installée dans un commerce"
-				 class="cs-slide" loading="lazy" decoding="async"/>
-
-			<img src="/assets/compactwood-3.jpeg"
-				 alt="CashSystem Compact Wood — vue verticale"
-				 class="cs-slide" loading="lazy" decoding="async"/>
-		  </div>
-
-		  <!-- Dégradé -->
-		  <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/25 to-transparent"></div>
-
-		  <!-- Texte -->
-		  <div class="relative z-10 p-6 flex flex-col h-full text-white">
-			<div class="text-xs font-semibold text-yellow-300">Édition bois</div>
-			<h3 class="mt-1 text-2xl sm:text-3xl font-semibold tracking-tight">Compact Wood</h3>
-
-			<div class="mt-2 w-fit whitespace-nowrap inline-flex items-center rounded-full bg-emerald-50/80 text-emerald-700 px-2.5 py-[3px] text-xs font-medium ring-1 ring-inset ring-emerald-200/70">
-			  Leasing possible — sans apport
-			</div>
-
-			<div class="mt-auto text-sm text-white/90">
-			  <p>Format vertical compact. Habillage bois premium. Écran 14”.</p>
-			</div>
-		  </div>
-		</article>
-
-
-        <!-- Carte 3 -->
-        <article class="snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card relative overflow-hidden apple-shadow" id="card-tulipe">
-          <div class="absolute inset-0" id="tulipe-carousel">
-            <img alt="Kiosque monnayeur CashSystem « La Tulipe » — covering doré, vue 1" class="cs-slide active" src="https://www.cashsystem.be/assets/tulipe-1.jpg" loading="lazy" decoding="async"/>
-            <img alt="Kiosque monnayeur CashSystem « La Tulipe » — covering doré, vue 2" class="cs-slide" src="https://www.cashsystem.be/assets/tulipe-2.jpg" loading="lazy" decoding="async"/>
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/25 to-transparent"></div>
-          <div class="relative z-10 p-6 flex flex-col h-full text-white">
-            <div class="text-xs font-semibold text-purple-300">Édition personnalisée</div>
-            <h3 class="mt-1 text-2xl sm:text-3xl font-semibold tracking-tight">La Tulipe</h3>
-            <div class="mt-2 w-fit whitespace-nowrap inline-flex items-center rounded-full bg-emerald-50/80 text-emerald-700 px-2.5 py-[3px] text-xs font-medium ring-1 ring-inset ring-emerald-200/70">Leasing possible — sans apport</div>
-            <div class="mt-auto text-sm text-white/90"><p>Habillage premium doré. 14” • 33 cm • 30 billets/recycleur • 2 500 billets • 1 200–1 500 pièces.</p></div>
-          </div>
-        </article>
-
-        <!-- Carte 5 — Personnalisation -->
-        <article class="group snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card relative overflow-hidden apple-shadow bg-gradient-to-br from-gray-900 to-gray-800">
-          <div class="relative z-10 p-6 h-full flex flex-col items-center justify-center text-center text-white">
-            <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-4">
-              <svg class="w-8 h-8 text-[#43d6b5]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"/>
-              </svg>
-            </div>
-            <h3 class="text-2xl sm:text-3xl font-semibold tracking-tight">Votre design sur-mesure</h3>
-            <p class="mt-3 text-sm text-white/70 max-w-[22rem]">
-              Couleur, habillage, reclamescherm... Créons ensemble la caisse qui vous ressemble.
-            </p>
-            <div class="mt-6">
-              <a href="https://wa.me/32456407362?text=Bonjour%2C%20je%20souhaite%20un%20design%20personnalis%C3%A9%20pour%20ma%20caisse%20automatique" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-[#43d6b5] text-white px-5 py-2.5 text-sm font-semibold hover:bg-[#3bc4a5] transition">
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                Discuter sur WhatsApp
-              </a>
-            </div>
-          </div>
-        </article>
-
+      <!-- list 2 (duplicate for loop) -->
+      <div class="flex items-center gap-12 text-2xl font-semibold text-[var(--muted)] whitespace-nowrap">
+        <span>Olea Zaventem</span><span>•</span>
+        <span>NewDelicia</span><span>•</span>
+        <span>OneNight</span><span>•</span>
+        <span>Boulangerie Léonard</span><span>•</span>
+        <span>Frida Kahlo Café</span><span>•</span>
+        <span>Le Comptoir</span><span>•</span>
+        <span>Kebab Royal</span><span>•</span>
       </div>
     </div>
   </div>
 </section>
 
-
-<!-- Bloc pricing -->
-<section class="py-16 bg-[#f5f5f7]" id="prijs">
-  <div class="max-w-3xl mx-auto px-6">
-    <h2 class="text-2xl sm:text-3xl font-semibold mb-3 text-center">De volledige kit — alles inbegrepen</h2>
-    <p class="text-gray-500 text-center mb-10 max-w-xl mx-auto">Geen verborgen kosten, geen verrassingen. De automaat, de service, de opleiding: alles zit erin.</p>
-
-    <!-- Card pricing principale -->
-    <div class="bg-white border-2 border-[#00C58E] rounded-3xl p-8 sm:p-10 shadow-lg">
-      <div class="text-center mb-7">
-        <p class="text-xs font-semibold text-[#00C58E] uppercase tracking-widest">Volledige kit — alles inbegrepen</p>
-        <p class="mt-3 text-5xl sm:text-6xl font-bold tracking-tight">9 900 €</p>
-        <p class="text-gray-500 text-sm mt-1">excl. BTW — kant-en-klaar aankoop</p>
-      </div>
-
-      <ul class="space-y-3 mb-7 text-gray-700">
-        <li class="flex gap-3"><span class="text-[#00C58E] font-bold flex-shrink-0">✓</span><span><strong>CashSystem automatische muntautomaat</strong> — wisselgeld in munten &amp; biljetten, gemaakt in België</span></li>
-        <li class="flex gap-3"><span class="text-[#00C58E] font-bold flex-shrink-0">✓</span><span><strong>Tablet 10"</strong> om de automaat te bedienen</span></li>
-        <li class="flex gap-3"><span class="text-[#00C58E] font-bold flex-shrink-0">✓</span><span><strong>Op maat afgewerkt</strong> in uw kleuren (covering op maat)</span></li>
-        <li class="flex gap-3"><span class="text-[#00C58E] font-bold flex-shrink-0">✓</span><span><strong>Installatie, opzet, opleiding</strong> van uw team</span></li>
-        <li class="flex gap-3"><span class="text-[#00C58E] font-bold flex-shrink-0">✓</span><span><strong>Technische ondersteuning</strong> direct via WhatsApp</span></li>
-        <li class="flex gap-3"><span class="text-[#00C58E] font-bold flex-shrink-0">✓</span>
-          <span>
-            <strong>Platinum onderhoud 1 jaar inbegrepen</strong> :
-            <ul class="text-sm text-gray-600 mt-1 space-y-0.5">
-              <li>· Onmiddellijke vervanging van defecte onderdelen</li>
-              <li>· Ondersteuning ter plaatse en op afstand</li>
-              <li>· Verplaatsingen inbegrepen</li>
-            </ul>
-          </span>
-        </li>
-      </ul>
-
-      <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
-        <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-[#43d6b5] text-white px-6 py-3 font-semibold hover:brightness-95 transition">Vraag een offerte</a>
-        <a href="https://wa.me/32456407362?text=Hallo%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20kit%20CashSystem%20%C3%A0%209900%20%E2%82%AC" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-green-600 text-white px-6 py-3 font-semibold hover:bg-green-700 transition">WhatsApp</a>
-      </div>
+<!-- USP #1 — SERVICE -->
+<section id="service" class="ink py-14 lg:py-20 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-30 grain"></div>
+  <div class="max-w-7xl mx-auto px-6 relative">
+    <div class="max-w-3xl mb-10 reveal">
+      <p class="eyebrow text-[var(--accent)] mb-4">Het echte verschil</p>
+      <h2 class="display text-3xl lg:text-5xl mb-6">
+        We verkopen een machine.<br/>
+        We <span class="text-[var(--accent)]">leveren rust.</span>
+      </h2>
+      <p class="text-xl text-white/70 leading-relaxed">
+        Een storing midden in de drukte, en u verliest honderden euro's. Daarom zit het <strong class="text-white">Platinum-onderhoud in de aankoopprijs</strong> — 3 jaar lang, zonder apart contract. Uniek in België.
+      </p>
     </div>
 
-    <!-- Sous-bloc tarifs an 2+ avec offre Suite 5 ans -->
-    <div class="mt-8 bg-white rounded-2xl p-6 text-sm text-gray-700 border border-gray-200">
-      <p class="font-semibold mb-3 text-gray-900">Na het 1<sup>e</sup> jaar — à la carte</p>
-      <ul class="space-y-1.5 mb-4">
-        <li>• <strong>Platinum onderhoud</strong>: 800 € excl. BTW/jaar, of <strong>600 € excl. BTW/jaar</strong> indien geïntegreerd in een leasing 5 jaar</li>
-        <li>• <strong>Suite Platform software</strong>: 600 € excl. BTW/jaar</li>
-      </ul>
-      <div class="mt-4 rounded-xl bg-gradient-to-br from-[#722F5A]/10 to-[#722F5A]/5 border-2 border-[#722F5A]/30 p-5">
-        <div class="flex items-start justify-between gap-3 flex-wrap">
-          <p class="font-semibold text-[#722F5A] flex items-center gap-2 text-base">
-            <span class="text-lg leading-none">★</span> Pakket 5 jaar — Suite software gratis
-          </p>
-          <span class="inline-flex items-center rounded-full bg-[#722F5A] text-white px-2.5 py-[3px] text-[10px] font-bold uppercase tracking-widest">Aanbevolen</span>
-        </div>
-        <p class="mt-2 text-gray-700 leading-relaxed">
-          Indien u <strong>Platinum onderhoud voor de 4 volgende jaren</strong> neemt (het 1<sup>e</sup> jaar is reeds inbegrepen) — bij aankoop of <strong>leasing 5 jaar</strong> met geïntegreerd onderhoud — bieden wij u <strong>Suite Platform software gratis aan tijdens de 5 jaren</strong>.
+    <div class="grid md:grid-cols-3 gap-px bg-white/10 rounded-3xl overflow-hidden border border-white/10">
+      <div class="bg-[var(--ink)] p-8">
+        <div class="num-big text-[var(--accent)]">24u</div>
+        <h3 class="display-md text-2xl mt-4 mb-2">Interventie ter plaatse</h3>
+        <p class="text-white/60 text-base leading-relaxed">
+          Oproep ontvangen, onderdeel meegenomen, hersteld. Overal in België.
         </p>
-        <p class="mt-3 inline-flex items-center gap-2 text-[#722F5A] font-semibold text-sm">
-          <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-          Besparing van 3 000 € excl. BTW over 5 jaar
+      </div>
+      <div class="bg-[var(--ink)] p-8">
+        <div class="num-big text-[var(--accent)]">1</div>
+        <h3 class="display-md text-2xl mt-4 mb-2">WhatsApp-nummer</h3>
+        <p class="text-white/60 text-base leading-relaxed">
+          Geen ticket, geen IVR, geen callcenter aan de andere kant van de wereld. U typt, wij antwoorden.
+        </p>
+      </div>
+      <div class="bg-[var(--ink)] p-8">
+        <div class="num-big text-[var(--accent)]">0</div>
+        <h3 class="display-md text-2xl mt-4 mb-2">Tussenpersonen</h3>
+        <p class="text-white/60 text-base leading-relaxed">
+          De technicus aan de lijn heeft uw machine zelf in elkaar gezet. Met zijn eigen handen.
         </p>
       </div>
     </div>
-
-    <!-- Sous-bloc leasing -->
-    <div class="mt-6 bg-white rounded-2xl p-6 text-center border border-gray-200">
-      <p class="text-xs font-semibold text-gray-500 uppercase tracking-widest">Liever leasing?</p>
-      <p class="mt-3 text-gray-700 leading-relaxed">
-        Leasing/renting mogelijk via onze <strong>financieringspartners</strong>, vanaf
-        <span class="font-bold text-gray-900 text-lg">170 € excl. BTW/maand</span><sup>*</sup>.
-      </p>
-      <p class="text-xs text-gray-400 mt-2">* 60 maanden zonder voorschot, onder voorbehoud van aanvaarding van het financieringsdossier.</p>
-    </div>
   </div>
 </section>
 
-<!-- Bloc SEO : Achat monnayeur automatique -->
-<section class="py-8 bg-[#f5f5f7] border-y border-gray-200/50">
-  <div class="max-w-4xl mx-auto px-6 text-gray-500 text-sm leading-relaxed">
-    <h2 class="text-base font-medium text-gray-600 mb-2">Aankoop automatische muntautomaat in België</h2>
-    <p>
-      CashSystem is een Belgische fabrikant van automatische muntautomaten en kassa-systemen
-      voor alle soorten winkels: bakkerijen, snackbars, tankstations, kapsalons en supermarkten.
-      Onze cash-betaaloplossingen worden in België ontworpen en geassembleerd, voor prestaties, veiligheid en design.
-      Of u nu een <strong class="text-gray-600">automatische muntautomaat wilt aankopen</strong> of liever leaset,
-      wij begeleiden u van installatie tot Platinum onderhoud <strong class="text-gray-600">Platinum</strong>.
-      <a href="#contact" class="underline hover:text-gray-700">Vraag een offerte aan</a>.
+<!-- VS COMPETITORS -->
+<section id="vs" class="py-14 lg:py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-10 reveal">
+      <p class="eyebrow mb-4">Eerlijke vergelijking</p>
+      <h2 class="display text-3xl lg:text-4xl mb-4">
+        De Belgische referentie voor automatische muntautomaten.
+      </h2>
+      <p class="text-[var(--muted)] text-xl">
+        Ontworpen, geassembleerd en onderhouden in België. Gekozen door + dan 65 winkels.
+      </p>
+    </div>
+
+    <div class="card-elevated overflow-x-auto">
+      <div class="min-w-[640px]">
+      <div class="grid grid-cols-4 bg-[var(--ink)] text-white text-base font-semibold">
+        <div class="p-4"></div>
+        <div class="p-4 text-center">Azië</div>
+        <div class="p-4 text-center">Zuid-Europa</div>
+        <div class="p-4 text-center bg-[var(--accent)] text-[var(--ink)]">CashSystem</div>
+      </div>
+      <div class="compare-row grid grid-cols-4 text-base">
+        <div class="font-semibold">Gemaakt in:</div>
+        <div class="text-center text-[var(--muted)]">Japan</div>
+        <div class="text-center text-[var(--muted)]">Spanje</div>
+        <div class="text-center font-bold text-[var(--accent-deep)]">Kortenberg, België</div>
+      </div>
+      <div class="compare-row grid grid-cols-4 text-base">
+        <div class="font-semibold">Levertijd</div>
+        <div class="text-center text-[var(--muted)]">6-10 weken</div>
+        <div class="text-center text-[var(--muted)]">4-6 weken</div>
+        <div class="text-center font-bold text-[var(--accent-deep)]">1 week</div>
+      </div>
+      <div class="compare-row grid grid-cols-4 text-base">
+        <div class="font-semibold">Interventietijd</div>
+        <div class="text-center text-[var(--muted)]">3-5 dagen</div>
+        <div class="text-center text-[var(--muted)]">2-4 dagen</div>
+        <div class="text-center font-bold text-[var(--accent-deep)]">&lt; 24u</div>
+      </div>
+      <div class="compare-row grid grid-cols-4 text-base">
+        <div class="font-semibold">U spreekt met</div>
+        <div class="text-center text-[var(--muted)]">Wederverkoper</div>
+        <div class="text-center text-[var(--muted)]">Wederverkoper</div>
+        <div class="text-center font-bold text-[var(--accent-deep)]">De fabrikant</div>
+      </div>
+      <div class="compare-row grid grid-cols-4 text-base">
+        <div class="font-semibold">Geïntegreerde software</div>
+        <div class="text-center text-[var(--muted)]">Apart</div>
+        <div class="text-center text-[var(--muted)]">Apart</div>
+        <div class="text-center font-bold text-[var(--accent-deep)]">Suite Platform inbegrepen</div>
+      </div>
+      <div class="compare-row grid grid-cols-4 text-base">
+        <div class="font-semibold">Hardware-aanpassing</div>
+        <div class="text-center text-[var(--muted)]">Nee</div>
+        <div class="text-center text-[var(--muted)]">Beperkt</div>
+        <div class="text-center font-bold text-[var(--accent-deep)]">Op maat</div>
+      </div>
+      <div class="compare-row grid grid-cols-4 text-base">
+        <div class="font-semibold">WhatsApp-ondersteuning 7d/7</div>
+        <div class="text-center text-[var(--muted)]">Nee</div>
+        <div class="text-center text-[var(--muted)]">Nee</div>
+        <div class="text-center font-bold text-[var(--accent-deep)]">Platinum inbegrepen</div>
+      </div>
+      <div class="compare-row grid grid-cols-4 text-base">
+        <div class="font-semibold">Onderhoud</div>
+        <div class="text-center text-[var(--muted)]">Apart contract</div>
+        <div class="text-center text-[var(--muted)]">Apart contract</div>
+        <div class="text-center font-bold text-[var(--accent-deep)]">3 jaar Platinum gratis</div>
+      </div>
+      </div>
+    </div>
+
+    <p class="text-sm text-[var(--muted)] mt-4 text-center">
+      Vergelijking gebaseerd op publieke servicevoorwaarden in 04/2025 en onze ervaring op het terrein. Deze tabel betreft de nabijheid van de service, niet de technische kwaliteit van de producten.
     </p>
   </div>
 </section>
 
-
-<!-- Solutions -->
-<section class="bg-[#f5f5f7] py-14" id="oplossingen">
-  <div class="max-w-7xl mx-auto px-4">
-    <h2 class="text-xl sm:text-3xl font-semibold tracking-tight">Oplossingen <span class="text-gray-500 block sm:inline">— Aanvullende tools</span></h2>
-    <div class="relative mt-8 rail-apple">
-      <div class="rail-inner flex gap-6 overflow-x-auto snap-x snap-mandatory sm:snap-proximity no-scrollbar">
-
-        <!-- Suite Platform -->
-        <article class="snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card relative overflow-hidden apple-shadow">
-          <div class="absolute inset-0 bg-gradient-to-br from-[#722F5A] to-[#4a1e3a]"></div>
-          <div class="relative z-10 p-6 flex flex-col h-full text-white">
-            <div class="text-xs font-semibold text-pink-200">Kassasoftware</div>
-            <h3 class="mt-1 text-2xl sm:text-3xl font-semibold tracking-tight">Suite Platform</h3>
-            <div class="mt-2 w-fit inline-flex items-center rounded-full bg-white/90 text-[#722F5A] px-3 py-[3px] text-xs font-medium">Offert 5 ans avec pack engagement</div>
-            <img alt="Suite Platform — logiciel de caisse pour restaurants" class="mt-4 w-full h-[180px] sm:h-[240px] object-contain rounded-lg" src="/assets/suite/dashboard.png" loading="lazy" decoding="async"/>
-            <p class="mt-3 text-sm text-white/90">Zaalplan, bestelling opnemen, contant- en kaartbetaling. De alles-in-één voor restaurants en winkels.</p>
-            <div class="mt-auto">
-              <a href="/suite" class="inline-flex items-center gap-2 rounded-full bg-white text-[#722F5A] px-5 py-2.5 text-sm font-semibold hover:bg-white/90 transition">
-                Ontdek Suite
-                <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- cartes solutions (inchangées) -->
-        <article class="snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card bg-white text-gray-900 p-6 apple-shadow border border-gray-200">
-          <div class="flex flex-col h-full">
-            <div>
-              <div class="text-xs font-semibold text-blue-600">Tabletoplossing</div>
-              <h3 class="mt-1 text-2xl sm:text-3xl font-semibold tracking-tight">Beheers-tablet</h3>
-              <div class="mt-2 w-fit inline-flex items-center rounded-full bg-gray-900/5 px-3 py-[3px] text-xs font-medium text-gray-700 ring-1 ring-inset ring-gray-300">Compatibel Windows/Android</div>
-            </div>
-            <img alt="Beheers-tablet — afstandsbediening van de automatische kassa" class="mt-4 w-full h-[200px] sm:h-[260px] object-contain" src="https://www.cashsystem.be/assets/tablet.png" loading="lazy" decoding="async"/>
-            <p class="mt-3 text-sm text-gray-600">Bediening van de automatische kassa, weergave, opdrachten op afstand, vereenvoudigd onderhoud.</p>
-          </div>
-        </article>
-
-        <article class="snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card relative overflow-hidden apple-shadow">
-          <div class="absolute inset-0 bg-gradient-to-tr from-gray-900 to-gray-700"></div>
-          <div class="relative z-10 p-6 flex flex-col h-full text-white">
-            <div class="text-xs font-semibold text-purple-300">OCR + Integratie</div>
-            <h3 class="mt-1 text-2xl sm:text-3xl font-semibold tracking-tight">OCR &amp; API module</h3>
-            <div class="mt-2 w-fit inline-flex items-center rounded-full bg-emerald-50/90 text-emerald-700 px-3 py-[3px] text-xs font-medium ring-1 ring-inset ring-emerald-200/70">Universeel koppelbaar</div>
-            <div class="mt-auto text-sm text-white/90"><p>Automatische lezing en interface met elke bestaande software.</p></div>
-          </div>
-        </article>
-
-        <article class="snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card bg-white text-gray-900 p-6 apple-shadow border border-gray-200">
-          <div class="flex flex-col h-full">
-            <div>
-              <div class="text-xs font-semibold text-emerald-600">Mobiele applicatie</div>
-              <h3 class="mt-1 text-2xl sm:text-3xl font-semibold tracking-tight">CashSystem Mobile</h3>
-              <div class="mt-2 w-fit inline-flex items-center rounded-full bg-emerald-600/10 px-3 py-1 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/20">iOS &amp; Android</div>
-            </div>
-            <div class="mt-4 flex items-end justify-center gap-4">
-              <img alt="CashSystem Mobile App — biljetten- en muntenstatus, scherm 1" class="h-[200px] sm:h-[260px] w-auto object-contain" src="https://www.cashsystem.be/assets/mobile-1.jpg" loading="lazy" decoding="async"/>
-              <img alt="CashSystem Mobile App — controle van geldopnames, scherm 2" class="h-[200px] sm:h-[260px] w-auto object-contain" src="https://www.cashsystem.be/assets/mobile-2.jpg" loading="lazy" decoding="async"/>
-            </div>
-            <p class="mt-3 text-sm text-gray-600">Real-time status van biljetten &amp; munten. Volledige controle over geldopnames. Elke opname vereist een autorisatie in de app (traceerbaarheid).</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Maintenance -->
-<section class="bg-[#f5f5f7] py-14" id="onderhoud">
-  <div class="max-w-7xl mx-auto px-4">
-    <h2 class="text-xl sm:text-3xl font-semibold tracking-tight">Onderhoud <span class="text-gray-500 block sm:inline">— Platinum bijstand</span></h2>
-    <div class="relative mt-8 rail-apple">
-      <div class="rail-inner flex gap-6 overflow-x-auto snap-x snap-mandatory sm:snap-proximity no-scrollbar">
-        <article class="snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card bg-white text-gray-900 p-6 apple-shadow border border-gray-200">
-          <div class="flex flex-col h-full">
-            <div>
-              <div class="text-xs font-semibold text-indigo-600">Platinum bijstand</div>
-              <h3 class="mt-1 text-xl sm:text-3xl font-semibold tracking-tight">CashSystem onderhoud</h3>
-              <ul class="mt-2 text-sm text-gray-700 list-disc list-inside space-y-1">
-                <li>Volledige dekking van de machine bij storing.</li>
-                <li>Vervanging door <span class="font-medium">nieuw onderdeel</span> bij defect component.</li>
-                <li>Online ondersteuning via WhatsApp.</li>
-                <li>Stap-voor-stap begeleiding bij storing of vragen.</li>
-              </ul>
-            </div>
-            <div class="mt-auto flex items-center gap-3">
-              <a class="inline-flex items-center rounded-full bg-[#43d6b5] text-white px-4 py-2 hover:bg-[#43d6b5] transition" href="https://wa.me/32456407362?text=Hallo%2C%20ik%20heb%20CashSystem%20bijstand%20nodig" rel="noopener" target="_blank">Bijstand contacteren</a>
-              <a class="inline-flex items-center rounded-full border border-gray-300 px-4 py-2 text-gray-700" href="#contact">Info vragen</a>
-            </div>
-          </div>
-        </article>
-        <article class="snap-center sm:snap-start card-w flex-none h-[420px] sm:h-[520px] card bg-white text-gray-900 p-6 apple-shadow border border-gray-200">
-          <div class="flex flex-col h-full">
-            <div>
-              <div class="text-xs font-semibold text-emerald-600">Waarom CashSystem</div>
-              <h3 class="mt-1 text-2xl sm:text-3xl font-semibold tracking-tight">Performance & design</h3>
-              <p class="mt-2 text-sm text-gray-900 italic">« Waarom kiezen voor lelijkheid wanneer prestaties ook mooi kunnen zijn? »</p>
-            </div>
-
-            <ul class="mt-9 text-sm text-gray-900 list-disc list-inside space-y-1">
-              <li><strong>Enige Belgische muntautomaat-producent</strong></li>
-              <li><strong>Op maat afgewerkt</strong> + <strong>reclamescherm 14"</strong></li>
-              <li><strong>Beste ondersteuning</strong>: intern team, eigen reparatie</li>
-              <li><strong>Eigen software</strong>: ontwikkeling & integraties intern</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Onze geschiedenis -->
-<section class="relative overflow-hidden bg-[#f5f5f7]" id="over-ons">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-    <div class="grid gap-8">
+<!-- PRODUCTS -->
+<section id="produits" class="py-14 lg:py-20 bg-white border-y hairline">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-end justify-between flex-wrap gap-6 mb-12 reveal">
       <div>
-        <p class="text-sm uppercase tracking-widest text-gray-500">Over ons</p>
-        <h2 class="mt-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl"><strong>CashSystem</strong></h2>
-        <p class="mt-1 text-lg text-gray-600 italic">Elegantie ten dienste van prestaties.</p>
+        <p class="eyebrow mb-3">Personalisatie</p>
+        <h2 class="display text-3xl lg:text-4xl">Eén machine. Uw identiteit.</h2>
+      </div>
+      <p class="text-[var(--muted)] max-w-md">
+        Eikenhout, mat zwart met cyaan-LED, artistieke covering, afwerking op maat — elke CashSystem wordt samen met u ontworpen om in uw winkel te passen.
+      </p>
+    </div>
 
-        <p class="mt-6 text-gray-600 leading-relaxed">
-          CashSystem is een <strong>Belgische startup</strong> gespecialiseerd in <strong>cash-betaaloplossingen</strong>. 
-          Wij ontwerpen <strong>slimme, betrouwbare en esthetische automatische kassa's</strong>, om <strong>het dagelijkse leven van handelaars te vereenvoudigen</strong>. 
-          Onze aanpak: <strong>technologie, veiligheid en design</strong> combineren om een <strong>vlotte ervaring zonder wrijving of compromis</strong> te bieden. 
-          Bedacht als concreet antwoord op de uitdagingen van moderne handel, is elke <strong>automatische kassa</strong> van CashSystem ontworpen om 
-          natuurlijk te integreren in haar omgeving. Wij stellen de <strong>tevredenheid van onze klanten</strong> centraal, met intuïtieve, 
-          toegankelijke en schaalbare tools, ontworpen om aan hun reële behoeften te voldoen.
+    <div class="grid lg:grid-cols-3 gap-6">
+      <article class="card-elevated overflow-hidden group">
+        <div class="aspect-[4/5] overflow-hidden bg-gray-100 relative">
+          <img src="/assets/newdelicia-1.jpg"
+               alt="Muntautomaat NewDelicia met houten afwerking voor bakkerij"
+               class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0"
+               loading="lazy" decoding="async"/>
+          <img src="/assets/newdelicia-2.jpg"
+               alt="Automatisch kassasysteem NewDelicia geïnstalleerd in een Belgische ambachtelijke bakkerij"
+               class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 group-hover:opacity-100"
+               loading="lazy" decoding="async"/>
+        </div>
+        <div class="p-6">
+          <p class="eyebrow mb-3">Ambachtelijke bakkerij</p>
+          <h3 class="display-md text-3xl mb-2">NewDelicia</h3>
+          <p class="text-[var(--muted)] text-base leading-relaxed mb-4">
+            Warme houten afwerking. Ontworpen om in een ambachtelijke vitrine te passen zonder de sfeer te breken.
+          </p>
+          <div class="flex items-center justify-between pt-4 border-t hairline">
+            <span class="text-base font-semibold">Bekijk deze personalisatie</span>
+            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+      </article>
+
+      <article class="card-elevated overflow-hidden group">
+        <div class="aspect-[4/5] overflow-hidden bg-gray-100 relative">
+          <img src="/assets/onenight-1.jpg"
+               alt="Muntautomaat OneNight mat zwart met cyaan-LED voor nachtwinkel"
+               class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0"
+               loading="lazy" decoding="async"/>
+          <img src="/assets/onenight-2.jpg"
+               alt="Automatisch kassasysteem OneNight geïnstalleerd in een Belgische nachtwinkel"
+               class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 group-hover:opacity-100"
+               loading="lazy" decoding="async"/>
+        </div>
+        <div class="p-6">
+          <p class="eyebrow mb-3">Nachtwinkel &amp; nachtkruidenier</p>
+          <h3 class="display-md text-3xl mb-2">OneNight</h3>
+          <p class="text-[var(--muted)] text-base leading-relaxed mb-4">
+            Mat zwart, aanpasbare cyaan-LED. Voor winkels die meteen indruk willen maken bij binnenkomst.
+          </p>
+          <div class="flex items-center justify-between pt-4 border-t hairline">
+            <span class="text-base font-semibold">Bekijk deze personalisatie</span>
+            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+      </article>
+
+      <article class="card-elevated overflow-hidden group">
+        <div class="aspect-[4/5] overflow-hidden bg-gray-100 relative">
+          <img src="/assets/olea/olea-3.jpg"
+               alt="Muntautomaat op maat Olea — eikenhout in bakkerij-brunch in Zaventem"
+               class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0"
+               loading="lazy" decoding="async"/>
+          <img src="/assets/olea/olea-1.jpg"
+               alt="Suite Platform-tablet in de hand voor bestelopname bij Olea"
+               class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 group-hover:opacity-100"
+               loading="lazy" decoding="async"/>
+        </div>
+        <div class="p-6">
+          <p class="eyebrow mb-3">Brunch café — Zaventem</p>
+          <h3 class="display-md text-3xl mb-2">Olea</h3>
+          <p class="text-[var(--muted)] text-base leading-relaxed mb-4">
+            Ruwe eikenhouten afwerking gekoppeld aan de Suite Platform-tablet voor bestelopname. Ontworpen in 3 weken.
+          </p>
+          <div class="flex items-center justify-between pt-4 border-t hairline">
+            <span class="text-base font-semibold">Bekijk de case study</span>
+            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PERSONNALISATION + TECH -->
+<section id="sur-mesure" class="py-14 lg:py-20 bg-white border-y hairline">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-12 gap-10 items-center">
+
+      <div class="lg:col-span-7 reveal">
+        <div class="relative">
+          <div class="absolute -inset-4 bg-gradient-to-br from-[var(--accent)]/20 via-transparent to-[var(--accent)]/5 rounded-[28px] blur-2xl"></div>
+          <div class="relative rounded-[24px] overflow-hidden shadow-[0_30px_60px_-20px_rgba(10,14,13,.25)] ring-1 ring-black/5">
+            <img src="/assets/monnayeur.jpeg"
+                 alt="Drie afwerkingen van de CashSystem-muntautomaat naast elkaar: artistieke covering Frida Kahlo, zichtbaar mechanisme, lichte houten afwerking"
+                 class="w-full h-auto block"
+                 loading="lazy" decoding="async"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 reveal">
+        <p class="eyebrow mb-3">Op maat</p>
+        <h2 class="display text-3xl lg:text-4xl mb-4">
+          Identiek in mechaniek.<br/>Uniek aan de buitenkant.
+        </h2>
+        <p class="text-xl text-[var(--muted)] mb-7 leading-relaxed">
+          De hardware is identiek voor al onze klanten. Wat verandert, is de afwerking die bij u past.
         </p>
 
-        <p class="mt-3 text-gray-600 leading-relaxed">
-          Ons doel is eenvoudig: <strong>cash-beheer</strong> even efficiënt als discreet maken, terwijl we 
-          een <strong>elegante en eenvoudige service</strong> bieden. Wij laten cash-betalingen evolueren om aan te passen aan de realiteit van vandaag.
-        </p>
-
-        <h3 class="mt-8 text-xl font-semibold text-gray-900">Een simpel idee. Een veeleisende uitvoering.</h3>
-        <p class="mt-3 text-gray-600 leading-relaxed">
-          Alles begon met een vaststelling: in veel winkels blijven cash-betalingen essentieel… 
-          Maar het beheer ervan veroorzaakt vaak stress, tijdverlies en zelfs risico's. 
-          Dus bedachten wij een terminal die tegelijk <strong>design, compact, autonoom en ultraveilig</strong> is. 
-          Een automatische kassa die natuurlijk integreert in de verkoopruimte, zonder gedoe, zonder complexiteit. 
-          Een <strong>vertrouwd object</strong>. Een nieuwe reflex.
-        </p>
-
-        <h3 class="mt-8 text-xl font-semibold text-gray-900">Achter het product, een visie.</h3>
-        <p class="mt-3 text-gray-600 leading-relaxed">CashSystem is een <strong>Belgisch merk</strong>, geboren uit <strong>terreinervaring</strong>:</p>
-        <ul class="mt-2 text-gray-700 leading-relaxed list-disc pl-5 space-y-1">
-          <li>in de <strong>buurthandel</strong></li>
-          <li>in <strong>betalingsbeheer</strong></li>
-          <li>in de <strong>dagelijkse realiteit van handelaars</strong></li>
-        </ul>
-        <p class="mt-3 text-gray-600 leading-relaxed">
-          Ons doel? <strong>Orde, rust en moderniteit</strong> brengen in cash-beheer. 
-          Met een oplossing die uw omgeving, uw esthetiek en uw klanten respecteert.
-        </p>
-
-        <h3 class="mt-8 text-xl font-semibold text-gray-900">Een menselijk team. Een service op niveau.</h3>
-        <p class="mt-3 text-gray-600 leading-relaxed">
-          Wij zijn een <strong>structuur op menselijke schaal</strong>, dicht bij u, en overtuigd dat efficiëntie nooit elegantie mag opofferen.
-        </p>
-        <ul class="mt-2 text-gray-700 leading-relaxed list-disc pl-5 space-y-1">
-          <li>🔧 Nous installons, connectons et ancrons chaque caisse automatique.</li>
-          <li>📡 Nous assurons un <strong>suivi technique à distance</strong>.</li>
-          <li>📞 Et surtout, nous restons <strong>joignables, disponibles et engagés</strong> à vos côtés.</li>
-        </ul>
-
-        <h3 class="mt-8 text-xl font-semibold text-gray-900">Et demain ?</h3>
-        <p class="mt-3 text-gray-600 leading-relaxed">
-          Nous voyons grand, mais nous avançons bien. 
-          Notre ambition est de faire de CashSystem une <strong>référence du paiement autonome en België</strong>, 
-          avec une présence affirmée, une image forte, et un <strong>réseau de partenaires de confiance</strong>.
-        </p>
-
-        <h3 class="mt-8 text-xl font-semibold text-gray-900">Parlons de vous.</h3>
-        <p class="mt-3 text-gray-600 leading-relaxed">
-          Chez CashSystem, <strong>tout commence par une discussion</strong>. 
-          Que vous soyez commerçant, entrepreneur ou futur partenaire, 
-          <strong>nous vous écoutons, nous vous accompagnons, nous construisons avec vous</strong>.
-        </p>
-
-        <div class="mt-5 flex flex-wrap items-center gap-3">
-          <a href="#contact" class="inline-flex items-center rounded-full bg-[#00C58E] px-5 py-2.5 text-white text-sm font-medium hover:brightness-95 transition">
-            Contactez-nous ici
-          </a>
-          <a href="#contact" class="inline-flex items-center rounded-full border border-gray-300 px-5 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-50 transition">
-            Devenez partenaire
-          </a>
+        <p class="eyebrow mb-3">De mechaniek</p>
+        <div class="space-y-2 mb-7">
+          <div class="card-elevated p-4">
+            <h3 class="font-bold text-xl mb-1">Snelheid</h3>
+            <p class="text-[var(--muted)] text-base leading-relaxed">
+              Biljet gevalideerd in 2 seconden. 12 muntstukken per seconde teruggegeven. De klant betaalt, krijgt wisselgeld en gaat weg voordat hij opkijkt.
+            </p>
+          </div>
+          <div class="card-elevated p-4">
+            <h3 class="font-bold text-xl mb-1">Capaciteit &amp; recycling</h3>
+            <p class="text-[var(--muted)] text-base leading-relaxed">
+              30 gerecyclede biljetten per coupure. 2 500 in cashbox. 1 500 muntstukken. Elke coupure heeft zijn eigen levende voorraad om wisselgeld te geven.
+            </p>
+          </div>
+          <div class="card-elevated p-4">
+            <h3 class="font-bold text-xl mb-1">Precisie &amp; veiligheid</h3>
+            <p class="text-[var(--muted)] text-base leading-relaxed">
+              Accepteert alles, weert wat verdacht is. Gevouwen, vuile of beschadigde biljetten worden automatisch afgewezen. 11 herkende coupures, gepatenteerde anti-fraude, geïntegreerde stalen kluis.
+            </p>
+          </div>
         </div>
 
-        <hr class="mt-10 mb-6 border-gray-200">
+        <p class="eyebrow mb-3">De afwerking</p>
+        <div class="space-y-2">
+          <div class="card-elevated p-4">
+            <h3 class="font-bold text-xl mb-1">Artistieke covering</h3>
+            <p class="text-[var(--muted)] text-base leading-relaxed">
+              Portret, illustratie, foto, motief — wij printen en integreren. De muntautomaat wordt een visuele signatuur in uw winkel.
+            </p>
+          </div>
+          <div class="card-elevated p-4">
+            <h3 class="font-bold text-xl mb-1">Materiaalafwerking</h3>
+            <p class="text-[var(--muted)] text-base leading-relaxed">
+              Ruw eikenhout, licht hout, mat zwart MDF, geborsteld metaal. U kiest het materiaal, wij integreren het in het frame.
+            </p>
+          </div>
+          <div class="card-elevated p-4">
+            <h3 class="font-bold text-xl mb-1">Aanpassingen op maat</h3>
+            <p class="text-[var(--muted)] text-base leading-relaxed">
+              LED-kleuren, integratie betaalterminal, specifieke biljetformaten, OCR-documenten — wij passen aan voor uw concrete situatie.
+            </p>
+          </div>
+        </div>
+      </div>
 
-        <!-- Stats -->
-        <dl class="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-4">
-          <div class="rounded-2xl border border-gray-200 p-4">
-            <dt class="text-xs text-gray-500">Actieve klanten</dt>
-            <dd class="mt-1 text-2xl font-semibold text-gray-900">65+</dd>
-          </div>
-          <div class="rounded-2xl border border-gray-200 p-4">
-            <dt class="text-xs text-gray-500">Années d’expérience</dt>
-            <dd class="mt-1 text-2xl font-semibold text-gray-900">6+</dd>
-          </div>
-          <div class="rounded-2xl border border-gray-200 p-4">
-            <dt class="text-xs text-gray-500">Gedekte landen</dt>
-            <dd class="mt-1 text-2xl font-semibold text-gray-900">BE · NL · DE</dd>
-          </div>
-          <div class="rounded-2xl border border-gray-200 p-4">
-            <dt class="text-xs text-gray-500">Assistance</dt>
-            <dd class="mt-1 text-2xl font-semibold text-gray-900">Platinum</dd>
-          </div>
-        </dl>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIE INSTALLATIONS -->
+<section id="galerie" class="py-14 lg:py-20 bg-[var(--paper)]">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-end justify-between flex-wrap gap-6 mb-12 reveal">
+      <div>
+        <p class="eyebrow mb-3">Klanten-installaties</p>
+        <h2 class="display text-3xl lg:text-4xl">65 winkels. Elke installatie uniek.</h2>
+      </div>
+      <p class="text-[var(--muted)] max-w-md">
+        Elke machine wordt op maat afgewerkt om in zijn winkel te passen. Hier zijn enkele van de laatste installaties geleverd in België.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/olea/olea-3.jpg"
+             alt="Automatische muntautomaat met eikenhouten afwerking geïnstalleerd bij Olea, brunchbakkerij in Zaventem"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Olea — Zaventem</figcaption>
+      </figure>
+
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/onenight-1.jpg"
+             alt="Muntautomaat OneNight mat zwart met cyaan-LED in een Belgische nachtwinkel"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">OneNight — Nachtwinkel</figcaption>
+      </figure>
+
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/newdelicia-1.jpg"
+             alt="Muntautomaat NewDelicia houten afwerking in ambachtelijke bakkerij"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">NewDelicia — Bakkerij</figcaption>
+      </figure>
+
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/compactwood-1.jpeg"
+             alt="Muntautomaat CompactWood houten afwerking met buffetmenu 8u-13u"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">CompactWood — Horeca</figcaption>
+      </figure>
+
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/olea/olea-1.jpg"
+             alt="Suite Platform-tablet in de hand voor de muntautomaat Olea voor bestelopname"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Olea — Suite-tablet</figcaption>
+      </figure>
+
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/newdelicia-2.jpg"
+             alt="Automatisch kassasysteem NewDelicia geïnstalleerd in een Belgische bakkerij"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">NewDelicia — Beeld 2</figcaption>
+      </figure>
+
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/frida.jpg"
+             alt="Muntautomaat speciale editie Frida Kahlo — gele covering op maat met portret"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Frida Kahlo — Speciale editie</figcaption>
+      </figure>
+
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/olea/olea-5.jpg"
+             alt="Overzicht van de volledige CashSystem-installatie bij Olea Zaventem"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Olea — Overzicht</figcaption>
+      </figure>
+
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/monnayeur-automatique-belgique.jpeg"
+             alt="Automatische muntautomaat CashSystem gemaakt in Kortenberg, België"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Atelier Kortenberg</figcaption>
+      </figure>
+
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/monnayeur-automatique.jpeg"
+             alt="Productafbeelding van de automatische muntautomaat CashSystem"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Standaardpakket</figcaption>
+      </figure>
+
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/monnayeur-automatique-coffre-fort.jpg"
+             alt="Beveiligde kluis geïntegreerd in de CashSystem-muntautomaat"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Geïntegreerde kluis</figcaption>
+      </figure>
+
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/kiosk-white-1.webp"
+             alt="Automatische muntautomaat met witte afwerking, strakke finish"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Witte afwerking</figcaption>
+      </figure>
+
+    </div>
+
+    <div class="mt-10 text-center reveal">
+      <a href="#contact" class="btn-ghost">
+        Bekijk een installatie bij ons
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="py-14 lg:py-20">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="card-elevated p-6 lg:p-12 relative overflow-hidden reveal">
+      <div class="absolute top-0 right-0 w-64 h-64 bg-[var(--accent)]/10 rounded-full blur-3xl"></div>
+      <svg class="w-12 h-12 text-[var(--accent)] mb-8" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M9 7H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2v3a2 2 0 0 1-2 2H4v2h1a4 4 0 0 0 4-4V7Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2v3a2 2 0 0 1-2 2h-1v2h1a4 4 0 0 0 4-4V7Z"/>
+      </svg>
+      <p class="display-md text-[1.5rem] lg:text-[2.25rem] mb-6 max-w-3xl">
+        De snelste muntautomaat op de markt, tot op de cent nauwkeurig. Suite draait op mijn telefoon, ik zie alles in real-time. En na 6 maanden gebruik: nul kasfouten.
+      </p>
+      <div class="flex items-center gap-4">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-[var(--accent)] to-[var(--accent-deep)] grid place-items-center text-white font-bold text-xl">
+          ON
+        </div>
+        <div>
+          <div class="font-semibold">OneNight</div>
+          <div class="text-base text-[var(--muted)]">Nachtwinkel — kassa, muntautomaat &amp; Suite Platform-software</div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Contact -->
-<section class="py-20" id="contact">
-  <div class="max-w-3xl mx-auto px-4">
-    <h2 class="text-3xl font-bold mb-4 text-center">Contact</h2>
-    <p class="text-gray-500 mb-8 text-center">Intéressé par nos solutions ? Envoyez-nous un message ou utilisez l'adresse ci-dessous.</p>
-    <div class="mb-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-      <a class="inline-flex items-center justify-center rounded-full bg-[#00C58E] text-white px-6 py-3 hover:bg-[#00AC7C] transition" href="#" id="email-btn">Open uw e-mail</a>
-      <a class="inline-flex items-center justify-center rounded-full bg-green-600 text-white px-6 py-3" href="https://wa.me/32456407362?text=Hallo%2C%20ik%20wil%20graag%20een%20offerte%20voor%20CashSystem" rel="noopener" target="_blank">WhatsApp</a>
-      <button class="inline-flex items-center justify-center rounded-full border border-gray-300 px-6 py-3 text-gray-700" type="button" id="copy-btn">Kopieer adres</button>
+<!-- PRICING -->
+<section id="prix" class="ink py-14 lg:py-20 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-30 grain"></div>
+  <div class="max-w-6xl mx-auto px-6 relative">
+    <div class="text-center mb-10 reveal">
+      <p class="eyebrow text-[var(--accent)] mb-4">Transparante prijzen</p>
+      <h2 class="display text-3xl lg:text-5xl mb-4">Eén prijs. Alles inbegrepen.</h2>
+      <p class="text-white/60 text-xl max-w-2xl mx-auto">
+        Geen verborgen licentie, geen extra "module", geen activeringskosten.
+      </p>
     </div>
-    <form class="bg-white shadow-sm rounded-2xl p-6 grid gap-4"
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          action="/merci">
-      <input type="hidden" name="form-name" value="contact"/><p class="hidden"><label>Niet invullen si vous êtes humain: <input name="bot-field"/></label></p>
-      <div><label class="block text-sm font-medium text-gray-700 mb-1">Volledige naam</label><input class="w-full rounded-xl border-gray-300" name="nom" placeholder="Uw naam" required/></div>
-      <div class="grid sm:grid-cols-2 gap-4">
-        <div><label class="block text-sm font-medium text-gray-700 mb-1">E-mail</label><input class="w-full rounded-xl border-gray-300" name="email" placeholder="u@voorbeeld.com" required type="email"/></div>
-        <div><label class="block text-sm font-medium text-gray-700 mb-1">Telefoon (optioneel)</label><input class="w-full rounded-xl border-gray-300" name="telephone" placeholder="+32 ..."/></div>
+
+    <div class="grid lg:grid-cols-2 gap-6">
+      <div class="bg-white/5 border border-white/10 rounded-3xl p-8">
+        <div class="flex items-center justify-between mb-6">
+          <h3 class="display-md text-3xl">Aankoop kant-en-klaar</h3>
+          <span class="text-sm uppercase tracking-wider text-white/50 font-semibold">Het eenvoudigst</span>
+        </div>
+        <div class="mb-8">
+          <div class="num-big">9 900 €</div>
+          <div class="text-white/50 text-base mt-2">excl. btw, geleverd en geïnstalleerd</div>
+        </div>
+        <ul class="space-y-3 text-base text-white/80 mb-8">
+          <li class="flex gap-3"><span class="text-[var(--accent)]">✓</span><span>Gemaakt in België</span></li>
+          <li class="flex gap-3"><span class="text-[var(--accent)]">✓</span><span>Touchscreen-tablet 10"</span></li>
+          <li class="flex gap-3"><span class="text-[var(--accent)]">✓</span><span>Gepersonaliseerde afwerking</span></li>
+          <li class="flex gap-3"><span class="text-[var(--accent)]">✓</span><span>Installatie + opleiding ter plaatse</span></li>
+          <li class="flex gap-3"><span class="text-[var(--accent)]">✓</span><span><strong>3 jaar Platinum-onderhoud gratis</strong> <span class="inline-block bg-[var(--accent)] text-[var(--ink)] text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full whitespace-nowrap align-middle shadow-sm">★ Uniek in België</span></span></li>
+          <li class="flex gap-3"><span class="text-[var(--accent)]">✓</span><span>Suite Platform gratis het 1<sup>e</sup> jaar</span></li>
+          <li class="flex gap-3"><span class="text-[var(--accent)]">✓</span><span>WhatsApp-ondersteuning 7d/7</span></li>
+        </ul>
+        <a href="#contact" class="btn-accent w-full justify-center">Vraag een offerte</a>
       </div>
-      <div><label class="block text-sm font-medium text-gray-700 mb-1">Bericht</label><textarea class="w-full rounded-xl border-gray-300" name="message" placeholder="Uw vraag..." required rows="5"></textarea></div>
-      <div class="flex items-center justify-center"><button class="inline-flex items-center justify-center rounded-full bg-[#00C58E] text-white px-8 py-3 hover:bg-[#00AC7C] transition" type="submit">Envoyer</button></div>
-      <p class="text-center text-sm text-gray-500">Ou écrivez-nous à <span class="font-medium" id="contact-email"></span></p>
-    </form>
+
+      <div class="bg-[var(--accent)] text-[var(--ink)] rounded-3xl p-8 relative">
+        <span class="absolute -top-3 right-8 bg-[var(--ink)] text-[var(--accent)] text-sm font-bold uppercase tracking-wider px-3 py-1.5 rounded-full">
+          Aanbevolen
+        </span>
+        <div class="flex items-center justify-between mb-6">
+          <h3 class="display-md text-3xl">Engagementspakket 5 jaar</h3>
+        </div>
+        <div class="mb-8">
+          <div class="num-big">170 €<span class="text-3xl font-semibold">/maand</span></div>
+          <div class="text-[var(--ink)]/70 text-base mt-2">excl. btw — leasing 60 maanden zonder voorschot*</div>
+        </div>
+        <ul class="space-y-3 text-base mb-8">
+          <li class="flex gap-3"><span class="font-bold">✓</span><span>Alles van het kant-en-klaar pakket</span></li>
+          <li class="flex gap-3"><span class="font-bold">✓</span><span><strong>3 jaar Platinum-onderhoud gratis</strong> <span class="inline-block bg-[var(--ink)] text-[var(--accent)] text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full whitespace-nowrap align-middle shadow-sm">★ Uniek in België</span></span></li>
+          <li class="flex gap-3"><span class="font-bold">✓</span><span>Suite Platform gratis het 1<sup>e</sup> jaar</span></li>
+          <li class="flex gap-3"><span class="font-bold">✓</span><span>Software-updates inbegrepen</span></li>
+          <li class="flex gap-3"><span class="font-bold">✓</span><span>Geen voorschot, geen waarborg</span></li>
+        </ul>
+        <a href="#contact" class="btn-primary w-full justify-center">Bereken mijn leasing</a>
+      </div>
+    </div>
+
+    <p class="text-sm text-white/40 mt-8 text-center max-w-3xl mx-auto">
+      *Onder voorbehoud van goedkeuring door onze financiële partner. De voorwaarden kunnen variëren afhankelijk van de marktrente.
+    </p>
   </div>
 </section>
 
-<!-- duplicate Netlify form removed -->
+<!-- FAQ -->
+<section id="faq" class="py-14 lg:py-20 bg-white border-y hairline">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="text-center mb-12 reveal">
+      <p class="eyebrow mb-4">De echte vragen</p>
+      <h2 class="display text-3xl lg:text-4xl">Voor u tekent, wilt u weten.</h2>
+    </div>
 
-<!-- custom JS submit handler removed to let Netlify handle the POST natively -->
+    <div class="space-y-3">
+      <details class="card-elevated p-6 group">
+        <summary class="flex items-center justify-between font-semibold text-xl">
+          En als de machine zondagavond uitvalt?
+          <span class="chev text-3xl text-[var(--accent-deep)] font-light">+</span>
+        </summary>
+        <p class="mt-4 text-[var(--muted)] leading-relaxed">
+          U stuurt ons een WhatsApp. 80% van de incidenten lossen we op afstand op binnen een uur (videobegeleiding, herstart, reset). Voor de overige 20% staan we de volgende ochtend bij u met het onderdeel. Dat is ons Platinum-engagement.
+        </p>
+      </details>
 
+      <details class="card-elevated p-6 group">
+        <summary class="flex items-center justify-between font-semibold text-xl">
+          Hoe lang duurt de installatie?
+          <span class="chev text-3xl text-[var(--accent-deep)] font-light">+</span>
+        </summary>
+        <p class="mt-4 text-[var(--muted)] leading-relaxed">
+          Een halve dag ter plaatse. U sluit 's morgens, u opent 's middags weer met de machine in werking, het team opgeleid en de software ingesteld. Geen werf, geen verbouwingen.
+        </p>
+      </details>
 
-<!-- JS (identiques à ta version) -->
+      <details class="card-elevated p-6 group">
+        <summary class="flex items-center justify-between font-semibold text-xl">
+          Maakt u echt in België?
+          <span class="chev text-3xl text-[var(--accent-deep)] font-light">+</span>
+        </summary>
+        <p class="mt-4 text-[var(--muted)] leading-relaxed">
+          Ja. Werkplaats in Kortenberg. U kan de assemblage van uw machine komen bekijken vóór levering — dat raden we zelfs aan. Geen enkele Europese concurrent biedt dit nabijheidsniveau.
+        </p>
+      </details>
 
-<script>
-// Smooth in-page navigation with header offset + proper hash behavior
-(function () {
-  const header = document.querySelector('header');
-  function headerH() {
-    const fromCss = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 0;
-    return (header?.offsetHeight || fromCss || 0);
-  }
-  function scrollToHash(hash, push = true) {
-    if (!hash || hash === '#') return;
-    const el = document.querySelector(hash);
-    if (!el) return;
-    const y = el.getBoundingClientRect().top + window.pageYOffset - Math.max(headerH() - 40, 0);
-    window.scrollTo({ top: y, behavior: 'smooth' });
-    if (push) try { history.pushState(null, '', hash); } catch(_) {}
-  }
-  // Intercept clicks on in-page links (href^="#")
-  document.addEventListener('click', function (e) {
-    const a = e.target.closest('a[href^="#"]');
-    if (!a) return;
-    const hash = a.getAttribute('href');
-    if (!hash || hash === '#') return;
-    e.preventDefault();
-    scrollToHash(hash, true);
-  }, { passive: false });
+      <details class="card-elevated p-6 group">
+        <summary class="flex items-center justify-between font-semibold text-xl">
+          Kan ik mijn huidige betaalterminal behouden?
+          <span class="chev text-3xl text-[var(--accent-deep)] font-light">+</span>
+        </summary>
+        <p class="mt-4 text-[var(--muted)] leading-relaxed">
+          De muntautomaat integreert met uw bestaande Worldline- of CCV-terminals. En als u kaartbetaling rechtstreeks in de machine geïntegreerd wilt, dat is inbegrepen — geen meerkost, geen extra abonnement.
+        </p>
+      </details>
 
-  // On load or hash changes (e.g., back/forward), correct the position
-  window.addEventListener('load', function () {
-    if (location.hash) setTimeout(() => scrollToHash(location.hash, false), 0);
-  });
-  window.addEventListener('hashchange', function () {
-    if (location.hash) scrollToHash(location.hash, false);
-  });
-})();
-</script>
-
-<script>
-(function(){
-  const card = document.getElementById('card-frida');
-  if(!card) return;
-  const img = card.querySelector('img');
-  const video = card.querySelector('video');
-  if(!video) return;
-  video.muted = true; video.playsInline = true;
-  const mqHover = window.matchMedia('(hover:hover)');
-  if(mqHover.matches){
-    card.addEventListener('mouseenter', () => { try { video.currentTime = 0; video.play(); } catch(e){} });
-    card.addEventListener('mouseleave', () => { try { video.pause(); video.currentTime = 0; } catch(e){} });
-  } else {
-    const io = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{
-        const visible = e.isIntersecting && e.intersectionRatio > 0.6;
-        if(visible){
-          if(img) img.style.opacity = '0';
-          video.style.opacity = '1';
-          try { video.play(); } catch(_){}
-        } else {
-          if(img) img.style.opacity = '1';
-          video.style.opacity = '0';
-          try { video.pause(); video.currentTime = 0; } catch(_){}
-        }
-      });
-    }, { threshold: [0.0, 0.6] });
-    io.observe(card);
-  }
-})();
-</script>
-<script>
-(function(){
-  const card = document.getElementById('card-cashsystem');
-  if(!card) return;
-  const slides = card.querySelectorAll('.cs-slide');
-  if(!slides || slides.length <= 1) return;
-  let i = 0, timer = null;
-  const show = (n) => { slides.forEach((s, idx)=> s.classList.toggle('active', idx === n)); };
-  const start = () => { if(timer) return; timer = setInterval(()=>{ i=(i+1)%slides.length; show(i); }, 3500); };
-  const stop  = () => { if(timer){ clearInterval(timer); timer = null; } };
-  card.addEventListener('mouseenter', stop);
-  card.addEventListener('mouseleave', start);
-  show(0); start();
-})();
-</script>
-<script>
-(function(){
-  const card = document.getElementById('card-olea');
-  if(!card) return;
-  const slides = card.querySelectorAll('.cs-slide');
-  if(!slides || slides.length <= 1) return;
-  let i = 0, timer = null;
-  const show = (n) => { slides.forEach((s, idx)=> s.classList.toggle('active', idx === n)); };
-  const start = () => { if(timer) return; timer = setInterval(()=>{ i=(i+1)%slides.length; show(i); }, 3500); };
-  const stop  = () => { if(timer){ clearInterval(timer); timer = null; } };
-  card.addEventListener('mouseenter', stop);
-  card.addEventListener('mouseleave', start);
-  show(0); start();
-})();
-</script>
-<script>
-(function(){
-  const card = document.getElementById('card-tulipe');
-  if(!card) return;
-  const slides = card.querySelectorAll('.cs-slide');
-  if(!slides || slides.length <= 1) return;
-  let i = 0, timer = null;
-  const show = (n)=>{ slides.forEach((s, idx)=> s.classList.toggle('active', idx === n)); };
-  const start = ()=>{ if(timer) return; timer = setInterval(()=>{ i=(i+1)%slides.length; show(i); }, 3500); };
-  const stop  = ()=>{ if(timer){ clearInterval(timer); timer = null; } };
-  card.addEventListener('mouseenter', stop);
-  card.addEventListener('mouseleave', start);
-  show(0); start();
-})();
-</script>
-<script>
-(function(){
-  const card = document.getElementById('card-frida');
-  if(!card) return;
-
-  const slides = card.querySelectorAll('.cs-slide');
-  const video  = card.querySelector('video');
-
-  let i = 0, timer = null;
-
-  const show = (n)=> slides.forEach((s, idx)=> s.classList.toggle('active', idx === n));
-
-  const start = () => {
-    if (timer) return;
-    timer = setInterval(() => { i = (i + 1) % slides.length; show(i); }, 3200);
-  };
-
-  const stop = () => { clearInterval(timer); timer = null; };
-
-  // desktop hover
-  card.addEventListener('mouseenter', () => { stop(); if(video){ video.currentTime=0; video.play(); } });
-  card.addEventListener('mouseleave', () => { if(video){ video.pause(); video.currentTime=0; } start(); });
-
-  // start carousel
-  show(0);
-  start();
-})();
-</script>
-<script>
-(function(){
-  const card = document.getElementById('card-compactwood');
-  if(!card) return;
-  const slides = card.querySelectorAll('.cs-slide');
-  if(!slides || slides.length <= 1) return;
-
-  let i = 0, timer = null;
-  const show = (n)=> slides.forEach((s, idx)=> s.classList.toggle('active', idx === n));
-  const start = ()=>{ if(timer) return; timer = setInterval(()=>{ i=(i+1)%slides.length; show(i); }, 3200); };
-  const stop  = ()=>{ if(timer){ clearInterval(timer); timer = null; } };
-
-  card.addEventListener('mouseenter', stop);
-  card.addEventListener('mouseleave', start);
-
-  show(0);
-  start();
-})();
-</script>
-<script>
-(function(){
-  const card = document.getElementById('card-onenight');
-  if(!card) return;
-  const slides = card.querySelectorAll('.cs-slide');
-  if(!slides || slides.length <= 1) return;
-  let i = 0, timer = null;
-  const show = (n) => { slides.forEach((s, idx)=> s.classList.toggle('active', idx === n)); };
-  const start = () => { if(timer) return; timer = setInterval(()=>{ i=(i+1)%slides.length; show(i); }, 3500); };
-  const stop  = () => { if(timer){ clearInterval(timer); timer = null; } };
-  card.addEventListener('mouseenter', stop);
-  card.addEventListener('mouseleave', start);
-  show(0); start();
-})();
-</script>
-<script>
-(function(){
-  const card = document.getElementById('card-newdelicia');
-  if(!card) return;
-  const slides = card.querySelectorAll('.cs-slide');
-  if(!slides || slides.length <= 1) return;
-  let i = 0, timer = null;
-  const show = (n) => { slides.forEach((s, idx)=> s.classList.toggle('active', idx === n)); };
-  const start = () => { if(timer) return; timer = setInterval(()=>{ i=(i+1)%slides.length; show(i); }, 3500); };
-  const stop  = () => { if(timer){ clearInterval(timer); timer = null; } };
-  card.addEventListener('mouseenter', stop);
-  card.addEventListener('mouseleave', start);
-  show(0); start();
-})();
-</script>
-<script>
-(function(){
-  const card = document.getElementById('card-ironbox');
-  if (!card) return;
-
-  const img = card.querySelector('img');
-  const video = card.querySelector('video');
-  if (!video) return;
-
-  video.muted = true;
-  video.playsInline = true;
-
-  const mqHover = window.matchMedia('(hover:hover)');
-
-  if (mqHover.matches) {
-    // Desktop : lecture au survol
-    card.addEventListener('mouseenter', () => {
-      try {
-        video.currentTime = 0;
-        video.play();
-      } catch (e) {}
-    });
-
-    card.addEventListener('mouseleave', () => {
-      try {
-        video.pause();
-        video.currentTime = 0;
-      } catch (e) {}
-    });
-  } else {
-    // Mobile / tactile : lecture quand la carte est bien visible
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        const visible = e.isIntersecting && e.intersectionRatio > 0.6;
-        if (visible) {
-          if (img) img.style.opacity = '0';
-          video.style.opacity = '1';
-          try { video.play(); } catch(_) {}
-        } else {
-          if (img) img.style.opacity = '1';
-          video.style.opacity = '0';
-          try {
-            video.pause();
-            video.currentTime = 0;
-          } catch(_) {}
-        }
-      });
-    }, { threshold: [0.0, 0.6] });
-
-    io.observe(card);
-  }
-})();
-</script>
-<script>
-(function(){
-  const v = document.querySelector('.hero-banniere');
-  if(!v) return;
-  v.autoplay = true; v.muted = true; v.defaultMuted = true; v.setAttribute('muted','');
-  v.playsInline = true; v.setAttribute('playsinline',''); v.setAttribute('webkit-playsinline','');
-  v.preload = 'auto';
-  const ensureSrc = ()=>{ if(!v.src){ const mp4 = v.querySelector('source[type="video/mp4"]'); if(mp4){ v.src = mp4.src; v.load(); } } };
-  const tryPlay = ()=>{ v.play().catch(()=>{}); };
-  const whenReady = ()=>{ if(v.readyState >= 2) tryPlay(); };
-  ['loadedmetadata','loadeddata','canplay','canplaythrough'].forEach(ev=> v.addEventListener(ev, whenReady, { passive:true }));
-  const io = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting && e.intersectionRatio > 0.2) tryPlay(); }); }, { threshold:[0.2, 0.5, 1]});
-  io.observe(v);
-  document.addEventListener('visibilitychange', ()=>{ if(!document.hidden) tryPlay(); }, { passive:true });
-  window.addEventListener('focus', tryPlay, { passive:true });
-  const userKick = ()=>{ ensureSrc(); tryPlay(); window.removeEventListener('touchstart', userKick); window.removeEventListener('pointerdown', userKick); };
-  window.addEventListener('touchstart', userKick, { once:true, passive:true });
-  window.addEventListener('pointerdown', userKick, { once:true, passive:true });
-  if (document.readyState === 'complete' || document.readyState === 'interactive') { ensureSrc(); tryPlay(); }
-  else document.addEventListener('DOMContentLoaded', ()=>{ ensureSrc(); tryPlay(); }, { once:true });
-})();
-</script>
-<section id="faq" class="max-w-5xl mx-auto px-6 py-16">
-  <h2 class="text-3xl font-bold tracking-tight mb-8">FAQ — CashSystem automatische kassa's</h2>
-  <div class="space-y-6">
-
-    <!-- AJOUT 1 -->
-    <details class="p-5 rounded-xl bg-gray-50">
-      <summary class="font-semibold cursor-pointer">Wat is een automatisch kassasysteem?</summary>
-      <div class="mt-3 text-gray-700">
-        Een automatisch kassasysteem is een beveiligd systeem waarmee klanten contant kunnen betalen zonder manuele afhandeling, wat snelheid en veiligheid verbetert.
-      </div>
-    </details>
-
-    <!-- AJOUT 2 -->
-    <details class="p-5 rounded-xl bg-gray-50">
-      <summary class="font-semibold cursor-pointer">Waarom kiezen voor een CashSystem muntautomaat?</summary>
-      <div class="mt-3 text-gray-700">
-        CashSystem is een Belgische fabrikant met snelle lokale service, betrouwbaar materiaal en uitstekende prijs-kwaliteitverhouding.
-      </div>
-    </details>
-
-    <details class="p-5 rounded-xl bg-gray-50">
-      <summary class="font-semibold cursor-pointer">Wie is CashSystem en hoe verschillen jullie van verkopers?</summary>
-      <div class="mt-3 text-gray-700">
-        CashSystem is <strong>de enige Belgische producent van automatische kassa's</strong>. Wij ontwerpen en assembleren onze kiosken lokaal, zonder tussenpersonen, om de <strong>beste prijs-kwaliteitverhouding</strong> en <strong>deskundig onderhoud</strong> te garanderen.
-      </div>
-    </details>
-
-    <details class="p-5 rounded-xl bg-gray-50">
-      <summary class="font-semibold cursor-pointer">Wat is de prijs van een CashSystem automatisch kassasysteem? Aankoop of leasing?</summary>
-      <div class="mt-3 text-gray-700">
-        Onze kant-en-klare kit kost <strong>9&nbsp;900&nbsp;€ excl. BTW</strong> en omvat de muntautomaat, de tablet 10", de op maat afgewerkte behuizing, de installatie, de opleiding, de technische ondersteuning en het Platinum onderhoud van het 1<sup>e</sup> jaar. <strong>Leasing</strong> is ook beschikbaar via onze financieringspartners, vanaf <strong>170&nbsp;€&nbsp;excl. BTW/maand</strong> over 60 maanden zonder voorschot. Met een <strong>onderhoudspakket 5 jaar</strong> (aankoop of leasing) wordt Suite Platform 5 jaar lang gratis aangeboden — een besparing van 3&nbsp;000&nbsp;€. Excl. BTW, onder voorbehoud van aanvaarding van het financieringsdossier.
-      </div>
-    </details>
-
-    <details class="p-5 rounded-xl bg-gray-50">
-      <summary class="font-semibold cursor-pointer">Welke functies biedt uw automatisch kassasysteem?</summary>
-      <div class="mt-3 text-gray-700">
-        Beveiligde <strong>contante</strong> betaling (munten/biljetten), automatische <strong>teruggave van wisselgeld</strong>, geïntegreerd <strong>reclamescherm</strong>, real-time statistieken, afstandsbediening via <strong>mobiele app</strong>, kluisvergrendeling en <strong>onderhoud op afstand</strong>.
-      </div>
-    </details>
-
-    <details class="p-5 rounded-xl bg-gray-50">
-      <summary class="font-semibold cursor-pointer">Voor welke winkels is een automatisch kassasysteem het meest rendabel?</summary>
-      <div class="mt-3 text-gray-700">
-        Bakkerijen, kruideniers, cafés/restaurants, supermarkten en buurtwinkels. De oplossing vermindert kassafouten, <strong>versnelt incasso's</strong> en <strong>beveiligt het cash</strong>, met snelle terugverdientijd in winkels met veel verkeer.
-      </div>
-    </details>
-
-    <details class="p-5 rounded-xl bg-gray-50">
-      <summary class="font-semibold cursor-pointer">Hoe verloopt de installatie en het onderhoud?</summary>
-      <div class="mt-3 text-gray-700">
-        Wij verzorgen de <strong>kant-en-klare installatie</strong> (configuratie, opleiding) en bieden <strong>proactief onderhoud</strong>: snelle ondersteuning, originele onderdelen, software-updates en bewaking op afstand.
-      </div>
-    </details>
-
-    <details class="p-5 rounded-xl bg-gray-50">
-      <summary class="font-semibold cursor-pointer">Kan het design en de software-integratie aangepast worden?</summary>
-      <div class="mt-3 text-gray-700">
-        Ja. Behuizing <strong>100% in uw kleuren</strong>, <strong>motieven</strong>, <strong>design</strong>, integratie met uw kassa/ERP met automatische OCR-lezing indien nodig of geïntegreerde software. Ons team past de oplossing aan uw omgeving aan.
-      </div>
-    </details>
-
+      <details class="card-elevated p-6 group">
+        <summary class="flex items-center justify-between font-semibold text-xl">
+          Gemiddelde ROI?
+          <span class="chev text-3xl text-[var(--accent-deep)] font-light">+</span>
+        </summary>
+        <p class="mt-4 text-[var(--muted)] leading-relaxed">
+          Bij onze 65 klanten: nul intern verlies, dagafsluiting in 2 minuten in plaats van 30, en een kassier vrijgemaakt om voor te bereiden/serveren. De terugverdientijd ligt tussen 14 en 22 maanden afhankelijk van het cashvolume.
+        </p>
+      </details>
+    </div>
   </div>
 </section>
 
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"Qu'est-ce qu'une caisse automatique ?","acceptedAnswer":{"@type":"Answer","text":"Une caisse automatique est un système sécurisé permettant aan klanten de payer en espèces sans manipulation manuelle, améliorant la rapidité et la sécurité du commerce."}},
-{"@type":"Question","name":"Waarom kiezen voor een CashSystem muntautomaat?","acceptedAnswer":{"@type":"Answer","text":"CashSystem is een Belgische fabrikant met snelle lokale ondersteuning, betrouwbaar materiaal en uitstekende prijs-kwaliteitverhouding."}},
-{"@type":"Question","name":"Wie is CashSystem en hoe verschillen jullie van verkopers?","acceptedAnswer":{"@type":"Answer","text":"CashSystem is de enige Belgische producent van automatische kassa's. Wij ontwerpen en assembleren onze kiosken lokaal, zonder tussenpersonen, om de beste prijs-kwaliteitverhouding en deskundig onderhoud te garanderen."}},
-{"@type":"Question","name":"Wat is de prijs van een CashSystem automatisch kassasysteem? Aankoop of leasing?","acceptedAnswer":{"@type":"Answer","text":"Onze kant-en-klare kit kost 9 900 € excl. BTW en omvat de muntautomaat, de tablet 10\", de op maat afgewerkte behuizing, de installatie, de opleiding, de technische ondersteuning en het Platinum onderhoud van het 1e jaar. Leasing is ook beschikbaar via onze financieringspartners, vanaf 170 € excl. BTW/maand over 60 maanden zonder voorschot. Met een onderhoudspakket 5 jaar (aankoop of leasing) wordt Suite Platform 5 jaar lang gratis aangeboden — een besparing van 3 000 €. Excl. BTW, onder voorbehoud van aanvaarding van het financieringsdossier."}},
-{"@type":"Question","name":"Quelles fonctionnalités propose votre caisse automatique ?","acceptedAnswer":{"@type":"Answer","text":"Encaissement sécurisé espèces (pièces et billets), teruggave van wisselgeld automatisé, reclamescherm intégré, statistiques en temps réel, contrôle à distance avec l'application mobile, verrouillage du coffre et maintenance à distance."}},
-{"@type":"Question","name":"Pour quels commerces une caisse automatique est-elle la plus rentable ?","acceptedAnswer":{"@type":"Answer","text":"Boulangeries, épiceries, cafés, restaurants, supermarchés et magasins de proximité. La solution réduit les erreurs de caisse, accélère les encaissements et sécurise le cash, avec un retour sur investissement rapide dans les points de vente à fort trafic."}},
-{"@type":"Question","name":"Comment se passe l’installation et la maintenance ?","acceptedAnswer":{"@type":"Answer","text":"Nous gérons l’installation clé en main (paramétrage et formation) et assurons une maintenance proactive : support rapide, pièces d’origine, mises à jour logicielles et supervision distante."}},
-{"@type":"Question","name":"Peut-on personnaliser le design et l’intégration logicielle ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Habillage 100 % à vos couleurs et motifs, intégration à votre caisse ou ERP avec lecture automatique OCR si besoin ou logiciel intégré. Ons team adapte la solution à votre environnement."}}
-]}
-</script>
+<!-- FINAL CTA -->
+<section id="contact" class="py-14 lg:py-20 bg-[var(--paper)]">
+  <div class="max-w-4xl mx-auto px-6 text-center reveal">
+    <p class="eyebrow mb-4">Volgende stap</p>
+    <h2 class="display text-3xl lg:text-5xl mb-6">
+      15 minuten, en u weet<br/>of het iets voor u is.
+    </h2>
+    <p class="text-[var(--muted)] text-xl max-w-xl mx-auto mb-10">
+      Geen PowerPoint-presentatie. We praten over uw winkel, uw volumes, uw beperkingen. Becijferde offerte na het gesprek.
+    </p>
+    <div class="flex flex-wrap items-center justify-center gap-3">
+      <a href="https://wa.me/32456407362" class="btn-accent">
+        Starten via WhatsApp
+      </a>
+      <a href="https://cashsystem.odoo.com/book/7ab74164" class="btn-ghost">
+        Tijdslot reserveren
+      </a>
+    </div>
+    <p class="text-sm text-[var(--muted)] mt-6">
+      Of telefonisch — <a href="tel:+32456407362" class="font-semibold text-[var(--ink)] underline underline-offset-4">+32 456 40 73 62</a>
+    </p>
+  </div>
+</section>
 
-<!-- Script RDV déplacé en bas + DOMContentLoaded -->
+<!-- FOOTER -->
+<footer class="ink py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-8 pb-12 border-b border-white/10">
+      <div>
+        <img src="/assets/logo-dark.png"
+             alt="CashSystem"
+             class="h-20 w-auto mb-5"
+             width="200" height="80"
+             loading="lazy" decoding="async"/>
+        <p class="text-[0.875rem] text-white/50 leading-relaxed">
+          Belgische fabrikant van automatische muntautomaten. Hardware + software ontworpen in België.
+        </p>
+      </div>
+      <div>
+        <p class="text-[0.75rem] uppercase tracking-wider text-white/40 mb-4 font-semibold">Producten</p>
+        <ul class="space-y-2 text-[0.875rem] text-white/70">
+          <li><a href="#produits" class="hover:text-[var(--accent)]">NewDelicia</a></li>
+          <li><a href="#produits" class="hover:text-[var(--accent)]">OneNight</a></li>
+          <li><a href="#produits" class="hover:text-[var(--accent)]">Olea (op maat)</a></li>
+          <li><a href="https://suiteplatform.com" class="hover:text-[var(--accent)]">Suite Platform</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-[0.75rem] uppercase tracking-wider text-white/40 mb-4 font-semibold">Sectoren</p>
+        <ul class="space-y-2 text-[0.875rem] text-white/70">
+          <li><a href="/monnayeur-boulangerie/" class="hover:text-[var(--accent)]">Bakkerij</a></li>
+          <li><a href="/monnayeur-fastfood/" class="hover:text-[var(--accent)]">Fastfood</a></li>
+          <li><a href="/monnayeur-horeca/" class="hover:text-[var(--accent)]">Horeca</a></li>
+          <li><a href="/monnayeur-librairie/" class="hover:text-[var(--accent)]">Boekhandel</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-[0.75rem] uppercase tracking-wider text-white/40 mb-4 font-semibold">Contact</p>
+        <ul class="space-y-2 text-[0.875rem] text-white/70">
+          <li>Leuvensesteenweg 21/L</li>
+          <li>3070 Kortenberg, België</li>
+          <li><a href="tel:+32456407362" class="hover:text-[var(--accent)]">+32 456 40 73 62</a></li>
+          <li><a href="mailto:sales@cashsystem.be" class="hover:text-[var(--accent)]">sales@cashsystem.be</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-6 flex flex-wrap items-center justify-between gap-4 text-[0.75rem] text-white/40">
+      <p>© 2025 CashSystem · BTW BE1023776996 · Made in Belgium</p>
+      <p>Nooit ver van u vandaan.</p>
+    </div>
+  </div>
+</footer>
+
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const CS_RDV_URL = "https://cashsystem.odoo.com/book/88d15a4c";
-  function withUTM(base, area){
-    try{
-      const u = new URL(base);
-      u.searchParams.set("utm_source","site");
-      u.searchParams.set("utm_medium","cta");
-      u.searchParams.set("utm_campaign","rdv");
-      if (area) u.searchParams.set("utm_content", area); // header | hero | contact
-      return u.toString();
-    }catch(_){ return base; }
-  }
-  document.querySelectorAll("[data-rdv]").forEach(function(a){
-    const area = a.getAttribute("data-rdv") || "cta";
-    const url  = withUTM(CS_RDV_URL, area);
-    a.href = url;
-    a.target = "_blank";
-    a.rel = "noopener";
-    a.addEventListener("click", function(){
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event:"rdv_click", area, link_url:url, link_text:a.textContent.trim() });
-    });
-  });
-});
-</script>
-
-
-<script>
-// Déclenche des animations légères au scroll pour les éléments marqués [data-animate]
-(function(){
-  function onScroll(){
-    document.querySelectorAll('[data-animate]').forEach(function(el){
-      var r = el.getBoundingClientRect();
-      if (r.top < window.innerHeight * 0.85){
-        el.classList.remove('opacity-0','translate-y-10','translate-y-8');
-        el.classList.add('opacity-100','translate-y-0');
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
       }
     });
-  }
-  window.addEventListener('scroll', onScroll, {passive:true});
-  window.addEventListener('load', onScroll, {passive:true});
-  onScroll();
-})();
-</script>
-
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const btn = document.getElementById('menuBtn');
-  const menu = document.getElementById('mobileMenu');
-  if (!btn || !menu) return;
-
-  function toggle() {
-  const isOpen = !menu.classList.contains('hidden');
-  menu.classList.toggle('hidden', isOpen);
-  btn.setAttribute('aria-expanded', String(!isOpen));
-  // Bloque le scroll du body quand le menu est ouvert
-  document.body.classList.toggle('overflow-hidden', !isOpen);
-  }
-
-  btn.addEventListener('click', toggle, { passive: true });
-
-  // Fermer le menu après un clic sur un lien
-  menu.querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => {
-    if (!menu.classList.contains('hidden')) {
-      toggle();
-      document.body.classList.remove('overflow-hidden'); // réactive le scroll
-    }
-  }, { passive: true });
-});
-
-  // Fermer si on resize au-dessus de md
-  const mql = window.matchMedia('(min-width: 768px)');
-  if (mql.addEventListener) {
-    mql.addEventListener('change', e => { if (e.matches) menu.classList.add('hidden'); });
-  } else if (mql.addListener) { // Safari
-    mql.addListener(e => { if (e.matches) menu.classList.add('hidden'); });
-  }
-});
-</script>
-
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  try {
-    const candidates = Array.from(document.querySelectorAll('a, button'));
-    candidates.forEach(el => {
-      const txt = (el.textContent || '').trim().toLowerCase();
-      if (txt === 'voir la caisse automatique') {
-        const btn = el.closest('a,button') || el;
-        btn.style.display = 'none';
-      }
-    });
-  } catch (e) { /* noop */ }
-});
-</script>
-
-
-<script>
-(function(){
-  var p=[115,97,108,101,115,64,99,97,115,104,115,121,115,116,101,109,46,98,101];
-  var e=p.map(function(c){return String.fromCharCode(c)}).join('');
-  var btn=document.getElementById('email-btn');
-  if(btn) btn.addEventListener('click',function(ev){ev.preventDefault();window.location.href='mai'+'lto:'+e;});
-  var cp=document.getElementById('copy-btn');
-  if(cp) cp.addEventListener('click',function(){navigator.clipboard.writeText(e);cp.innerText='Copié !';setTimeout(function(){cp.innerText="Copier l'adresse"},1500);});
-  var sp=document.getElementById('contact-email');
-  if(sp){var a=document.createElement('a');a.href='mai'+'lto:'+e;a.textContent=e;sp.appendChild(a);}
-})();
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 </script>
 
 </body>

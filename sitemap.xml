@@ -51,18 +51,48 @@
     <lastmod>2026-04-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/monnayeur-boulangerie/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/muntautomaat-bakkerij/"/>
+  </url>
+  <url>
+    <loc>https://www.cashsystem.be/nl/muntautomaat-bakkerij/</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/monnayeur-boulangerie/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/muntautomaat-bakkerij/"/>
   </url>
   <url>
     <loc>https://www.cashsystem.be/monnayeur-horeca/</loc>
     <lastmod>2026-04-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/monnayeur-horeca/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/muntautomaat-horeca/"/>
+  </url>
+  <url>
+    <loc>https://www.cashsystem.be/nl/muntautomaat-horeca/</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/monnayeur-horeca/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/muntautomaat-horeca/"/>
   </url>
   <url>
     <loc>https://www.cashsystem.be/monnayeur-fastfood/</loc>
     <lastmod>2026-04-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/monnayeur-fastfood/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/muntautomaat-fastfood/"/>
+  </url>
+  <url>
+    <loc>https://www.cashsystem.be/nl/muntautomaat-fastfood/</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/monnayeur-fastfood/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/muntautomaat-fastfood/"/>
   </url>
   <url>
     <loc>https://www.cashsystem.be/monnayeur-librairie/</loc>

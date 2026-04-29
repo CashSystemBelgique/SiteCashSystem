@@ -34,6 +34,9 @@
 
 <title>Monnayeur automatique HoReCa Belgique | Caisse automatique bar & restaurant</title>
 <link rel="canonical" href="https://www.cashsystem.be/monnayeur-horeca/">
+<link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/monnayeur-horeca/">
+<link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/muntautomaat-horeca/">
+<link rel="alternate" hreflang="x-default" href="https://www.cashsystem.be/monnayeur-horeca/">
 <meta name="description" content="Caisse automatique pour HoReCa belge : bars, cafés, restaurants. Encaissement cash sécurisé, fin de service comptée en 2 minutes. Fabricant belge CashSystem.">
 
 <!-- Open Graph -->
@@ -1011,6 +1014,23 @@
     });
   }, { threshold: 0.15 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // GA4 conversion event tracking
+  document.addEventListener('click', function(e) {
+    const a = e.target.closest('a');
+    if (!a) return;
+    const href = a.href || '';
+    if (typeof gtag !== 'function') return;
+    if (href.includes('wa.me/')) {
+      gtag('event', 'click_whatsapp', { event_category: 'conversion', link_url: href });
+    } else if (href.includes('cashsystem.odoo.com/book')) {
+      gtag('event', 'click_book_appointment', { event_category: 'conversion', link_url: href });
+    } else if (href.startsWith('tel:')) {
+      gtag('event', 'click_phone', { event_category: 'conversion', link_url: href });
+    } else if (href.startsWith('mailto:')) {
+      gtag('event', 'click_email', { event_category: 'conversion', link_url: href });
+    }
+  });
 </script>
 
 </body>

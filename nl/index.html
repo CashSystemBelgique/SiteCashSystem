@@ -981,6 +981,23 @@
     });
   }, { threshold: 0.15 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // GA4 conversion event tracking
+  document.addEventListener('click', function(e) {
+    const a = e.target.closest('a');
+    if (!a) return;
+    const href = a.href || '';
+    if (typeof gtag !== 'function') return;
+    if (href.includes('wa.me/')) {
+      gtag('event', 'click_whatsapp', { event_category: 'conversion', link_url: href });
+    } else if (href.includes('cashsystem.odoo.com/book')) {
+      gtag('event', 'click_book_appointment', { event_category: 'conversion', link_url: href });
+    } else if (href.startsWith('tel:')) {
+      gtag('event', 'click_phone', { event_category: 'conversion', link_url: href });
+    } else if (href.startsWith('mailto:')) {
+      gtag('event', 'click_email', { event_category: 'conversion', link_url: href });
+    }
+  });
 </script>
 
 </body>

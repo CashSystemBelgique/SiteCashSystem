@@ -166,41 +166,6 @@ function baseTemplate({ preheader, heading, intro, extraSection }) {
           </tr>
 
           <tr>
-            <td style="padding:8px 32px 24px;">
-              <div style="font-size:11px;font-weight:700;color:#009d72;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px;">Ce qui se passe maintenant</div>
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td valign="top" width="40" style="padding-bottom:14px;">
-                    <div style="width:32px;height:32px;border-radius:9999px;background:rgba(0,197,142,.12);color:#009d72;font-weight:700;font-size:14px;line-height:32px;text-align:center;">1</div>
-                  </td>
-                  <td style="padding-bottom:14px;padding-left:12px;">
-                    <strong style="color:#0a0e0d;font-size:14px;display:block;margin-bottom:2px;">On lit votre demande</strong>
-                    <span style="color:#6b7280;font-size:14px;line-height:1.55;">Pas de bot. Votre message arrive direct chez l'équipe technique.</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td valign="top" width="40" style="padding-bottom:14px;">
-                    <div style="width:32px;height:32px;border-radius:9999px;background:rgba(0,197,142,.12);color:#009d72;font-weight:700;font-size:14px;line-height:32px;text-align:center;">2</div>
-                  </td>
-                  <td style="padding-bottom:14px;padding-left:12px;">
-                    <strong style="color:#0a0e0d;font-size:14px;display:block;margin-bottom:2px;">On vous répond sous 4h ouvrées</strong>
-                    <span style="color:#6b7280;font-size:14px;line-height:1.55;">Avec un premier élément de réponse concret — pas de copier-coller automatique.</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td valign="top" width="40">
-                    <div style="width:32px;height:32px;border-radius:9999px;background:rgba(0,197,142,.12);color:#009d72;font-weight:700;font-size:14px;line-height:32px;text-align:center;">3</div>
-                  </td>
-                  <td style="padding-left:12px;">
-                    <strong style="color:#0a0e0d;font-size:14px;display:block;margin-bottom:2px;">Vous décidez tranquille</strong>
-                    <span style="color:#6b7280;font-size:14px;line-height:1.55;">Aucune pression commerciale. Vous prenez le temps qu'il faut.</span>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <tr>
             <td style="padding:0 32px 32px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0a0e0d;border-radius:16px;">
                 <tr>
@@ -245,11 +210,6 @@ function renderContactTextFallback(nom, data) {
   return `Bonjour ${nom},
 
 Votre message vient d'arriver dans notre boîte. On revient vers vous sous 4h en jours ouvrés avec un premier élément de réponse concret.
-
-Ce qui se passe maintenant :
-1. On lit votre demande (pas de bot, équipe technique en direct)
-2. On vous répond sous 4h ouvrées
-3. Vous décidez tranquille — aucune pression commerciale
 
 Si c'est urgent :
 WhatsApp : https://wa.me/32456407362

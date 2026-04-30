@@ -135,7 +135,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <a href="/#prix" class="hover:text-[var(--accent-deep)]">Prix</a>
       <a href="/leasing/" class="hover:text-[var(--accent-deep)] text-[var(--accent-deep)] font-bold">Leasing</a>
     </nav>
-    <a href="#dossier" class="btn-primary text-sm lg:text-base whitespace-nowrap px-3 lg:px-5 py-2 lg:py-3">
+    <a href="#config" class="btn-primary text-sm lg:text-base whitespace-nowrap px-3 lg:px-5 py-2 lg:py-3">
       <span class="lg:hidden">Dossier</span>
       <span class="hidden lg:inline">Demander mon dossier</span>
     </a>
@@ -170,7 +170,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </p>
 
         <div class="flex flex-wrap gap-3 mb-8">
-          <a href="#dossier" class="btn-accent">
+          <a href="#config" class="btn-accent">
             Demander mon dossier
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
@@ -240,29 +240,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 </section>
 
-<!-- CONFIGURATEUR -->
+<!-- CONFIGURATEUR + FORM -->
 <section id="config" class="py-14 lg:py-20 bg-[var(--paper)]">
   <div class="max-w-5xl mx-auto px-6">
     <div class="text-center mb-12">
-      <p class="eyebrow mb-4">Configurateur</p>
+      <p class="eyebrow mb-4">Configurateur &amp; demande</p>
       <h2 class="display text-3xl lg:text-4xl mb-4">Combien pour mon commerce ?</h2>
       <p class="text-[var(--muted)] text-lg max-w-2xl mx-auto">
-        Estimation indicative basée sur notre offre standard 60 mois. Le tarif final dépend du profil financier de votre société et est validé par notre partenaire.
+        Configurez vos besoins, recevez votre dossier sous <strong class="text-[var(--ink)]">4h en jours ouvrés</strong>.
       </p>
     </div>
 
     <div class="card-elevated p-8 lg:p-12">
-      <div class="grid md:grid-cols-2 gap-8 mb-10">
+      <!-- Step 1 : Configurateur -->
+      <div class="grid md:grid-cols-2 gap-6 mb-6">
         <div>
           <label for="machines" class="block text-sm font-semibold mb-2">Nombre de machines</label>
-          <div class="flex items-center gap-4">
-            <button type="button" onclick="adjustMachines(-1)" class="w-12 h-12 rounded-xl border hairline bg-white text-2xl font-bold hover:bg-[var(--paper)] transition-all">−</button>
+          <div class="flex items-center gap-3">
+            <button type="button" onclick="adjustMachines(-1)" class="w-11 h-11 rounded-xl border hairline bg-white text-xl font-bold hover:bg-[var(--paper)] transition-all">−</button>
             <input type="number" id="machines" value="1" min="1" max="10"
-              class="w-20 text-center text-3xl font-bold py-3 rounded-xl border hairline bg-white focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40"
+              class="w-16 text-center text-2xl font-bold py-2.5 rounded-xl border hairline bg-white focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40"
               oninput="updateConfig()" />
-            <button type="button" onclick="adjustMachines(1)" class="w-12 h-12 rounded-xl border hairline bg-white text-2xl font-bold hover:bg-[var(--paper)] transition-all">+</button>
+            <button type="button" onclick="adjustMachines(1)" class="w-11 h-11 rounded-xl border hairline bg-white text-xl font-bold hover:bg-[var(--paper)] transition-all">+</button>
           </div>
-          <p class="text-sm text-[var(--muted)] mt-2">Pour franchises ou multi-points</p>
         </div>
 
         <div>
@@ -275,34 +275,93 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <option value="36">36 mois</option>
             <option value="24">24 mois</option>
           </select>
-          <p class="text-sm text-[var(--muted)] mt-2">60 mois = mensualité publique. Autres durées sur devis.</p>
         </div>
       </div>
 
-      <div id="result" class="bg-[var(--ink)] rounded-2xl p-8 lg:p-10 text-white relative overflow-hidden">
+      <!-- Result block -->
+      <div id="result" class="bg-[var(--ink)] rounded-2xl p-7 text-white relative overflow-hidden mb-8">
         <div class="absolute inset-0 opacity-30 grain"></div>
-        <div class="relative grid md:grid-cols-3 gap-6 items-center">
+        <div class="relative grid grid-cols-3 gap-4 items-center">
           <div>
-            <div class="text-xs uppercase tracking-wider text-white/60 mb-2">Mensualité estimée</div>
-            <div id="output-monthly" class="num-big text-[var(--accent)]">170 €<span class="text-xl text-white/60">/mois</span></div>
+            <div class="text-[10px] uppercase tracking-wider text-white/60 mb-1.5">Mensualité estimée</div>
+            <div id="output-monthly" class="text-3xl lg:text-4xl font-bold text-[var(--accent)] leading-none">170 €<span class="text-base text-white/60">/mois</span></div>
           </div>
           <div>
-            <div class="text-xs uppercase tracking-wider text-white/60 mb-2">Sur</div>
-            <div id="output-duration" class="text-2xl font-bold">60 mois</div>
+            <div class="text-[10px] uppercase tracking-wider text-white/60 mb-1.5">Sur</div>
+            <div id="output-duration" class="text-lg lg:text-xl font-bold">60 mois</div>
           </div>
           <div>
-            <div class="text-xs uppercase tracking-wider text-white/60 mb-2">Total estimé</div>
-            <div id="output-total" class="text-2xl font-bold">10 200 €</div>
+            <div class="text-[10px] uppercase tracking-wider text-white/60 mb-1.5">Total estimé</div>
+            <div id="output-total" class="text-lg lg:text-xl font-bold">10 200 €</div>
           </div>
         </div>
-        <div id="output-disclaimer" class="relative text-sm text-white/50 mt-6 italic"></div>
+        <div id="output-disclaimer" class="relative text-xs text-white/50 mt-4 italic"></div>
       </div>
 
-      <div class="mt-8 text-center">
-        <a href="#dossier" id="config-cta" class="btn-accent">
-          Demander mon dossier personnalisé
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </a>
+      <!-- Step 2 : Form (compact) -->
+      <div class="border-t hairline pt-7">
+        <div class="flex items-center gap-3 mb-5">
+          <span class="text-xs uppercase tracking-[0.15em] font-semibold text-[var(--accent-deep)]">Vos coordonnées</span>
+          <span class="h-px flex-1 bg-[var(--line)]"></span>
+        </div>
+
+        <form name="leasing" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/merci.html" class="space-y-4">
+          <input type="hidden" name="form-name" value="leasing" />
+          <input type="hidden" id="hidden-machines" name="machines" value="1" />
+          <input type="hidden" id="hidden-duree" name="duree" value="60" />
+          <input type="hidden" id="hidden-mensualite" name="mensualite" value="170" />
+          <p class="hidden"><label>Ne pas remplir : <input name="bot-field" /></label></p>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="lnom" class="block text-sm font-semibold mb-1.5">Nom <span class="text-[var(--accent-deep)]">*</span></label>
+              <input type="text" id="lnom" name="nom" required
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 transition-all"
+                placeholder="Jean Dupont" />
+            </div>
+            <div>
+              <label for="lemail" class="block text-sm font-semibold mb-1.5">Email <span class="text-[var(--accent-deep)]">*</span></label>
+              <input type="email" id="lemail" name="email" required
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 transition-all"
+                placeholder="jean@boulangerie.be" />
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="ltel" class="block text-sm font-semibold mb-1.5">Téléphone</label>
+              <input type="tel" id="ltel" name="telephone"
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 transition-all"
+                placeholder="+32 ..." />
+            </div>
+            <div>
+              <label for="lsociete" class="block text-sm font-semibold mb-1.5">Société</label>
+              <input type="text" id="lsociete" name="societe"
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 transition-all"
+                placeholder="Boulangerie Dupont SRL" />
+            </div>
+          </div>
+
+          <div>
+            <label for="lmessage" class="block text-sm font-semibold mb-1.5">Précisions (optionnel)</label>
+            <textarea id="lmessage" name="message" rows="3"
+              class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 transition-all resize-none"
+              placeholder="Type de commerce, ancienneté société, volumes..."></textarea>
+          </div>
+
+          <label class="flex items-start gap-3 text-sm text-[var(--muted)] cursor-pointer pt-1">
+            <input type="checkbox" name="rgpd" required class="mt-0.5 w-4 h-4 accent-[var(--accent)] cursor-pointer flex-shrink-0" />
+            <span>J'accepte d'être recontacté par CashSystem et son partenaire financier au sujet de ma demande.</span>
+          </label>
+
+          <button type="submit" class="btn-accent w-full justify-center text-base mt-2">
+            Demander mon dossier personnalisé
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+          <p class="text-xs text-[var(--muted)] text-center pt-1">
+            Sous réserve d'acceptation par notre partenaire financier.
+          </p>
+        </form>
       </div>
     </div>
   </div>
@@ -435,107 +494,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 </section>
 
-<!-- DOSSIER FORM -->
-<section id="dossier" class="py-14 lg:py-20 ink relative overflow-hidden">
-  <div class="absolute inset-0 opacity-30 grain"></div>
-  <div class="max-w-5xl mx-auto px-6 relative">
-    <div class="text-center mb-12">
-      <p class="eyebrow text-[var(--accent)] mb-4">Étape suivante</p>
-      <h2 class="display text-3xl lg:text-4xl text-white mb-4">Demandez votre dossier leasing.</h2>
-      <p class="text-white/70 text-lg max-w-xl mx-auto">
-        On revient vers vous sous 4h en jours ouvrés avec un dossier prêt à transmettre à notre partenaire financier.
-      </p>
-    </div>
-
-    <div class="bg-white rounded-3xl p-8 lg:p-10">
-      <form name="leasing" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/merci.html" class="space-y-4">
-        <input type="hidden" name="form-name" value="leasing" />
-        <p class="hidden"><label>Ne pas remplir : <input name="bot-field" /></label></p>
-
-        <div class="grid sm:grid-cols-2 gap-4">
-          <div>
-            <label for="lnom" class="block text-sm font-semibold mb-1.5">Nom <span class="text-[var(--accent-deep)]">*</span></label>
-            <input type="text" id="lnom" name="nom" required
-              class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 transition-all"
-              placeholder="Jean Dupont" />
-          </div>
-          <div>
-            <label for="lemail" class="block text-sm font-semibold mb-1.5">Email <span class="text-[var(--accent-deep)]">*</span></label>
-            <input type="email" id="lemail" name="email" required
-              class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 transition-all"
-              placeholder="jean@boulangerie.be" />
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 gap-4">
-          <div>
-            <label for="ltel" class="block text-sm font-semibold mb-1.5">Téléphone</label>
-            <input type="tel" id="ltel" name="telephone"
-              class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 transition-all"
-              placeholder="+32 ..." />
-          </div>
-          <div>
-            <label for="lsociete" class="block text-sm font-semibold mb-1.5">Nom de société</label>
-            <input type="text" id="lsociete" name="societe"
-              class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 transition-all"
-              placeholder="Boulangerie Dupont SRL" />
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 gap-4">
-          <div>
-            <label for="lcommerce" class="block text-sm font-semibold mb-1.5">Type de commerce</label>
-            <select id="lcommerce" name="commerce"
-              class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 appearance-none pr-10"
-              style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%236b7280%22 stroke-width=%222%22><path d=%22M6 9l6 6 6-6%22/></svg>');background-size:18px;background-repeat:no-repeat;background-position:right 14px center;">
-              <option value="">Sélectionner...</option>
-              <option>Boulangerie</option>
-              <option>Fastfood / Friterie</option>
-              <option>HoReCa / Café</option>
-              <option>Restaurant</option>
-              <option>Librairie</option>
-              <option>Night-shop / Superette</option>
-              <option>Autre commerce</option>
-            </select>
-          </div>
-          <div>
-            <label for="lduree" class="block text-sm font-semibold mb-1.5">Durée envisagée</label>
-            <select id="lduree" name="duree"
-              class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 appearance-none pr-10"
-              style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%236b7280%22 stroke-width=%222%22><path d=%22M6 9l6 6 6-6%22/></svg>');background-size:18px;background-repeat:no-repeat;background-position:right 14px center;">
-              <option value="60">60 mois (offre standard)</option>
-              <option value="48">48 mois</option>
-              <option value="36">36 mois</option>
-              <option value="24">24 mois</option>
-              <option value="autre">À discuter</option>
-            </select>
-          </div>
-        </div>
-
-        <div>
-          <label for="lmessage" class="block text-sm font-semibold mb-1.5">Votre situation <span class="text-[var(--accent-deep)]">*</span></label>
-          <textarea id="lmessage" name="message" required rows="4"
-            class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 transition-all resize-none"
-            placeholder="Combien de machines, type de commerce, ancienneté de la société, volumes mensuels..."></textarea>
-        </div>
-
-        <label class="flex items-start gap-3 text-sm text-[var(--muted)] cursor-pointer pt-1">
-          <input type="checkbox" name="rgpd" required class="mt-0.5 w-4 h-4 accent-[var(--accent)] cursor-pointer flex-shrink-0" />
-          <span>J'accepte d'être recontacté par CashSystem et son partenaire financier au sujet de ma demande. Vos données ne sont jamais partagées avec des tiers non concernés.</span>
-        </label>
-
-        <button type="submit" class="btn-accent w-full justify-center text-base mt-2">
-          Envoyer mon dossier
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </button>
-        <p class="text-xs text-[var(--muted)] text-center pt-2">
-          Réponse sous <strong class="text-[var(--ink)]">4h en jours ouvrés</strong>. Sous réserve d'acceptation par notre partenaire financier.
-        </p>
-      </form>
-    </div>
-  </div>
-</section>
-
 <!-- FOOTER -->
 <footer class="ink py-16">
   <div class="max-w-7xl mx-auto px-6">
@@ -598,8 +556,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     const duree = parseInt(document.getElementById('duree').value);
     const monthly = STANDARD_MONTHLY * machines;
 
-    document.getElementById('output-monthly').innerHTML = `${formatPrice(monthly)} €<span class="text-xl text-white/60">/mois</span>`;
+    document.getElementById('output-monthly').innerHTML = `${formatPrice(monthly)} €<span class="text-base text-white/60">/mois</span>`;
     document.getElementById('output-duration').textContent = `${duree} mois`;
+
+    // Sync hidden fields (envoyés avec le form leasing)
+    document.getElementById('hidden-machines').value = machines;
+    document.getElementById('hidden-duree').value = duree;
+    document.getElementById('hidden-mensualite').value = monthly;
 
     if (duree === 60) {
       const total = monthly * 60;
@@ -607,7 +570,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       document.getElementById('output-disclaimer').textContent = 'Estimation basée sur notre offre standard 60 mois. Tarif final validé par notre partenaire financier après analyse de votre dossier.';
     } else {
       document.getElementById('output-total').textContent = 'Sur devis';
-      document.getElementById('output-disclaimer').textContent = `Pour ${duree} mois, la mensualité est ajustée selon le profil financier de votre société et les taux du marché. Demandez un dossier personnalisé pour obtenir une offre précise.`;
+      document.getElementById('output-disclaimer').textContent = `Pour ${duree} mois, la mensualité est ajustée selon le profil financier de votre société et les taux du marché. Le dossier ci-dessous nous permet de vous faire une offre précise.`;
     }
   }
 

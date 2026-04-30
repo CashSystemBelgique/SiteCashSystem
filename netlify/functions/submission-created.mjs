@@ -1,8 +1,9 @@
 // Netlify Function : envoie un email de remerciement automatique au prospect
 // après chaque submission Netlify Form (contact ou leasing).
 //
-// Trigger : configuré comme outgoing webhook dans Netlify Forms settings.
-// URL : https://www.cashsystem.be/.netlify/functions/thank-you
+// Trigger : nom magique "submission-created" → déclenché automatiquement par
+// Netlify Forms à chaque soumission, sans webhook à configurer dans l'UI.
+// Cf. https://docs.netlify.com/forms/notifications/#trigger-notifications-from-a-serverless-function
 //
 // Variables d'environnement requises (Netlify dashboard → Site settings → Environment variables) :
 //   SMTP_HOST  (ex: smtp.ionos.fr)
@@ -34,15 +35,17 @@ export const handler = async (event) => {
     return { statusCode: 500, body: 'SMTP not configured' };
   }
 
-  let payload;
+  let body;
   try {
-    payload = JSON.parse(event.body || '{}');
+    body = JSON.parse(event.body || '{}');
   } catch {
     return { statusCode: 400, body: 'Invalid JSON' };
   }
 
-  // Netlify outgoing webhook payload : champs au top-level (pas dans .data)
-  // Cf. https://docs.netlify.com/forms/notifications/
+  // submission-created trigger : body = { payload: { form_name, data, ... } }
+  // outgoing webhook (legacy) : body = { form_name, data, ... } directement
+  // On gère les deux formats.
+  const payload = body.payload || body;
   const formName = payload.form_name || payload.formName;
   const data = payload.data || payload;
   const prospectEmail = (data.email || '').trim();

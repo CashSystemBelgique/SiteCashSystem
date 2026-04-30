@@ -375,12 +375,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <p class="text-xs uppercase tracking-[0.15em] font-semibold text-[var(--accent-deep)] mb-3">Documents requis</p>
 
             <div class="space-y-3">
-              <!-- ID -->
+              <!-- ID recto -->
               <div>
-                <label for="lid" class="block text-sm font-semibold mb-1.5">Carte d'identité — recto &amp; verso <span class="text-[var(--accent-deep)]">*</span></label>
-                <input type="file" id="lid" name="id_card" multiple required accept=".pdf,.jpg,.jpeg,.png"
+                <label for="lid_recto" class="block text-sm font-semibold mb-1.5">Carte d'identité — recto <span class="text-[var(--accent-deep)]">*</span></label>
+                <input type="file" id="lid_recto" name="id_card_recto" required accept=".pdf,.jpg,.jpeg,.png"
                   class="block w-full text-sm text-[var(--muted)] file:mr-4 file:py-2.5 file:px-5 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-[var(--ink)] file:text-white hover:file:bg-[#1a1f1d] file:cursor-pointer cursor-pointer" />
-                <p class="text-xs text-[var(--muted)] mt-1.5">PDF, JPG ou PNG · 2 fichiers (recto + verso) ou 1 PDF combiné · 8 MB max par fichier</p>
+                <p class="text-xs text-[var(--muted)] mt-1.5">PDF, JPG ou PNG · 8 MB max</p>
+              </div>
+
+              <!-- ID verso -->
+              <div>
+                <label for="lid_verso" class="block text-sm font-semibold mb-1.5">Carte d'identité — verso <span class="text-[var(--accent-deep)]">*</span></label>
+                <input type="file" id="lid_verso" name="id_card_verso" required accept=".pdf,.jpg,.jpeg,.png"
+                  class="block w-full text-sm text-[var(--muted)] file:mr-4 file:py-2.5 file:px-5 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-[var(--ink)] file:text-white hover:file:bg-[#1a1f1d] file:cursor-pointer cursor-pointer" />
+                <p class="text-xs text-[var(--muted)] mt-1.5">PDF, JPG ou PNG · 8 MB max</p>
               </div>
 
               <!-- Bilan -->

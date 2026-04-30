@@ -255,7 +255,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <!-- Step 1 : Configurateur -->
       <div class="grid md:grid-cols-2 gap-6 mb-6">
         <div>
-          <label for="machines" class="block text-sm font-semibold mb-2">Nombre de machines</label>
+          <div class="flex items-center justify-between mb-2">
+            <label for="machines" class="block text-sm font-semibold">Nombre de machines</label>
+            <span id="discount-badge" class="hidden text-[10px] font-bold uppercase tracking-wider bg-[var(--accent)] text-[var(--ink)] px-2 py-0.5 rounded-full">−10% appliqué</span>
+          </div>
           <div class="flex items-center gap-3">
             <button type="button" onclick="adjustMachines(-1)" class="w-11 h-11 rounded-xl border hairline bg-white text-xl font-bold hover:bg-[var(--paper)] transition-all">−</button>
             <input type="number" id="machines" value="1" min="1" max="10"
@@ -263,6 +266,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               oninput="updateConfig()" />
             <button type="button" onclick="adjustMachines(1)" class="w-11 h-11 rounded-xl border hairline bg-white text-xl font-bold hover:bg-[var(--paper)] transition-all">+</button>
           </div>
+          <p id="discount-hint" class="text-xs text-[var(--accent-deep)] font-medium mt-2">Dès 2 machines : <strong>−10% sur la mensualité totale</strong></p>
         </div>
 
         <div>
@@ -283,8 +287,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="absolute inset-0 opacity-30 grain"></div>
         <div class="relative grid grid-cols-3 gap-4 items-center">
           <div>
-            <div class="text-[10px] uppercase tracking-wider text-white/60 mb-1.5">Mensualité estimée</div>
+            <div class="flex items-center gap-2 mb-1.5">
+              <span class="text-[10px] uppercase tracking-wider text-white/60">Mensualité estimée</span>
+              <span id="output-saving" class="hidden text-[10px] font-bold uppercase tracking-wider bg-[var(--accent)] text-[var(--ink)] px-1.5 py-0.5 rounded-full">−10%</span>
+            </div>
             <div id="output-monthly" class="text-3xl lg:text-4xl font-bold text-[var(--accent)] leading-none">170 €<span class="text-base text-white/60">/mois</span></div>
+            <div id="output-original" class="hidden text-xs text-white/40 line-through mt-1"></div>
           </div>
           <div>
             <div class="text-[10px] uppercase tracking-wider text-white/60 mb-1.5">Sur</div>
@@ -541,8 +549,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <script>
   // Configurateur leasing — multiplie le tarif standard 60 mois (170€)
+  // Remise -10% sur la mensualité dès 2 machines
   // Pour autres durées : pas de calcul (taux non publics), redirection vers dossier perso
   const STANDARD_MONTHLY = 170; // EUR HT par machine sur 60 mois
+  const VOLUME_DISCOUNT_THRESHOLD = 2;
+  const VOLUME_DISCOUNT_RATE = 0.10; // 10%
 
   function adjustMachines(delta) {
     const input = document.getElementById('machines');
@@ -554,10 +565,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   function updateConfig() {
     const machines = parseInt(document.getElementById('machines').value) || 1;
     const duree = parseInt(document.getElementById('duree').value);
-    const monthly = STANDARD_MONTHLY * machines;
+    const baseMonthly = STANDARD_MONTHLY * machines;
 
+    const hasDiscount = machines >= VOLUME_DISCOUNT_THRESHOLD;
+    const monthly = hasDiscount ? Math.round(baseMonthly * (1 - VOLUME_DISCOUNT_RATE)) : baseMonthly;
+
+    // Affichage mensualité + badge remise
     document.getElementById('output-monthly').innerHTML = `${formatPrice(monthly)} €<span class="text-base text-white/60">/mois</span>`;
     document.getElementById('output-duration').textContent = `${duree} mois`;
+
+    // Badge "−10%" + prix barré
+    const savingBadge = document.getElementById('output-saving');
+    const originalEl = document.getElementById('output-original');
+    const sideBadge = document.getElementById('discount-badge');
+    const hint = document.getElementById('discount-hint');
+    if (hasDiscount) {
+      savingBadge.classList.remove('hidden');
+      originalEl.classList.remove('hidden');
+      originalEl.textContent = `${formatPrice(baseMonthly)} € avant remise volume`;
+      sideBadge.classList.remove('hidden');
+      hint.innerHTML = '<strong>Remise volume −10% appliquée</strong> sur la mensualité totale';
+      hint.classList.remove('text-[var(--accent-deep)]');
+      hint.classList.add('text-[var(--accent-deep)]', 'font-semibold');
+    } else {
+      savingBadge.classList.add('hidden');
+      originalEl.classList.add('hidden');
+      sideBadge.classList.add('hidden');
+      hint.innerHTML = 'Dès 2 machines : <strong>−10% sur la mensualité totale</strong>';
+      hint.classList.add('text-[var(--accent-deep)]');
+    }
 
     // Sync hidden fields (envoyés avec le form leasing)
     document.getElementById('hidden-machines').value = machines;
@@ -567,10 +603,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     if (duree === 60) {
       const total = monthly * 60;
       document.getElementById('output-total').textContent = `${formatPrice(total)} €`;
-      document.getElementById('output-disclaimer').textContent = 'Estimation basée sur notre offre standard 60 mois. Tarif final validé par notre partenaire financier après analyse de votre dossier.';
+      const disclaimer = hasDiscount
+        ? `Mensualité avec remise volume −10% appliquée. Estimation indicative basée sur notre offre standard 60 mois — tarif final validé par notre partenaire financier après analyse de votre dossier.`
+        : 'Estimation basée sur notre offre standard 60 mois. Tarif final validé par notre partenaire financier après analyse de votre dossier.';
+      document.getElementById('output-disclaimer').textContent = disclaimer;
     } else {
       document.getElementById('output-total').textContent = 'Sur devis';
-      document.getElementById('output-disclaimer').textContent = `Pour ${duree} mois, la mensualité est ajustée selon le profil financier de votre société et les taux du marché. Le dossier ci-dessous nous permet de vous faire une offre précise.`;
+      document.getElementById('output-disclaimer').textContent = `Pour ${duree} mois, la mensualité est ajustée selon le profil financier de votre société et les taux du marché${hasDiscount ? ' (la remise volume −10% reste applicable)' : ''}. Le dossier ci-dessous nous permet de vous faire une offre précise.`;
     }
   }
 

@@ -887,25 +887,126 @@
 
 <!-- FINAL CTA -->
 <section id="contact" class="py-14 lg:py-20 bg-[var(--paper)]">
-  <div class="max-w-4xl mx-auto px-6 text-center reveal">
-    <p class="eyebrow mb-4">Volgende stap</p>
-    <h2 class="display text-3xl lg:text-5xl mb-6">
-      15 minuten, en u weet<br/>of het iets voor u is.
-    </h2>
-    <p class="text-[var(--muted)] text-xl max-w-xl mx-auto mb-10">
-      Geen PowerPoint-presentatie. We praten over uw winkel, uw volumes, uw beperkingen. Becijferde offerte na het gesprek.
-    </p>
-    <div class="flex flex-wrap items-center justify-center gap-3">
-      <a href="https://wa.me/32456407362" class="btn-accent">
-        Starten via WhatsApp
-      </a>
-      <a href="https://cashsystem.odoo.com/book/7ab74164" class="btn-ghost">
-        Tijdslot reserveren
-      </a>
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center reveal mb-12">
+      <p class="eyebrow mb-4">Volgende stap</p>
+      <h2 class="display text-3xl lg:text-5xl mb-6">
+        15 minuten, en u weet<br/>of het iets voor u is.
+      </h2>
+      <p class="text-[var(--muted)] text-xl max-w-xl mx-auto">
+        Geen PowerPoint-presentatie. We praten over uw winkel, uw volumes, uw beperkingen.
+      </p>
     </div>
-    <p class="text-sm text-[var(--muted)] mt-6">
-      Of telefonisch — <a href="tel:+32456407362" class="font-semibold text-[var(--ink)] underline underline-offset-4">+32 456 40 73 62</a>
-    </p>
+
+    <div class="grid lg:grid-cols-5 gap-6 reveal">
+      <!-- FORM -->
+      <div class="lg:col-span-3 card-elevated p-8 lg:p-10">
+        <div class="flex items-center gap-3 mb-1">
+          <span class="text-xs uppercase tracking-[0.15em] font-semibold text-[var(--accent-deep)]">Schrijf ons</span>
+          <span class="h-px flex-1 bg-[var(--line)]"></span>
+        </div>
+        <h3 class="display-md text-2xl mb-2">Beschrijf uw project</h3>
+        <p class="text-[var(--muted)] text-base mb-7 leading-relaxed">
+          Antwoord binnen <strong class="text-[var(--ink)]">4u op werkdagen</strong>, met een eerste prijsschatting als u ons voldoende info geeft.
+        </p>
+
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/merci.html" class="space-y-4">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden"><label>Niet invullen: <input name="bot-field" /></label></p>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="nom" class="block text-sm font-semibold mb-1.5">Naam <span class="text-[var(--accent-deep)]">*</span></label>
+              <input type="text" id="nom" name="nom" required
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all"
+                placeholder="Jan Janssens" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-semibold mb-1.5">E-mail <span class="text-[var(--accent-deep)]">*</span></label>
+              <input type="email" id="email" name="email" required
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all"
+                placeholder="jan@bakkerij.be" />
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="telephone" class="block text-sm font-semibold mb-1.5">Telefoon</label>
+              <input type="tel" id="telephone" name="telephone"
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all"
+                placeholder="+32 ..." />
+            </div>
+            <div>
+              <label for="commerce" class="block text-sm font-semibold mb-1.5">Type winkel</label>
+              <select id="commerce" name="commerce"
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all appearance-none pr-10"
+                style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%236b7280%22 stroke-width=%222%22><path d=%22M6 9l6 6 6-6%22/></svg>');background-size:18px;background-repeat:no-repeat;background-position:right 14px center;">
+                <option value="">Selecteren...</option>
+                <option>Bakkerij</option>
+                <option>Fastfood / Frituur</option>
+                <option>Horeca / Café</option>
+                <option>Restaurant</option>
+                <option>Boekhandel</option>
+                <option>Nachtwinkel / Superette</option>
+                <option>Andere winkel</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-semibold mb-1.5">Uw project <span class="text-[var(--accent-deep)]">*</span></label>
+            <textarea id="message" name="message" required rows="4"
+              class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all resize-none"
+              placeholder="Beschrijf uw winkel en uw behoefte (maandelijks cashvolume, huidige situatie, beperkingen...)."></textarea>
+          </div>
+
+          <label class="flex items-start gap-3 text-sm text-[var(--muted)] cursor-pointer pt-1">
+            <input type="checkbox" name="rgpd" required class="mt-0.5 w-4 h-4 accent-[var(--accent)] cursor-pointer flex-shrink-0" />
+            <span>Ik ga akkoord dat CashSystem mij contacteert over mijn aanvraag. Uw gegevens worden nooit gedeeld.</span>
+          </label>
+
+          <button type="submit" class="btn-accent w-full justify-center text-base mt-2">
+            Mijn aanvraag versturen
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- ALTERNATIVES -->
+      <div class="lg:col-span-2 flex flex-col gap-4">
+        <div class="rounded-3xl p-7 ink relative overflow-hidden">
+          <div class="absolute inset-0 opacity-30 grain"></div>
+          <div class="relative">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="accent-dot"></span>
+              <span class="text-xs uppercase tracking-[0.15em] font-bold text-[var(--accent)]">★ Het snelst</span>
+            </div>
+            <h4 class="text-2xl font-bold mb-3 text-white">WhatsApp</h4>
+            <p class="text-white/60 text-sm leading-relaxed mb-5">
+              Antwoord binnen enkele minuten op werkdagen. Direct kanaal naar de oprichter — geen callcenter.
+            </p>
+            <a href="https://wa.me/32456407362" class="btn-accent w-full justify-center text-sm">
+              Start het gesprek
+            </a>
+          </div>
+        </div>
+
+        <div class="card-elevated p-7">
+          <div class="text-xs uppercase tracking-[0.15em] text-[var(--accent-deep)] font-semibold mb-3">Voor verder gaan</div>
+          <h4 class="text-2xl font-bold mb-3">Reserveer 30 minuten</h4>
+          <p class="text-[var(--muted)] text-sm leading-relaxed mb-5">
+            Persoonlijke demo via videocall of bij ons in Kortenberg. We bekijken uw situatie en becijferen alles.
+          </p>
+          <a href="https://cashsystem.odoo.com/book/7ab74164" class="btn-ghost w-full justify-center text-sm">
+            Mijn tijdslot bekijken
+          </a>
+        </div>
+
+        <div class="text-center text-sm text-[var(--muted)] py-2">
+          Direct telefoon&nbsp;: <a href="tel:+32456407362" class="font-semibold text-[var(--ink)] underline underline-offset-4 hover:text-[var(--accent-deep)]">+32 456 40 73 62</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 

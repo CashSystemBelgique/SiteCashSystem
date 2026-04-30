@@ -907,25 +907,126 @@
 
 <!-- FINAL CTA -->
 <section id="contact" class="py-14 lg:py-20 bg-[var(--paper)]">
-  <div class="max-w-4xl mx-auto px-6 text-center reveal">
-    <p class="eyebrow mb-4">Prochaine étape</p>
-    <h2 class="display text-3xl lg:text-5xl mb-6">
-      15 minutes, et vous savez<br/>si c'est pour vous.
-    </h2>
-    <p class="text-[var(--muted)] text-xl max-w-xl mx-auto mb-10">
-      Pas de présentation PowerPoint. On parle de votre commerce, de vos volumes, de vos contraintes. Devis chiffré en sortie d'appel.
-    </p>
-    <div class="flex flex-wrap items-center justify-center gap-3">
-      <a href="https://wa.me/32456407362" class="btn-accent">
-        Démarrer sur WhatsApp
-      </a>
-      <a href="https://cashsystem.odoo.com/book/7ab74164" class="btn-ghost">
-        Bloquer un créneau
-      </a>
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center reveal mb-12">
+      <p class="eyebrow mb-4">Prochaine étape</p>
+      <h2 class="display text-3xl lg:text-5xl mb-6">
+        15 minutes, et vous savez<br/>si c'est pour vous.
+      </h2>
+      <p class="text-[var(--muted)] text-xl max-w-xl mx-auto">
+        Pas de présentation PowerPoint. On parle de votre commerce, de vos volumes, de vos contraintes.
+      </p>
     </div>
-    <p class="text-sm text-[var(--muted)] mt-6">
-      Ou par téléphone — <a href="tel:+32456407362" class="font-semibold text-[var(--ink)] underline underline-offset-4">+32 456 40 73 62</a>
-    </p>
+
+    <div class="grid lg:grid-cols-5 gap-6 reveal">
+      <!-- FORM -->
+      <div class="lg:col-span-3 card-elevated p-8 lg:p-10">
+        <div class="flex items-center gap-3 mb-1">
+          <span class="text-xs uppercase tracking-[0.15em] font-semibold text-[var(--accent-deep)]">Écrivez-nous</span>
+          <span class="h-px flex-1 bg-[var(--line)]"></span>
+        </div>
+        <h3 class="display-md text-2xl mb-2">Décrivez votre projet</h3>
+        <p class="text-[var(--muted)] text-base mb-7 leading-relaxed">
+          Réponse sous <strong class="text-[var(--ink)]">4h en jours ouvrés</strong>, avec un premier chiffrage si vous nous donnez assez d'éléments.
+        </p>
+
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/merci.html" class="space-y-4">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden"><label>Ne pas remplir : <input name="bot-field" /></label></p>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="nom" class="block text-sm font-semibold mb-1.5">Nom <span class="text-[var(--accent-deep)]">*</span></label>
+              <input type="text" id="nom" name="nom" required
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all"
+                placeholder="Jean Dupont" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-semibold mb-1.5">Email <span class="text-[var(--accent-deep)]">*</span></label>
+              <input type="email" id="email" name="email" required
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all"
+                placeholder="jean@boulangerie.be" />
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="telephone" class="block text-sm font-semibold mb-1.5">Téléphone</label>
+              <input type="tel" id="telephone" name="telephone"
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all"
+                placeholder="+32 ..." />
+            </div>
+            <div>
+              <label for="commerce" class="block text-sm font-semibold mb-1.5">Type de commerce</label>
+              <select id="commerce" name="commerce"
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all appearance-none pr-10"
+                style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%236b7280%22 stroke-width=%222%22><path d=%22M6 9l6 6 6-6%22/></svg>');background-size:18px;background-repeat:no-repeat;background-position:right 14px center;">
+                <option value="">Sélectionner...</option>
+                <option>Boulangerie</option>
+                <option>Fastfood / Friterie</option>
+                <option>HoReCa / Café</option>
+                <option>Restaurant</option>
+                <option>Librairie</option>
+                <option>Night-shop / Superette</option>
+                <option>Autre commerce</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-semibold mb-1.5">Votre projet <span class="text-[var(--accent-deep)]">*</span></label>
+            <textarea id="message" name="message" required rows="4"
+              class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all resize-none"
+              placeholder="Décrivez votre commerce et votre besoin (volume cash mensuel, situation actuelle, contraintes...)."></textarea>
+          </div>
+
+          <label class="flex items-start gap-3 text-sm text-[var(--muted)] cursor-pointer pt-1">
+            <input type="checkbox" name="rgpd" required class="mt-0.5 w-4 h-4 accent-[var(--accent)] cursor-pointer flex-shrink-0" />
+            <span>J'accepte d'être recontacté par CashSystem au sujet de ma demande. Vos données ne sont jamais partagées.</span>
+          </label>
+
+          <button type="submit" class="btn-accent w-full justify-center text-base mt-2">
+            Envoyer ma demande
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- ALTERNATIVES -->
+      <div class="lg:col-span-2 flex flex-col gap-4">
+        <div class="rounded-3xl p-7 ink relative overflow-hidden">
+          <div class="absolute inset-0 opacity-30 grain"></div>
+          <div class="relative">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="accent-dot"></span>
+              <span class="text-xs uppercase tracking-[0.15em] font-bold text-[var(--accent)]">★ Le plus rapide</span>
+            </div>
+            <h4 class="text-2xl font-bold mb-3 text-white">WhatsApp</h4>
+            <p class="text-white/60 text-sm leading-relaxed mb-5">
+              Réponse en quelques minutes en jours ouvrés. Le canal direct vers le fondateur — pas de call center.
+            </p>
+            <a href="https://wa.me/32456407362" class="btn-accent w-full justify-center text-sm">
+              Démarrer la conversation
+            </a>
+          </div>
+        </div>
+
+        <div class="card-elevated p-7">
+          <div class="text-xs uppercase tracking-[0.15em] text-[var(--accent-deep)] font-semibold mb-3">Pour aller plus loin</div>
+          <h4 class="text-2xl font-bold mb-3">Bloquez 30 minutes</h4>
+          <p class="text-[var(--muted)] text-sm leading-relaxed mb-5">
+            Démo personnalisée en visio ou chez nous à Kortenberg. On regarde votre situation, on chiffre.
+          </p>
+          <a href="https://cashsystem.odoo.com/book/7ab74164" class="btn-ghost w-full justify-center text-sm">
+            Voir mon créneau
+          </a>
+        </div>
+
+        <div class="text-center text-sm text-[var(--muted)] py-2">
+          Téléphone direct&nbsp;: <a href="tel:+32456407362" class="font-semibold text-[var(--ink)] underline underline-offset-4 hover:text-[var(--accent-deep)]">+32 456 40 73 62</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 

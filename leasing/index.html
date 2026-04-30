@@ -309,11 +309,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <!-- Step 2 : Form (compact) -->
       <div class="border-t hairline pt-7">
         <div class="flex items-center gap-3 mb-5">
-          <span class="text-xs uppercase tracking-[0.15em] font-semibold text-[var(--accent-deep)]">Vos coordonnées</span>
+          <span class="text-xs uppercase tracking-[0.15em] font-semibold text-[var(--accent-deep)]">Votre dossier</span>
           <span class="h-px flex-1 bg-[var(--line)]"></span>
         </div>
 
-        <form name="leasing" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/merci.html" class="space-y-4">
+        <!-- Reassurance block -->
+        <div class="bg-[var(--accent)]/8 border border-[var(--accent)]/25 rounded-2xl p-5 mb-6">
+          <div class="flex gap-3">
+            <span class="text-2xl flex-shrink-0">✓</span>
+            <div>
+              <strong class="text-[var(--ink)] block mb-1.5 text-base">Demande gratuite, sans engagement</strong>
+              <p class="text-sm text-[var(--muted)] leading-relaxed">
+                Le partenaire financier a besoin du <strong class="text-[var(--ink)]">minimum légal</strong> pour vous faire une offre&nbsp;: carte d'identité et un bilan (récent ou provisoire). Aucune obligation d'achat — vous décidez après réception de l'offre.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <form name="leasing" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/merci.html" enctype="multipart/form-data" class="space-y-4">
           <input type="hidden" name="form-name" value="leasing" />
           <input type="hidden" id="hidden-machines" name="machines" value="1" />
           <input type="hidden" id="hidden-duree" name="duree" value="60" />
@@ -337,16 +350,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           <div class="grid sm:grid-cols-2 gap-4">
             <div>
-              <label for="ltel" class="block text-sm font-semibold mb-1.5">Téléphone</label>
-              <input type="tel" id="ltel" name="telephone"
+              <label for="ltel" class="block text-sm font-semibold mb-1.5">Téléphone <span class="text-[var(--accent-deep)]">*</span></label>
+              <input type="tel" id="ltel" name="telephone" required
                 class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 transition-all"
                 placeholder="+32 ..." />
             </div>
             <div>
-              <label for="lsociete" class="block text-sm font-semibold mb-1.5">Société</label>
-              <input type="text" id="lsociete" name="societe"
+              <label for="lsociete" class="block text-sm font-semibold mb-1.5">Nom de société <span class="text-[var(--accent-deep)]">*</span></label>
+              <input type="text" id="lsociete" name="societe" required
                 class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 transition-all"
                 placeholder="Boulangerie Dupont SRL" />
+            </div>
+          </div>
+
+          <div>
+            <label for="ltva" class="block text-sm font-semibold mb-1.5">Numéro de TVA <span class="text-[var(--accent-deep)]">*</span></label>
+            <input type="text" id="ltva" name="tva" required
+              class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 transition-all"
+              placeholder="BE 0123.456.789" />
+          </div>
+
+          <!-- Documents required -->
+          <div class="pt-2">
+            <p class="text-xs uppercase tracking-[0.15em] font-semibold text-[var(--accent-deep)] mb-3">Documents requis</p>
+
+            <div class="space-y-3">
+              <!-- ID -->
+              <div>
+                <label for="lid" class="block text-sm font-semibold mb-1.5">Carte d'identité — recto &amp; verso <span class="text-[var(--accent-deep)]">*</span></label>
+                <input type="file" id="lid" name="id_card" multiple required accept=".pdf,.jpg,.jpeg,.png"
+                  class="block w-full text-sm text-[var(--muted)] file:mr-4 file:py-2.5 file:px-5 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-[var(--ink)] file:text-white hover:file:bg-[#1a1f1d] file:cursor-pointer cursor-pointer" />
+                <p class="text-xs text-[var(--muted)] mt-1.5">PDF, JPG ou PNG · 2 fichiers (recto + verso) ou 1 PDF combiné · 8 MB max par fichier</p>
+              </div>
+
+              <!-- Bilan -->
+              <div>
+                <label for="lbilan" class="block text-sm font-semibold mb-1.5">Bilan financier — récent ou provisoire <span class="text-[var(--accent-deep)]">*</span></label>
+                <input type="file" id="lbilan" name="bilan" required accept=".pdf,.xls,.xlsx,.jpg,.jpeg,.png"
+                  class="block w-full text-sm text-[var(--muted)] file:mr-4 file:py-2.5 file:px-5 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-[var(--ink)] file:text-white hover:file:bg-[#1a1f1d] file:cursor-pointer cursor-pointer" />
+                <p class="text-xs text-[var(--muted)] mt-1.5">PDF, Excel ou image · Bilan d'exercice complet ou bilan intermédiaire · 8 MB max</p>
+              </div>
             </div>
           </div>
 
@@ -354,20 +397,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <label for="lmessage" class="block text-sm font-semibold mb-1.5">Précisions (optionnel)</label>
             <textarea id="lmessage" name="message" rows="3"
               class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 transition-all resize-none"
-              placeholder="Type de commerce, ancienneté société, volumes..."></textarea>
+              placeholder="Type de commerce, ancienneté société, contraintes particulières..."></textarea>
           </div>
 
           <label class="flex items-start gap-3 text-sm text-[var(--muted)] cursor-pointer pt-1">
             <input type="checkbox" name="rgpd" required class="mt-0.5 w-4 h-4 accent-[var(--accent)] cursor-pointer flex-shrink-0" />
-            <span>J'accepte d'être recontacté par CashSystem et son partenaire financier au sujet de ma demande.</span>
+            <span>J'accepte que CashSystem transmette les documents fournis à son partenaire financier dans le cadre de cette demande de leasing. Vos données ne sont jamais partagées avec des tiers non concernés.</span>
           </label>
 
           <button type="submit" class="btn-accent w-full justify-center text-base mt-2">
-            Demander mon dossier personnalisé
+            Demander mon offre gratuite
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </button>
           <p class="text-xs text-[var(--muted)] text-center pt-1">
-            Sous réserve d'acceptation par notre partenaire financier.
+            Réponse sous 4h en jours ouvrés. Sous réserve d'acceptation par notre partenaire financier.
           </p>
         </form>
       </div>

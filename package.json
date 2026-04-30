@@ -1,0 +1,10 @@
+{
+  "name": "cashsystem-be",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Site cashsystem.be — Netlify deploy + Functions",
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}

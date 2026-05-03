@@ -288,4 +288,36 @@
     <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/blog/comment-choisir-monnayeur-automatique/"/>
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/blog/muntautomaat-kiezen/"/>
   </url>
+  <url>
+    <loc>https://www.cashsystem.be/blog/quand-remplacer-monnayeur-automatique/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/blog/quand-remplacer-monnayeur-automatique/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/blog/muntautomaat-vervangen/"/>
+  </url>
+  <url>
+    <loc>https://www.cashsystem.be/nl/blog/muntautomaat-vervangen/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/blog/quand-remplacer-monnayeur-automatique/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/blog/muntautomaat-vervangen/"/>
+  </url>
+  <url>
+    <loc>https://www.cashsystem.be/blog/prix-monnayeur-automatique-belgique-2026/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/blog/prix-monnayeur-automatique-belgique-2026/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/blog/prijs-muntautomaat-belgie-2026/"/>
+  </url>
+  <url>
+    <loc>https://www.cashsystem.be/nl/blog/prijs-muntautomaat-belgie-2026/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/blog/prix-monnayeur-automatique-belgique-2026/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/blog/prijs-muntautomaat-belgie-2026/"/>
+  </url>
 </urlset>

@@ -320,4 +320,20 @@
     <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/blog/prix-monnayeur-automatique-belgique-2026/"/>
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/blog/prijs-muntautomaat-belgie-2026/"/>
   </url>
+  <url>
+    <loc>https://www.cashsystem.be/calculateur-roi-monnayeur/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/calculateur-roi-monnayeur/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/roi-calculator-muntautomaat/"/>
+  </url>
+  <url>
+    <loc>https://www.cashsystem.be/nl/roi-calculator-muntautomaat/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/calculateur-roi-monnayeur/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/roi-calculator-muntautomaat/"/>
+  </url>
 </urlset>

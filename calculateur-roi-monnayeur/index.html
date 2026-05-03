@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CQLB8S547L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CQLB8S547L');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NSFKT4JV');</script>
+<!-- End Google Tag Manager -->
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="/vertigo-favicon-16.png?v=3">
+<link rel="icon" type="image/png" sizes="32x32" href="/vertigo-favicon-32.png?v=3">
+<link rel="icon" type="image/png" sizes="48x48" href="/vertigo-favicon-48.png?v=3">
+<link rel="icon" type="image/png" sizes="64x64" href="/vertigo-favicon-64.png?v=3">
+<link rel="icon" type="image/png" sizes="192x192" href="/vertigo-favicon-192.png?v=3">
+<link rel="icon" type="image/png" sizes="512x512" href="/vertigo-favicon-512.png?v=3">
+<link rel="shortcut icon" href="/favicon.ico?v=3">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#00C58E">
+
+<title>Calculateur ROI monnayeur automatique : combien vous perdez ? | CashSystem</title>
+<link rel="canonical" href="https://www.cashsystem.be/calculateur-roi-monnayeur/">
+<link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/calculateur-roi-monnayeur/">
+<link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/roi-calculator-muntautomaat/">
+<link rel="alternate" hreflang="x-default" href="https://www.cashsystem.be/calculateur-roi-monnayeur/">
+<meta name="description" content="Calculez en 60 secondes combien vous perdez chaque année en erreurs de caisse, vol, temps perdu. Estimation gratuite, résultat instantané. CashSystem, fabricant belge.">
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="CashSystem">
+<meta property="og:title" content="Calculateur ROI monnayeur automatique : combien vous perdez ? | CashSystem">
+<meta property="og:description" content="Calculez en 60 secondes combien vous perdez chaque année en erreurs de caisse, vol, temps perdu. Estimation gratuite, résultat instantané. CashSystem, fabricant belge.">
+<meta property="og:url" content="https://www.cashsystem.be/calculateur-roi-monnayeur/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.cashsystem.be/assets/banniere-poster.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Calculateur ROI monnayeur automatique CashSystem">
+<meta property="og:locale" content="fr_BE">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Calculateur ROI monnayeur automatique : combien vous perdez ? | CashSystem">
+<meta name="twitter:description" content="Calculez en 60 secondes combien vous perdez chaque année en erreurs de caisse, vol, temps perdu. Estimation gratuite, résultat instantané. CashSystem, fabricant belge.">
+<meta name="twitter:image" content="https://www.cashsystem.be/assets/banniere-poster.jpg">
+
+<meta content="#ffffff" name="theme-color"/>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#0a0e0d;
+    --paper:#fafaf7;
+    --accent:#00C58E;
+    --accent-deep:#009d72;
+    --muted:#6b7280;
+    --line:rgba(10,14,13,.08);
+    --danger:#dc2626;
+    --danger-bg:#fef2f2;
+    --danger-deep:#991b1b;
+  }
+  *{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale }
+  html{ scroll-behavior:smooth }
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    font-feature-settings:"ss01","cv11";
+    zoom:0.75;
+  }
+  .display{ font-weight:800; letter-spacing:-0.035em; line-height:.98 }
+  .display-md{ font-weight:700; letter-spacing:-0.025em; line-height:1.05 }
+  .eyebrow{
+    font-size:.8125rem; font-weight:600; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent-deep);
+  }
+  .ink{ background:var(--ink); color:#f5f5f0 }
+  .accent-dot{
+    display:inline-block; width:.55rem; height:.55rem; border-radius:9999px;
+    background:var(--accent); box-shadow:0 0 0 4px rgba(0,197,142,.18);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse{
+    0%,100%{ box-shadow:0 0 0 4px rgba(0,197,142,.18) }
+    50%{ box-shadow:0 0 0 8px rgba(0,197,142,.08) }
+  }
+  .hairline{ border-color:var(--line) }
+  .grain{
+    background-image:
+      radial-gradient(ellipse 800px 400px at 80% 20%, rgba(0,197,142,.10), transparent 60%),
+      radial-gradient(ellipse 600px 300px at 0% 100%, rgba(0,197,142,.06), transparent 60%);
+  }
+  .card-elevated{
+    background:#fff; border:1px solid var(--line);
+    border-radius:20px; transition:transform .35s ease, box-shadow .35s ease;
+  }
+  .card-elevated:hover{ transform:translateY(-4px); box-shadow:0 24px 48px -20px rgba(10,14,13,.18) }
+  .badge{
+    display:inline-flex; align-items:center; gap:.4rem;
+    padding:.35rem .75rem; border-radius:9999px;
+    font-size:.78rem; font-weight:500;
+    background:rgba(0,197,142,.08); color:var(--accent-deep);
+    border:1px solid rgba(0,197,142,.18);
+  }
+  .btn-primary{
+    display:inline-flex; align-items:center; gap:.5rem;
+    padding:.85rem 1.4rem; border-radius:9999px;
+    background:var(--ink); color:#fff; font-weight:600;
+    transition:transform .2s ease, background .2s ease;
+  }
+  .btn-primary:hover{ background:#1a1f1d; transform:translateY(-1px) }
+  .btn-ghost{
+    display:inline-flex; align-items:center; gap:.5rem;
+    padding:.85rem 1.4rem; border-radius:9999px;
+    border:1px solid var(--line); font-weight:600;
+    transition:background .2s ease;
+  }
+  .btn-ghost:hover{ background:rgba(10,14,13,.04) }
+  .btn-accent{
+    display:inline-flex; align-items:center; gap:.5rem;
+    padding:.95rem 1.6rem; border-radius:9999px;
+    background:var(--accent); color:var(--ink); font-weight:700;
+    transition:transform .2s ease, background .2s ease;
+  }
+  .btn-accent:hover{ background:#00d99d; transform:translateY(-1px) }
+  .num-big{
+    font-size:clamp(2.5rem,5.5vw,4rem); font-weight:800;
+    letter-spacing:-0.04em; line-height:1;
+  }
+  .reveal{ opacity:0; transform:translateY(20px); transition:opacity .8s ease, transform .8s ease }
+  .reveal.in{ opacity:1; transform:none }
+
+  /* Calculator-specific */
+  .progress-track{
+    height:6px; background:rgba(10,14,13,.08); border-radius:9999px; overflow:hidden;
+  }
+  .progress-bar{
+    height:100%; background:var(--accent); border-radius:9999px;
+    transition:width .5s cubic-bezier(.4,0,.2,1);
+  }
+  .calc-step{ display:none }
+  .calc-step.active{ display:block; animation:fadeIn .4s ease }
+  @keyframes fadeIn{
+    from{ opacity:0; transform:translateY(10px) }
+    to{ opacity:1; transform:none }
+  }
+  .opt-btn{
+    display:flex; align-items:center; justify-content:center;
+    text-align:center;
+    padding:1.1rem 1rem; border-radius:14px;
+    background:#fff; border:1.5px solid var(--line);
+    font-weight:600; font-size:1rem;
+    cursor:pointer; transition:all .2s ease;
+    color:var(--ink);
+  }
+  .opt-btn:hover{
+    border-color:var(--accent);
+    background:rgba(0,197,142,.04);
+    transform:translateY(-1px);
+  }
+  .opt-btn.selected{
+    border-color:var(--accent);
+    background:rgba(0,197,142,.10);
+    color:var(--accent-deep);
+    box-shadow:0 4px 14px -4px rgba(0,197,142,.3);
+  }
+  .danger-box{
+    background:linear-gradient(135deg, var(--danger-bg) 0%, #fff5f5 100%);
+    border:2px solid rgba(220,38,38,.15);
+    border-radius:24px;
+  }
+  .success-box{
+    background:linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%);
+    border:2px solid rgba(0,197,142,.25);
+    border-radius:24px;
+  }
+  .future-box{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:24px;
+  }
+  .calc-step button:disabled{
+    opacity:.4; cursor:not-allowed;
+  }
+  .calc-step button:disabled:hover{
+    background:var(--ink); transform:none;
+  }
+  #result-section{ display:none }
+  #result-section.shown{ display:block }
+</style>
+
+<!-- JSON-LD : WebSite -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.cashsystem.be/#website","url":"https://www.cashsystem.be/","name":"CashSystem","alternateName":"CashSystem Belgique","inLanguage":"fr-BE","publisher":{"@id":"https://www.cashsystem.be/#organization"}}
+</script>
+<!-- JSON-LD : Organization + LocalBusiness -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["Organization","LocalBusiness"],"@id":"https://www.cashsystem.be/#organization","name":"CashSystem","alternateName":"CashSystem Belgique","url":"https://www.cashsystem.be/","logo":"https://www.cashsystem.be/assets/logo.png","image":"https://www.cashsystem.be/assets/logo.png","telephone":"+32456407362","email":"sales@cashsystem.be","vatID":"BE1023776996","priceRange":"€€€","description":"Fabricant belge de monnayeurs automatiques et caisses automatiques de paiement cash. Support Platinum 24/7 via WhatsApp.","slogan":"Jamais loin de chez vous","address":{"@type":"PostalAddress","streetAddress":"Leuvensesteenweg 21/L","postalCode":"3070","addressLocality":"Kortenberg","addressCountry":"BE"},"areaServed":["Belgique","Luxembourg","France","Pays-Bas"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"sameAs":["https://www.youtube.com/@cashsystem","https://www.linkedin.com/in/kaanyilmaz-cashsystem"]}
+</script>
+<!-- JSON-LD : WebPage -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","url":"https://www.cashsystem.be/calculateur-roi-monnayeur/","name":"Calculateur ROI monnayeur automatique : combien vous perdez ? | CashSystem","description":"Calculez en 60 secondes combien vous perdez chaque année en erreurs de caisse, vol, temps perdu. Estimation gratuite, résultat instantané. CashSystem, fabricant belge.","isPartOf":{"@type":"WebSite","url":"https://www.cashsystem.be/","name":"CashSystem"}}
+</script>
+<!-- JSON-LD : BreadcrumbList -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.cashsystem.be/"},{"@type":"ListItem","position":2,"name":"Calculateur ROI","item":"https://www.cashsystem.be/calculateur-roi-monnayeur/"}]}
+</script>
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "tpyxaeb76z");
+</script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-[rgba(250,250,247,.85)] backdrop-blur-md border-b hairline">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-3">
+      <img src="/assets/logo-h.png"
+           alt="CashSystem — fabricant belge de monnayeurs automatiques"
+           class="h-9 w-auto"
+           width="160" height="36"
+           loading="eager" decoding="async"/>
+      <span class="hidden sm:inline-flex badge">Made in Belgium</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-base font-medium">
+      <a href="/#produits" class="hover:text-[var(--accent-deep)]">Produits</a>
+      <a href="/#galerie" class="hover:text-[var(--accent-deep)]">Galerie</a>
+      <a href="/prix-monnayeur-automatique/" class="hover:text-[var(--accent-deep)]">Prix</a>
+      <a href="/leasing/" class="hover:text-[var(--accent-deep)]">Leasing</a>
+      <a href="/blog/" class="hover:text-[var(--accent-deep)]">Blog</a>
+    </nav>
+    <a href="#contact" class="btn-primary text-sm lg:text-base whitespace-nowrap px-3 lg:px-5 py-2 lg:py-3">
+      <span class="lg:hidden">Devis</span>
+      <span class="hidden lg:inline">Demander un devis</span>
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative grain overflow-hidden">
+  <div class="max-w-4xl mx-auto px-6 pt-14 pb-12 lg:pt-20 lg:pb-16 text-center reveal">
+    <div class="flex items-center justify-center gap-3 mb-6">
+      <span class="accent-dot"></span>
+      <span class="eyebrow">Calculateur gratuit · 60 secondes</span>
+    </div>
+
+    <h1 class="display text-[clamp(2rem,4.8vw,3.75rem)] mb-5">
+      Combien vous coûtent<br/>
+      <span class="text-[var(--accent-deep)]">vos erreurs de caisse ?</span>
+    </h1>
+
+    <p class="text-[1.125rem] lg:text-[1.25rem] text-[var(--muted)] max-w-2xl mx-auto mb-9 leading-relaxed">
+      Calcul personnalisé selon votre activité. Résultat instantané, aucune obligation.
+    </p>
+
+    <a href="#calculator" id="hero-cta" class="btn-accent text-base">
+      Démarrer le calcul
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section id="calculator" class="py-12 lg:py-16 bg-white border-y hairline">
+  <div class="max-w-3xl mx-auto px-6">
+
+    <!-- Progress -->
+    <div class="mb-10">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-sm font-semibold text-[var(--muted)]" id="step-label">Étape 1 / 4</span>
+        <span class="text-sm font-semibold text-[var(--accent-deep)]" id="step-percent">25%</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-bar" id="progress-bar" style="width:25%"></div>
+      </div>
+    </div>
+
+    <!-- Step 1: Type de commerce -->
+    <div class="calc-step active" data-step="1">
+      <h2 class="display text-2xl lg:text-3xl mb-3">Quel type de commerce ?</h2>
+      <p class="text-[var(--muted)] text-base mb-8">Sélectionnez l'activité la plus proche de la vôtre.</p>
+
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-3">
+        <button type="button" class="opt-btn" data-field="commerce" data-value="boulangerie">Boulangerie</button>
+        <button type="button" class="opt-btn" data-field="commerce" data-value="fastfood">Fastfood ou Friterie</button>
+        <button type="button" class="opt-btn" data-field="commerce" data-value="restaurant">Restaurant</button>
+        <button type="button" class="opt-btn" data-field="commerce" data-value="bar">Bar ou Café</button>
+        <button type="button" class="opt-btn" data-field="commerce" data-value="commerce">Commerce général</button>
+        <button type="button" class="opt-btn" data-field="commerce" data-value="librairie">Librairie ou Presse</button>
+      </div>
+    </div>
+
+    <!-- Step 2: Volume + Ticket -->
+    <div class="calc-step" data-step="2">
+      <h2 class="display text-2xl lg:text-3xl mb-8">Votre flux cash quotidien.</h2>
+
+      <div class="mb-8">
+        <p class="font-semibold text-lg mb-4">Combien de transactions cash par jour ?</p>
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
+          <button type="button" class="opt-btn" data-field="volume" data-value="<50">&lt; 50</button>
+          <button type="button" class="opt-btn" data-field="volume" data-value="50-100">50-100</button>
+          <button type="button" class="opt-btn" data-field="volume" data-value="100-200">100-200</button>
+          <button type="button" class="opt-btn" data-field="volume" data-value="200-500">200-500</button>
+          <button type="button" class="opt-btn" data-field="volume" data-value="500+">500+</button>
+        </div>
+      </div>
+
+      <div class="mb-10">
+        <p class="font-semibold text-lg mb-4">Quel est le ticket moyen ?</p>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <button type="button" class="opt-btn" data-field="ticket" data-value="<10">&lt; 10 €</button>
+          <button type="button" class="opt-btn" data-field="ticket" data-value="10-25">10-25 €</button>
+          <button type="button" class="opt-btn" data-field="ticket" data-value="25-50">25-50 €</button>
+          <button type="button" class="opt-btn" data-field="ticket" data-value=">50">&gt; 50 €</button>
+        </div>
+      </div>
+
+      <div class="flex justify-end">
+        <button type="button" class="btn-primary" id="next-2" disabled>
+          Continuer
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Step 3: Temps + Employés -->
+    <div class="calc-step" data-step="3">
+      <h2 class="display text-2xl lg:text-3xl mb-8">Comptage et organisation.</h2>
+
+      <div class="mb-8">
+        <p class="font-semibold text-lg mb-4">Combien de temps pour compter la caisse en fin de journée ?</p>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <button type="button" class="opt-btn" data-field="temps" data-value="<30">&lt; 30 min</button>
+          <button type="button" class="opt-btn" data-field="temps" data-value="30-60">30-60 min</button>
+          <button type="button" class="opt-btn" data-field="temps" data-value="1-2">1-2 h</button>
+          <button type="button" class="opt-btn" data-field="temps" data-value=">2">&gt; 2 h</button>
+        </div>
+      </div>
+
+      <div class="mb-10">
+        <p class="font-semibold text-lg mb-4">Combien d'employés manipulent la caisse ?</p>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <button type="button" class="opt-btn" data-field="employes" data-value="1">1</button>
+          <button type="button" class="opt-btn" data-field="employes" data-value="2-3">2-3</button>
+          <button type="button" class="opt-btn" data-field="employes" data-value="4-5">4-5</button>
+          <button type="button" class="opt-btn" data-field="employes" data-value="6+">6+</button>
+        </div>
+      </div>
+
+      <div class="flex justify-end">
+        <button type="button" class="btn-accent" id="next-3" disabled>
+          Voir mon résultat
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- RESULT SECTION -->
+<section id="result-section" class="py-14 lg:py-20 bg-[var(--paper)]">
+  <div class="max-w-4xl mx-auto px-6">
+
+    <div class="text-center mb-10 reveal in">
+      <p class="eyebrow mb-4">Estimation personnalisée</p>
+      <h2 class="display text-3xl lg:text-5xl">Votre estimation est prête.</h2>
+    </div>
+
+    <!-- DANGER BOX -->
+    <div class="danger-box p-8 lg:p-10 mb-8">
+      <p class="text-sm font-bold uppercase tracking-wider text-[var(--danger)] mb-3">Aujourd'hui, vous perdez environ</p>
+      <div class="num-big text-[var(--danger-deep)] mb-2" id="result-total-headline">0 €</div>
+      <p class="text-lg text-[var(--ink)]/70 mb-8">par an en frais cachés.</p>
+
+      <div class="border-t border-red-200 pt-6 space-y-3">
+        <div class="flex justify-between items-center text-base">
+          <span class="text-[var(--ink)]/80">Erreurs de caisse</span>
+          <span class="font-bold text-[var(--danger-deep)]" id="r-erreurs">0 €</span>
+        </div>
+        <div class="flex justify-between items-center text-base">
+          <span class="text-[var(--ink)]/80">Vol &amp; coulage interne</span>
+          <span class="font-bold text-[var(--danger-deep)]" id="r-vol">0 €</span>
+        </div>
+        <div class="flex justify-between items-center text-base">
+          <span class="text-[var(--ink)]/80">Temps perdu à compter la caisse</span>
+          <span class="font-bold text-[var(--danger-deep)]" id="r-temps">0 €</span>
+        </div>
+        <div class="flex justify-between items-center text-base">
+          <span class="text-[var(--ink)]/80">File d'attente non encaissée</span>
+          <span class="font-bold text-[var(--danger-deep)]" id="r-file">0 €</span>
+        </div>
+        <div class="flex justify-between items-center text-lg pt-3 border-t border-red-200">
+          <span class="font-bold">Total perdu</span>
+          <span class="font-bold text-[var(--danger-deep)] text-2xl" id="r-total">0 €</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUCCESS BOX -->
+    <div class="success-box p-8 lg:p-10 mb-8">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="accent-dot"></span>
+        <p class="text-sm font-bold uppercase tracking-wider text-[var(--accent-deep)]">Avec un monnayeur CashSystem</p>
+      </div>
+
+      <ul class="space-y-3 mb-8 text-lg">
+        <li class="flex items-center gap-3">
+          <svg class="w-5 h-5 text-[var(--accent-deep)] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          <span>Erreurs de caisse : <strong>ZÉRO</strong></span>
+        </li>
+        <li class="flex items-center gap-3">
+          <svg class="w-5 h-5 text-[var(--accent-deep)] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          <span>Vol &amp; coulage : <strong>ZÉRO</strong></span>
+        </li>
+        <li class="flex items-center gap-3">
+          <svg class="w-5 h-5 text-[var(--accent-deep)] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          <span>Temps de comptage : <strong>ZÉRO</strong></span>
+        </li>
+        <li class="flex items-center gap-3">
+          <svg class="w-5 h-5 text-[var(--accent-deep)] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          <span>File d'attente : <strong>ZÉRO</strong></span>
+        </li>
+      </ul>
+
+      <p class="text-base text-[var(--ink)]/80 mb-6 italic">Tout votre cash est sécurisé.</p>
+
+      <div class="bg-white/60 rounded-2xl p-6 border border-[var(--accent)]/20 mb-4">
+        <p class="text-sm font-semibold uppercase tracking-wider text-[var(--accent-deep)] mb-2">Vous récupérez</p>
+        <div class="num-big text-[var(--accent-deep)]" id="r-recup">0 €</div>
+        <p class="text-base text-[var(--muted)] mt-1">par an</p>
+      </div>
+
+      <p class="text-base lg:text-lg leading-relaxed">
+        Votre machine (<strong>9 900 € HT</strong>) est rentabilisée en
+        <strong class="text-[var(--accent-deep)]"><span id="r-roi-mois">0</span> mois et <span id="r-roi-jours">0</span> jours</strong>.
+      </p>
+    </div>
+
+    <!-- FUTURE BOX -->
+    <div class="future-box p-8 lg:p-10 mb-12">
+      <p class="eyebrow mb-5">Et après ?</p>
+
+      <div class="grid sm:grid-cols-3 gap-4">
+        <div class="bg-[var(--paper)] rounded-2xl p-5">
+          <p class="text-xs uppercase tracking-wider text-[var(--muted)] font-semibold mb-2">Année 2</p>
+          <p class="text-2xl font-bold text-[var(--accent-deep)]" id="r-year2">0 €</p>
+          <p class="text-sm text-[var(--muted)] mt-1">de bénéfice net</p>
+        </div>
+        <div class="bg-[var(--paper)] rounded-2xl p-5">
+          <p class="text-xs uppercase tracking-wider text-[var(--muted)] font-semibold mb-2">Année 3</p>
+          <p class="text-2xl font-bold text-[var(--accent-deep)]" id="r-year3">0 €</p>
+          <p class="text-sm text-[var(--muted)] mt-1">de bénéfice net</p>
+        </div>
+        <div class="bg-[var(--ink)] text-white rounded-2xl p-5">
+          <p class="text-xs uppercase tracking-wider text-[var(--accent)] font-semibold mb-2">Total 5 ans</p>
+          <p class="text-2xl font-bold" id="r-year5">0 €</p>
+          <p class="text-sm text-white/60 mt-1">économisés</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <a href="#contact" class="btn-accent">
+        Recevoir mon offre personnalisée
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <p class="text-sm text-[var(--muted)] mt-4">Estimation indicative basée sur les moyennes terrain de notre base de 65+ commerces équipés.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="contact" class="py-14 lg:py-20 bg-[var(--paper)]">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center reveal mb-12">
+      <p class="eyebrow mb-4">Prochaine étape</p>
+      <h2 class="display text-3xl lg:text-5xl mb-6">
+        15 minutes, et vous savez<br/>si c'est pour vous.
+      </h2>
+      <p class="text-[var(--muted)] text-xl max-w-xl mx-auto">
+        Pas de présentation PowerPoint. On parle de votre commerce, de vos volumes, de vos contraintes.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-5 gap-6 reveal">
+      <!-- FORM -->
+      <div class="lg:col-span-3 card-elevated p-8 lg:p-10">
+        <div class="flex items-center gap-3 mb-1">
+          <span class="text-xs uppercase tracking-[0.15em] font-semibold text-[var(--accent-deep)]">Écrivez-nous</span>
+          <span class="h-px flex-1 bg-[var(--line)]"></span>
+        </div>
+        <h3 class="display-md text-2xl mb-2">Décrivez votre projet</h3>
+        <p class="text-[var(--muted)] text-base mb-7 leading-relaxed">
+          Réponse sous <strong class="text-[var(--ink)]">4h en jours ouvrés</strong>.
+        </p>
+
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/merci.html" class="space-y-4">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden"><label>Ne pas remplir : <input name="bot-field" /></label></p>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="nom" class="block text-sm font-semibold mb-1.5">Nom <span class="text-[var(--accent-deep)]">*</span></label>
+              <input type="text" id="nom" name="nom" required
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all"
+                placeholder="Jean Dupont" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-semibold mb-1.5">Email <span class="text-[var(--accent-deep)]">*</span></label>
+              <input type="email" id="email" name="email" required
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all"
+                placeholder="jean@boulangerie.be" />
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="telephone" class="block text-sm font-semibold mb-1.5">Téléphone</label>
+              <input type="tel" id="telephone" name="telephone"
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all"
+                placeholder="+32 ..." />
+            </div>
+            <div>
+              <label for="commerce" class="block text-sm font-semibold mb-1.5">Type de commerce</label>
+              <select id="commerce" name="commerce"
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all appearance-none pr-10"
+                style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%236b7280%22 stroke-width=%222%22><path d=%22M6 9l6 6 6-6%22/></svg>');background-size:18px;background-repeat:no-repeat;background-position:right 14px center;">
+                <option value="">Sélectionner...</option>
+                <option>Boulangerie</option>
+                <option>Fastfood / Friterie</option>
+                <option>HoReCa / Café</option>
+                <option>Restaurant</option>
+                <option>Librairie</option>
+                <option>Night-shop / Superette</option>
+                <option>Autre commerce</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-semibold mb-1.5">Votre projet <span class="text-[var(--accent-deep)]">*</span></label>
+            <textarea id="message" name="message" required rows="9"
+              class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all resize-none"
+              placeholder="Décrivez votre commerce et votre besoin (volume cash mensuel, situation actuelle, contraintes...)."></textarea>
+          </div>
+
+          <label class="flex items-start gap-3 text-sm text-[var(--muted)] cursor-pointer pt-1">
+            <input type="checkbox" name="rgpd" required class="mt-0.5 w-4 h-4 accent-[var(--accent)] cursor-pointer flex-shrink-0" />
+            <span>J'accepte d'être recontacté par CashSystem au sujet de ma demande. Vos données ne sont jamais partagées.</span>
+          </label>
+
+          <button type="submit" class="btn-accent w-full justify-center text-base mt-2">
+            Envoyer ma demande
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- ALTERNATIVES (3 cards) -->
+      <div class="lg:col-span-2 flex flex-col gap-4">
+        <div class="rounded-3xl p-7 ink relative overflow-hidden">
+          <div class="absolute inset-0 opacity-30 grain"></div>
+          <div class="relative">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="accent-dot"></span>
+              <span class="text-xs uppercase tracking-[0.15em] font-bold text-[var(--accent)]">★ Le plus rapide</span>
+            </div>
+            <h4 class="text-2xl font-bold mb-3 text-white">WhatsApp</h4>
+            <p class="text-white/60 text-sm leading-relaxed mb-5">
+              Réponse en quelques minutes en jours ouvrés. Direct avec l'équipe technique.
+            </p>
+            <a href="https://wa.me/32456407362" class="btn-accent w-full justify-center text-sm">
+              Démarrer la conversation
+            </a>
+          </div>
+        </div>
+
+        <div class="card-elevated p-7">
+          <div class="text-xs uppercase tracking-[0.15em] text-[var(--accent-deep)] font-semibold mb-3">Pour aller plus loin</div>
+          <h4 class="text-2xl font-bold mb-3">Bloquez 30 minutes</h4>
+          <p class="text-[var(--muted)] text-sm leading-relaxed mb-5">
+            Démo personnalisée chez vous. On voit votre commerce, on évalue vos besoins, on prépare votre offre sur mesure.
+          </p>
+          <a href="https://cashsystem.odoo.com/book/7ab74164" class="btn-ghost w-full justify-center text-sm">
+            Voir mon créneau
+          </a>
+        </div>
+
+        <div class="card-elevated p-7">
+          <div class="text-xs uppercase tracking-[0.15em] text-[var(--accent-deep)] font-semibold mb-3">Budget mensuel</div>
+          <h4 class="text-2xl font-bold mb-3">Calculer mon leasing</h4>
+          <p class="text-[var(--muted)] text-sm leading-relaxed mb-5">
+            Mensualité dès 170 €/mois HT. Devis en 1 minute, sans engagement.
+          </p>
+          <a href="/leasing/" class="btn-ghost w-full justify-center text-sm">
+            Calculer ma mensualité
+          </a>
+        </div>
+
+        <div class="text-center text-sm text-[var(--muted)] py-2">
+          Téléphone direct&nbsp;: <a href="tel:+32456407362" class="font-semibold text-[var(--ink)] underline underline-offset-4 hover:text-[var(--accent-deep)]">+32 456 40 73 62</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ink py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8 pb-12 border-b border-white/10">
+      <div>
+        <img src="/assets/logo-dark.png"
+             alt="CashSystem"
+             class="h-20 w-auto mb-5"
+             width="200" height="80"
+             loading="lazy" decoding="async"/>
+        <p class="text-[0.875rem] text-white/50 leading-relaxed">
+          Fabricant belge de monnayeurs automatiques. Hardware + logiciel conçus en Belgique.
+        </p>
+      </div>
+      <div>
+        <p class="text-[0.75rem] uppercase tracking-wider text-white/40 mb-4 font-semibold">Produits</p>
+        <ul class="space-y-2 text-[0.875rem] text-white/70">
+          <li><a href="/#produits" class="hover:text-[var(--accent)]">NewDelicia</a></li>
+          <li><a href="/#produits" class="hover:text-[var(--accent)]">OneNight</a></li>
+          <li><a href="/#produits" class="hover:text-[var(--accent)]">Olea (sur mesure)</a></li>
+          <li><a href="https://suiteplatform.com" class="hover:text-[var(--accent)]">Suite Platform</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-[0.75rem] uppercase tracking-wider text-white/40 mb-4 font-semibold">Par métier</p>
+        <ul class="space-y-2 text-[0.875rem] text-white/70">
+          <li><a href="/monnayeur-boulangerie/" class="hover:text-[var(--accent)]">Boulangerie</a></li>
+          <li><a href="/monnayeur-fastfood/" class="hover:text-[var(--accent)]">Fastfood &amp; friterie</a></li>
+          <li><a href="/monnayeur-horeca/" class="hover:text-[var(--accent)]">HoReCa</a></li>
+          <li><a href="/monnayeur-restaurant/" class="hover:text-[var(--accent)]">Restaurant</a></li>
+          <li><a href="/monnayeur-librairie/" class="hover:text-[var(--accent)]">Librairie</a></li>
+          <li><a href="/monnayeur-pour-commerce/" class="hover:text-[var(--accent)]">Tout commerce</a></li>
+          <li><a href="/monnayeur-sans-erreur/" class="hover:text-[var(--accent)]">Sans erreur</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-[0.75rem] uppercase tracking-wider text-white/40 mb-4 font-semibold">Solutions</p>
+        <ul class="space-y-2 text-[0.875rem] text-white/70">
+          <li><a href="/caisse-automatique/" class="hover:text-[var(--accent)]">Caisse automatique</a></li>
+          <li><a href="/monnayeur-automatique-belgique/" class="hover:text-[var(--accent)]">Monnayeur Belgique</a></li>
+          <li><a href="/monnayeur-automatique-bruxelles/" class="hover:text-[var(--accent)]">Monnayeur Bruxelles</a></li>
+          <li><a href="/kiosque-de-paiement-cash/" class="hover:text-[var(--accent)]">Kiosque de paiement</a></li>
+          <li><a href="/solution-encaissement-cash/" class="hover:text-[var(--accent)]">Encaissement cash</a></li>
+          <li><a href="/gestion-caisse-automatique/" class="hover:text-[var(--accent)]">Gestion à distance</a></li>
+          <li><a href="/prix-monnayeur-automatique/" class="hover:text-[var(--accent)]">Prix &amp; leasing</a></li>
+          <li><a href="/calculateur-roi-monnayeur/" class="hover:text-[var(--accent)]">Calculateur ROI</a></li>
+          <li><a href="/blog/" class="hover:text-[var(--accent)]">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-[0.75rem] uppercase tracking-wider text-white/40 mb-4 font-semibold">Contact</p>
+        <ul class="space-y-2 text-[0.875rem] text-white/70">
+          <li>Leuvensesteenweg 21/L</li>
+          <li>3070 Kortenberg, Belgique</li>
+          <li><a href="tel:+32456407362" class="hover:text-[var(--accent)]">+32 456 40 73 62</a></li>
+          <li><a href="mailto:sales@cashsystem.be" class="hover:text-[var(--accent)]">sales@cashsystem.be</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-6 flex flex-wrap items-center justify-between gap-4 text-[0.75rem] text-white/40">
+      <p>© 2025 CashSystem · TVA BE1023776996 · Made in Belgium</p>
+      <p>Jamais loin de chez vous.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // GA4 conversion event tracking
+  document.addEventListener('click', function(e) {
+    const a = e.target.closest('a');
+    if (!a) return;
+    const href = a.href || '';
+    if (typeof gtag !== 'function') return;
+    if (href.includes('wa.me/')) {
+      gtag('event', 'click_whatsapp', { event_category: 'conversion', link_url: href });
+    } else if (href.includes('cashsystem.odoo.com/book')) {
+      gtag('event', 'click_book_appointment', { event_category: 'conversion', link_url: href });
+    } else if (href.startsWith('tel:')) {
+      gtag('event', 'click_phone', { event_category: 'conversion', link_url: href });
+    } else if (href.startsWith('mailto:')) {
+      gtag('event', 'click_email', { event_category: 'conversion', link_url: href });
+    }
+  });
+
+  // ========== ROI CALCULATOR ==========
+  const COMMERCE_PARAMS = {
+    'boulangerie':       { tauxErreur: 0.004, tauxVol: 0.008, intensiteFile: 0.5 },
+    'fastfood':          { tauxErreur: 0.005, tauxVol: 0.010, intensiteFile: 0.7 },
+    'restaurant':        { tauxErreur: 0.004, tauxVol: 0.008, intensiteFile: 0.4 },
+    'bar':               { tauxErreur: 0.004, tauxVol: 0.010, intensiteFile: 0.6 },
+    'commerce':          { tauxErreur: 0.003, tauxVol: 0.005, intensiteFile: 0.3 },
+    'librairie':         { tauxErreur: 0.003, tauxVol: 0.005, intensiteFile: 0.2 },
+  };
+
+  const COMMERCE_LABEL = {
+    'boulangerie': 'Boulangerie',
+    'fastfood': 'Fastfood ou Friterie',
+    'restaurant': 'Restaurant',
+    'bar': 'Bar ou Café',
+    'commerce': 'Commerce général',
+    'librairie': 'Librairie ou Presse',
+  };
+
+  const VOLUME_VALUES = { '<50': 30, '50-100': 75, '100-200': 150, '200-500': 350, '500+': 700 };
+  const TICKET_VALUES = { '<10': 7, '10-25': 17, '25-50': 37, '>50': 70 };
+  const TEMPS_VALUES  = { '<30': 0.3, '30-60': 0.75, '1-2': 1.5, '>2': 2.5 };
+  const EMPLOYES_VALUES = { '1': 1.0, '2-3': 1.3, '4-5': 1.6, '6+': 2.0 };
+
+  const TICKET_LABEL = { '<10': '< 10', '10-25': '10-25', '25-50': '25-50', '>50': '> 50' };
+  const TEMPS_LABEL  = { '<30': '< 30 min', '30-60': '30-60 min', '1-2': '1-2 h', '>2': '> 2 h' };
+
+  const state = {
+    commerce: null,
+    volume: null,
+    ticket: null,
+    temps: null,
+    employes: null,
+    currentStep: 1,
+  };
+
+  function formatEuro(n) {
+    return Math.round(n).toLocaleString('fr-BE', { minimumFractionDigits: 0, maximumFractionDigits: 0 }).replace(/ /g, ' ').replace(/,/g, ' ') + ' €';
+  }
+
+  function calculer({ commerce, volume, ticket, temps, employes }) {
+    const params = COMMERCE_PARAMS[commerce];
+    const v = VOLUME_VALUES[volume];
+    const t = TICKET_VALUES[ticket];
+    const tH = TEMPS_VALUES[temps];
+    const mE = EMPLOYES_VALUES[employes];
+
+    const caCashAnnuel = v * t * 300;
+    const erreurs = Math.round(caCashAnnuel * params.tauxErreur);
+    const vol = Math.round(caCashAnnuel * params.tauxVol * mE);
+    const tempsCompte = Math.round(tH * 300 * 25);
+    // File d'attente: pertes capacités au pic. Calibré sur fourchette
+    // crédible (1-4% du CA selon volume). Multiplicateur progressif:
+    // <50 = 0 (pas de file), 50-100 = 0.5, 100-200 = 1, 200-500 = 2, 500+ = 3
+    const fileMult = v < 50 ? 0 : v < 100 ? 0.5 : v < 200 ? 1 : v < 500 ? 2 : 3;
+    const fileAttente = Math.round(caCashAnnuel * 0.005 * params.intensiteFile * fileMult);
+
+    const total = erreurs + vol + tempsCompte + fileAttente;
+    const roiMois = (9900 / total) * 12;
+    const roiMoisEntier = Math.floor(roiMois);
+    const roiJours = Math.floor((roiMois - roiMoisEntier) * 30);
+    const economie5ans = (total * 5) - 9900;
+    const benefAnnuel = total;
+
+    return {
+      erreurs, vol, tempsCompte, fileAttente, total,
+      roiMoisEntier, roiJours, economie5ans, caCashAnnuel,
+      benefAnnuel
+    };
+  }
+
+  function showStep(n) {
+    state.currentStep = n;
+    document.querySelectorAll('.calc-step').forEach(s => {
+      s.classList.toggle('active', parseInt(s.dataset.step) === n);
+    });
+    document.getElementById('step-label').textContent = `Étape ${n} / 4`;
+    const pct = n * 25;
+    document.getElementById('step-percent').textContent = `${pct}%`;
+    document.getElementById('progress-bar').style.width = `${pct}%`;
+  }
+
+  function updateNextButtons() {
+    document.getElementById('next-2').disabled = !(state.volume && state.ticket);
+    document.getElementById('next-3').disabled = !(state.temps && state.employes);
+  }
+
+  // Option button click
+  document.querySelectorAll('.opt-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const field = btn.dataset.field;
+      const value = btn.dataset.value;
+      state[field] = value;
+
+      // Visual selection — clear siblings of same field
+      document.querySelectorAll(`.opt-btn[data-field="${field}"]`).forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+
+      // Auto-advance for step 1
+      if (field === 'commerce') {
+        setTimeout(() => showStep(2), 250);
+      }
+
+      updateNextButtons();
+    });
+  });
+
+  document.getElementById('next-2').addEventListener('click', () => {
+    if (state.volume && state.ticket) showStep(3);
+  });
+
+  document.getElementById('next-3').addEventListener('click', () => {
+    if (state.temps && state.employes) {
+      showResult();
+    }
+  });
+
+  document.getElementById('hero-cta').addEventListener('click', (e) => {
+    // anchor handles smooth scroll, just ensure step 1 is active
+    showStep(state.currentStep || 1);
+  });
+
+  function showResult() {
+    const r = calculer(state);
+
+    // Update progress to 100%
+    showStep(4);
+    document.getElementById('step-label').textContent = 'Résultat';
+    document.getElementById('step-percent').textContent = '100%';
+    document.getElementById('progress-bar').style.width = '100%';
+
+    // Hide all calc steps
+    document.querySelectorAll('.calc-step').forEach(s => s.classList.remove('active'));
+
+    // Fill result section
+    document.getElementById('result-total-headline').textContent = formatEuro(r.total) + '/an';
+    document.getElementById('r-erreurs').textContent = formatEuro(r.erreurs);
+    document.getElementById('r-vol').textContent = formatEuro(r.vol);
+    document.getElementById('r-temps').textContent = formatEuro(r.tempsCompte);
+    document.getElementById('r-file').textContent = formatEuro(r.fileAttente);
+    document.getElementById('r-total').textContent = formatEuro(r.total);
+    document.getElementById('r-recup').textContent = formatEuro(r.total) + '/an';
+    document.getElementById('r-roi-mois').textContent = r.roiMoisEntier;
+    document.getElementById('r-roi-jours').textContent = r.roiJours;
+    document.getElementById('r-year2').textContent = formatEuro(r.benefAnnuel);
+    document.getElementById('r-year3').textContent = formatEuro(r.benefAnnuel);
+    document.getElementById('r-year5').textContent = formatEuro(r.economie5ans);
+
+    // Show
+    document.getElementById('result-section').classList.add('shown');
+
+    // Pre-fill textarea
+    const recap =
+`Calculateur ROI complété :
+• Type de commerce : ${COMMERCE_LABEL[state.commerce] || state.commerce}
+• Volume cash : ${state.volume} transactions/jour
+• Ticket moyen : ${TICKET_LABEL[state.ticket]} €
+• Temps de comptage actuel : ${TEMPS_LABEL[state.temps]}
+• Employés au cash : ${state.employes}
+
+Pertes estimées : ${formatEuro(r.total)}/an
+ROI machine : ${r.roiMoisEntier} mois et ${r.roiJours} jours
+Économie sur 5 ans : ${formatEuro(r.economie5ans)}
+
+[Précisez ici votre situation, contraintes ou questions]`;
+
+    const ta = document.getElementById('message');
+    if (ta && !ta.value) {
+      ta.value = recap;
+    }
+
+    // Pre-select commerce in select
+    const sel = document.getElementById('commerce');
+    if (sel) {
+      const map = {
+        'boulangerie': 'Boulangerie',
+        'fastfood': 'Fastfood / Friterie',
+        'restaurant': 'Restaurant',
+        'bar': 'HoReCa / Café',
+        'commerce': 'Autre commerce',
+        'librairie': 'Librairie',
+      };
+      const target = map[state.commerce];
+      if (target) {
+        for (const opt of sel.options) {
+          if (opt.value === target || opt.text === target) {
+            sel.value = opt.value || opt.text;
+            break;
+          }
+        }
+      }
+    }
+
+    // GA4 event
+    if (typeof gtag === 'function') {
+      gtag('event', 'calculator_completed', {
+        event_category: 'engagement',
+        commerce_type: state.commerce,
+        total_loss_eur: r.total,
+        roi_months: r.roiMoisEntier
+      });
+    }
+
+    // Smooth scroll to result
+    setTimeout(() => {
+      document.getElementById('result-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+  }
+</script>
+
+</body>
+</html>

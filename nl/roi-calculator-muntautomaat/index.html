@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CQLB8S547L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CQLB8S547L');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NSFKT4JV');</script>
+<!-- End Google Tag Manager -->
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="/vertigo-favicon-16.png?v=3">
+<link rel="icon" type="image/png" sizes="32x32" href="/vertigo-favicon-32.png?v=3">
+<link rel="icon" type="image/png" sizes="48x48" href="/vertigo-favicon-48.png?v=3">
+<link rel="icon" type="image/png" sizes="64x64" href="/vertigo-favicon-64.png?v=3">
+<link rel="icon" type="image/png" sizes="192x192" href="/vertigo-favicon-192.png?v=3">
+<link rel="icon" type="image/png" sizes="512x512" href="/vertigo-favicon-512.png?v=3">
+<link rel="shortcut icon" href="/favicon.ico?v=3">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#00C58E">
+
+<title>ROI-calculator muntautomaat: hoeveel verliest u? | CashSystem</title>
+<link rel="canonical" href="https://www.cashsystem.be/nl/roi-calculator-muntautomaat/">
+<link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/roi-calculator-muntautomaat/">
+<link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/calculateur-roi-monnayeur/">
+<link rel="alternate" hreflang="x-default" href="https://www.cashsystem.be/calculateur-roi-monnayeur/">
+<meta name="description" content="Bereken in 60 seconden hoeveel u jaarlijks verliest aan kassafouten, diefstal, tijdverlies. Gratis schatting, direct resultaat. CashSystem, Belgische fabrikant.">
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="CashSystem">
+<meta property="og:title" content="ROI-calculator muntautomaat: hoeveel verliest u? | CashSystem">
+<meta property="og:description" content="Bereken in 60 seconden hoeveel u jaarlijks verliest aan kassafouten, diefstal en telling-tijd. Persoonlijk resultaat, geen verplichting. Belgische fabrikant.">
+<meta property="og:url" content="https://www.cashsystem.be/nl/roi-calculator-muntautomaat/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.cashsystem.be/assets/banniere-poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ROI-calculator muntautomaat CashSystem">
+<meta property="og:locale" content="nl_BE">
+
+<!-- Twitter equivalents -->
+<meta name="twitter:title" content="ROI-calculator muntautomaat: hoeveel verliest u? | CashSystem">
+<meta name="twitter:description" content="Bereken in 60 seconden hoeveel u jaarlijks verliest aan kassafouten, diefstal en telling-tijd. Persoonlijk resultaat, geen verplichting. Belgische fabrikant.">
+<meta name="twitter:image" content="https://www.cashsystem.be/assets/banniere-poster.jpg">
+
+<meta content="#ffffff" name="theme-color"/>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#0a0e0d;
+    --paper:#fafaf7;
+    --accent:#00C58E;
+    --accent-deep:#009d72;
+    --muted:#6b7280;
+    --line:rgba(10,14,13,.08);
+  }
+  *{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale }
+  html{ scroll-behavior:smooth }
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    font-feature-settings:"ss01","cv11";
+    zoom:0.75;
+  }
+  .display{ font-weight:800; letter-spacing:-0.035em; line-height:.98 }
+  .display-md{ font-weight:700; letter-spacing:-0.025em; line-height:1.05 }
+  .eyebrow{
+    font-size:.8125rem; font-weight:600; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent-deep);
+  }
+  .ink{ background:var(--ink); color:#f5f5f0 }
+  .accent-dot{
+    display:inline-block; width:.55rem; height:.55rem; border-radius:9999px;
+    background:var(--accent); box-shadow:0 0 0 4px rgba(0,197,142,.18);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse{
+    0%,100%{ box-shadow:0 0 0 4px rgba(0,197,142,.18) }
+    50%{ box-shadow:0 0 0 8px rgba(0,197,142,.08) }
+  }
+  .hairline{ border-color:var(--line) }
+  .grain{
+    background-image:
+      radial-gradient(ellipse 800px 400px at 80% 20%, rgba(0,197,142,.10), transparent 60%),
+      radial-gradient(ellipse 600px 300px at 0% 100%, rgba(0,197,142,.06), transparent 60%);
+  }
+  .card-elevated{
+    background:#fff; border:1px solid var(--line);
+    border-radius:20px; transition:transform .35s ease, box-shadow .35s ease;
+  }
+  .card-elevated:hover{ transform:translateY(-4px); box-shadow:0 24px 48px -20px rgba(10,14,13,.18) }
+  .badge{
+    display:inline-flex; align-items:center; gap:.4rem;
+    padding:.35rem .75rem; border-radius:9999px;
+    font-size:.78rem; font-weight:500;
+    background:rgba(0,197,142,.08); color:var(--accent-deep);
+    border:1px solid rgba(0,197,142,.18);
+  }
+  .btn-primary{
+    display:inline-flex; align-items:center; gap:.5rem;
+    padding:.85rem 1.4rem; border-radius:9999px;
+    background:var(--ink); color:#fff; font-weight:600;
+    transition:transform .2s ease, background .2s ease;
+  }
+  .btn-primary:hover{ background:#1a1f1d; transform:translateY(-1px) }
+  .btn-ghost{
+    display:inline-flex; align-items:center; gap:.5rem;
+    padding:.85rem 1.4rem; border-radius:9999px;
+    border:1px solid var(--line); font-weight:600;
+    transition:background .2s ease;
+  }
+  .btn-ghost:hover{ background:rgba(10,14,13,.04) }
+  .btn-accent{
+    display:inline-flex; align-items:center; gap:.5rem;
+    padding:.95rem 1.6rem; border-radius:9999px;
+    background:var(--accent); color:var(--ink); font-weight:700;
+    transition:transform .2s ease, background .2s ease;
+  }
+  .btn-accent:hover{ background:#00d99d; transform:translateY(-1px) }
+  .reveal{ opacity:0; transform:translateY(20px); transition:opacity .8s ease, transform .8s ease }
+  .reveal.in{ opacity:1; transform:none }
+
+  /* Calculator-specific styles */
+  .step{ display:none; }
+  .step.active{ display:block; animation:stepIn .4s ease both; }
+  @keyframes stepIn{
+    from{ opacity:0; transform:translateY(12px); }
+    to{ opacity:1; transform:none; }
+  }
+  .opt-btn{
+    display:flex; flex-direction:column; align-items:flex-start; gap:.25rem;
+    padding:1.1rem 1.25rem; border-radius:16px;
+    border:1.5px solid var(--line); background:#fff;
+    text-align:left; font-weight:600; color:var(--ink);
+    transition:border-color .2s ease, background .2s ease, transform .15s ease;
+    cursor:pointer; width:100%;
+  }
+  .opt-btn:hover{ border-color:var(--accent-deep); background:rgba(0,197,142,.04); transform:translateY(-1px); }
+  .opt-btn.selected{ border-color:var(--accent-deep); background:rgba(0,197,142,.08); box-shadow:0 0 0 3px rgba(0,197,142,.12); }
+  .progress-bar{ height:6px; border-radius:9999px; background:rgba(10,14,13,.06); overflow:hidden; }
+  .progress-fill{ height:100%; background:var(--accent); border-radius:9999px; transition:width .4s ease; }
+  .result-loss-box{
+    background:linear-gradient(135deg,#7a1d1d,#b32424);
+    color:#fff; border-radius:24px; padding:2rem 2.25rem;
+    box-shadow:0 24px 48px -20px rgba(179,36,36,.4);
+  }
+  .result-gain-box{
+    background:linear-gradient(135deg,#0c5e44,#0d8a5f);
+    color:#fff; border-radius:24px; padding:2rem 2.25rem;
+    box-shadow:0 24px 48px -20px rgba(13,138,95,.4);
+  }
+  .result-future-box{
+    background:#fff; border:1.5px solid var(--line);
+    border-radius:24px; padding:2rem 2.25rem;
+  }
+  .num-result{ font-size:clamp(2rem,4.5vw,3.25rem); font-weight:800; letter-spacing:-0.03em; line-height:1; }
+</style>
+
+<!-- JSON-LD : WebSite + Organization/LocalBusiness + WebPage + BreadcrumbList -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.cashsystem.be/#website","url":"https://www.cashsystem.be/","name":"CashSystem","alternateName":"CashSystem België","inLanguage":"nl-BE","publisher":{"@id":"https://www.cashsystem.be/#organization"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["Organization","LocalBusiness"],"@id":"https://www.cashsystem.be/#organization","name":"CashSystem","alternateName":"CashSystem België","url":"https://www.cashsystem.be/","logo":"https://www.cashsystem.be/assets/logo.png","image":"https://www.cashsystem.be/assets/logo.png","telephone":"+32456407362","email":"sales@cashsystem.be","vatID":"BE1023776996","priceRange":"€€€","description":"Belgische fabrikant van automatische muntautomaten en kassasystemen voor contante betalingen. 24/7 Platinum-ondersteuning via WhatsApp.","slogan":"Nooit ver van u vandaan","address":{"@type":"PostalAddress","streetAddress":"Leuvensesteenweg 21/L","postalCode":"3070","addressLocality":"Kortenberg","addressCountry":"BE"},"areaServed":["België","Luxemburg","Frankrijk","Nederland"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"sameAs":["https://www.youtube.com/@cashsystem","https://www.linkedin.com/in/kaanyilmaz-cashsystem"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","url":"https://www.cashsystem.be/nl/roi-calculator-muntautomaat/","name":"ROI-calculator muntautomaat: hoeveel verliest u? | CashSystem","description":"Bereken in 60 seconden hoeveel u jaarlijks verliest aan kassafouten, diefstal, tijdverlies. Gratis schatting, direct resultaat. CashSystem, Belgische fabrikant.","inLanguage":"nl-BE","isPartOf":{"@type":"WebSite","url":"https://www.cashsystem.be/","name":"CashSystem"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.cashsystem.be/nl/"},{"@type":"ListItem","position":2,"name":"ROI-calculator","item":"https://www.cashsystem.be/nl/roi-calculator-muntautomaat/"}]}
+</script>
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "tpyxaeb76z");
+</script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-[rgba(250,250,247,.85)] backdrop-blur-md border-b hairline">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="/nl/" class="flex items-center gap-3">
+      <img src="/assets/logo-h.png"
+           alt="CashSystem — Belgische fabrikant van automatische muntautomaten"
+           class="h-9 w-auto"
+           width="160" height="36"
+           loading="eager" decoding="async"/>
+      <span class="hidden sm:inline-flex badge">Made in Belgium</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-base font-medium">
+      <a href="/nl/#service" class="hover:text-[var(--accent-deep)]">Service</a>
+      <a href="/nl/#produits" class="hover:text-[var(--accent-deep)]">Producten</a>
+      <a href="/nl/leasing/" class="hover:text-[var(--accent-deep)]">Leasing</a>
+      <a href="/nl/prijs-muntautomaat/" class="hover:text-[var(--accent-deep)]">Prijzen</a>
+      <a href="/nl/blog/" class="hover:text-[var(--accent-deep)]">Blog</a>
+    </nav>
+    <a href="#contact" class="btn-primary text-sm lg:text-base whitespace-nowrap px-3 lg:px-5 py-2 lg:py-3">
+      <span class="lg:hidden">Offerte</span>
+      <span class="hidden lg:inline">Vraag een offerte</span>
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative grain overflow-hidden">
+  <div class="max-w-4xl mx-auto px-6 pt-12 pb-10 lg:pt-20 lg:pb-14 text-center reveal">
+    <p class="eyebrow mb-5">Gratis calculator &middot; 60 seconden</p>
+    <h1 class="display text-[clamp(2rem,5vw,3.75rem)] mb-5">
+      Hoeveel kosten uw<br/>
+      <span class="text-[var(--accent-deep)]">kassafouten u?</span>
+    </h1>
+    <p class="text-[1.125rem] lg:text-[1.25rem] text-[var(--muted)] max-w-2xl mx-auto mb-8 leading-relaxed">
+      Persoonlijke berekening volgens uw activiteit. Direct resultaat, geen verplichting.
+    </p>
+    <a href="#calculator" class="btn-accent">
+      Bereken starten
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section id="calculator" class="py-14 lg:py-20">
+  <div class="max-w-3xl mx-auto px-6">
+
+    <!-- Progress -->
+    <div id="progress-wrap" class="mb-8 reveal">
+      <div class="flex items-center justify-between text-sm font-semibold mb-2">
+        <span id="progress-label" class="text-[var(--accent-deep)]">Stap 1 / 4</span>
+        <span class="text-[var(--muted)]" id="progress-count">25%</span>
+      </div>
+      <div class="progress-bar">
+        <div id="progress-fill" class="progress-fill" style="width:25%"></div>
+      </div>
+    </div>
+
+    <!-- STEP 1 : Type winkel -->
+    <div id="step-1" class="step active card-elevated p-7 lg:p-10 reveal">
+      <h2 class="display-md text-2xl lg:text-3xl mb-2">Welk type winkel runt u?</h2>
+      <p class="text-[var(--muted)] mb-7">Selecteer de optie die het dichtst bij uw activiteit ligt.</p>
+      <div class="grid sm:grid-cols-2 gap-3">
+        <button type="button" class="opt-btn" data-step="1" data-key="commerce" data-value="bakkerij" data-label="Bakkerij">Bakkerij</button>
+        <button type="button" class="opt-btn" data-step="1" data-key="commerce" data-value="fastfood" data-label="Fastfood of friterie">Fastfood of friterie</button>
+        <button type="button" class="opt-btn" data-step="1" data-key="commerce" data-value="restaurant" data-label="Restaurant">Restaurant</button>
+        <button type="button" class="opt-btn" data-step="1" data-key="commerce" data-value="bar" data-label="Bar of café">Bar of café</button>
+        <button type="button" class="opt-btn" data-step="1" data-key="commerce" data-value="winkel" data-label="Algemene winkel">Algemene winkel</button>
+        <button type="button" class="opt-btn" data-step="1" data-key="commerce" data-value="boekhandel" data-label="Boekhandel of pers">Boekhandel of pers</button>
+      </div>
+    </div>
+
+    <!-- STEP 2 : Volume + ticket -->
+    <div id="step-2" class="step card-elevated p-7 lg:p-10 reveal">
+      <h2 class="display-md text-2xl lg:text-3xl mb-2">Uw cashvolume</h2>
+      <p class="text-[var(--muted)] mb-7">Twee snelle vragen over uw dagelijkse activiteit.</p>
+
+      <div class="mb-7">
+        <h3 class="text-base font-semibold mb-3">Hoeveel cashtransacties per dag?</h3>
+        <div class="grid sm:grid-cols-5 gap-3">
+          <button type="button" class="opt-btn" data-step="2" data-key="volume" data-value="25" data-label="< 50">&lt; 50</button>
+          <button type="button" class="opt-btn" data-step="2" data-key="volume" data-value="75" data-label="50-100">50-100</button>
+          <button type="button" class="opt-btn" data-step="2" data-key="volume" data-value="150" data-label="100-200">100-200</button>
+          <button type="button" class="opt-btn" data-step="2" data-key="volume" data-value="350" data-label="200-500">200-500</button>
+          <button type="button" class="opt-btn" data-step="2" data-key="volume" data-value="650" data-label="500+">500+</button>
+        </div>
+      </div>
+
+      <div class="mb-7">
+        <h3 class="text-base font-semibold mb-3">Wat is het gemiddelde ticket?</h3>
+        <div class="grid sm:grid-cols-4 gap-3">
+          <button type="button" class="opt-btn" data-step="2" data-key="ticket" data-value="6" data-label="< 10 €">&lt; 10 €</button>
+          <button type="button" class="opt-btn" data-step="2" data-key="ticket" data-value="17" data-label="10-25 €">10-25 €</button>
+          <button type="button" class="opt-btn" data-step="2" data-key="ticket" data-value="37" data-label="25-50 €">25-50 €</button>
+          <button type="button" class="opt-btn" data-step="2" data-key="ticket" data-value="65" data-label="> 50 €">&gt; 50 €</button>
+        </div>
+      </div>
+
+      <div class="flex justify-between gap-3 pt-4 border-t hairline">
+        <button type="button" class="btn-ghost" data-action="back">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M11 19l-7-7 7-7"/></svg>
+          Terug
+        </button>
+        <button type="button" class="btn-primary" data-action="next" id="next-2" disabled style="opacity:.45;cursor:not-allowed;">
+          Doorgaan
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- STEP 3 : Telling + medewerkers -->
+    <div id="step-3" class="step card-elevated p-7 lg:p-10 reveal">
+      <h2 class="display-md text-2xl lg:text-3xl mb-2">Telling &amp; team</h2>
+      <p class="text-[var(--muted)] mb-7">Laatste twee vragen, en uw resultaat verschijnt direct.</p>
+
+      <div class="mb-7">
+        <h3 class="text-base font-semibold mb-3">Hoeveel tijd om de kassa op te tellen aan het einde van de dag?</h3>
+        <div class="grid sm:grid-cols-4 gap-3">
+          <button type="button" class="opt-btn" data-step="3" data-key="temps" data-value="0.4" data-label="< 30 min">&lt; 30 min</button>
+          <button type="button" class="opt-btn" data-step="3" data-key="temps" data-value="0.75" data-label="30-60 min">30-60 min</button>
+          <button type="button" class="opt-btn" data-step="3" data-key="temps" data-value="1.5" data-label="1-2 u">1-2 u</button>
+          <button type="button" class="opt-btn" data-step="3" data-key="temps" data-value="2.5" data-label="> 2 u">&gt; 2 u</button>
+        </div>
+      </div>
+
+      <div class="mb-7">
+        <h3 class="text-base font-semibold mb-3">Hoeveel medewerkers gebruiken de kassa?</h3>
+        <div class="grid sm:grid-cols-4 gap-3">
+          <button type="button" class="opt-btn" data-step="3" data-key="employes" data-value="1" data-label="1">1</button>
+          <button type="button" class="opt-btn" data-step="3" data-key="employes" data-value="2.5" data-label="2-3">2-3</button>
+          <button type="button" class="opt-btn" data-step="3" data-key="employes" data-value="4.5" data-label="4-5">4-5</button>
+          <button type="button" class="opt-btn" data-step="3" data-key="employes" data-value="7" data-label="6+">6+</button>
+        </div>
+      </div>
+
+      <div class="flex justify-between gap-3 pt-4 border-t hairline">
+        <button type="button" class="btn-ghost" data-action="back">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M11 19l-7-7 7-7"/></svg>
+          Terug
+        </button>
+        <button type="button" class="btn-accent" data-action="result" id="next-3" disabled style="opacity:.45;cursor:not-allowed;">
+          Bekijk mijn resultaat
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- STEP 4 : RESULT -->
+    <div id="step-4" class="step reveal">
+      <div class="text-center mb-8">
+        <p class="eyebrow mb-3">Uw schatting is klaar</p>
+        <h2 class="display text-3xl lg:text-4xl mb-3">Resultaat van uw analyse</h2>
+        <p class="text-[var(--muted)] max-w-xl mx-auto">Op basis van de door u verstrekte parameters. Cijfers afgerond op het hele euro.</p>
+      </div>
+
+      <!-- Loss box -->
+      <div class="result-loss-box mb-6">
+        <p class="text-sm uppercase tracking-[0.15em] font-bold opacity-80 mb-2">Vandaag verliest u</p>
+        <div class="num-result mb-2"><span id="r-total">0 €</span><span class="text-base font-semibold opacity-80 ml-2">/jaar</span></div>
+        <p class="text-base opacity-90">aan verborgen kosten verbonden aan cashbeheer.</p>
+
+        <div class="mt-7 pt-6 border-t border-white/15 grid sm:grid-cols-2 gap-y-3 gap-x-6 text-sm">
+          <div class="flex justify-between"><span class="opacity-75">Kassafouten</span><span class="font-bold" id="r-erreurs">0 €/jaar</span></div>
+          <div class="flex justify-between"><span class="opacity-75">Diefstal &amp; verspilling</span><span class="font-bold" id="r-vol">0 €/jaar</span></div>
+          <div class="flex justify-between"><span class="opacity-75">Verloren tijd bij telling</span><span class="font-bold" id="r-temps">0 €/jaar</span></div>
+          <div class="flex justify-between"><span class="opacity-75">Wachtrij niet geïnd</span><span class="font-bold" id="r-file">0 €/jaar</span></div>
+          <div class="flex justify-between sm:col-span-2 pt-3 border-t border-white/15 text-base"><span class="font-semibold">Totaal verloren</span><span class="font-bold" id="r-total-2">0 €/jaar</span></div>
+        </div>
+      </div>
+
+      <!-- Gain box -->
+      <div class="result-gain-box mb-6">
+        <p class="text-sm uppercase tracking-[0.15em] font-bold opacity-90 mb-3">Met een muntautomaat van CashSystem</p>
+        <ul class="space-y-1.5 text-base mb-5">
+          <li class="flex items-center gap-2"><span class="text-[var(--accent)] font-bold">&#9654;</span> Kassafouten&nbsp;: <span class="font-bold">NUL</span></li>
+          <li class="flex items-center gap-2"><span class="text-[var(--accent)] font-bold">&#9654;</span> Diefstal&nbsp;: <span class="font-bold">NUL</span></li>
+          <li class="flex items-center gap-2"><span class="text-[var(--accent)] font-bold">&#9654;</span> Telling-tijd&nbsp;: <span class="font-bold">NUL</span></li>
+          <li class="flex items-center gap-2"><span class="text-[var(--accent)] font-bold">&#9654;</span> Wachtrij&nbsp;: <span class="font-bold">NUL</span></li>
+        </ul>
+        <p class="text-base opacity-95 mb-5">Al uw cash is beveiligd.</p>
+
+        <div class="grid sm:grid-cols-2 gap-4 pt-5 border-t border-white/15">
+          <div>
+            <p class="text-xs uppercase tracking-wider opacity-80 mb-1">U recupereert</p>
+            <div class="num-result"><span id="r-recup">0 €</span><span class="text-base font-semibold opacity-80 ml-2">/jaar</span></div>
+          </div>
+          <div>
+            <p class="text-xs uppercase tracking-wider opacity-80 mb-1">Machine afbetaald in</p>
+            <div class="text-2xl lg:text-3xl font-bold"><span id="r-roi-mois">0</span> maanden en <span id="r-roi-jours">0</span> dagen</div>
+            <p class="text-xs opacity-75 mt-1">9 900 € excl. btw, volledig pakket</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Future box -->
+      <div class="result-future-box mb-8">
+        <p class="eyebrow mb-3">En daarna?</p>
+        <h3 class="display-md text-2xl mb-5">Uw verwachte besparing</h3>
+        <div class="grid sm:grid-cols-3 gap-4">
+          <div class="p-5 rounded-2xl bg-[var(--paper)] border hairline">
+            <p class="text-xs uppercase tracking-wider text-[var(--muted)] font-semibold mb-1">Jaar 2</p>
+            <p class="text-2xl font-bold" id="r-an2">0 €</p>
+            <p class="text-xs text-[var(--muted)] mt-1">netto winst</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-[var(--paper)] border hairline">
+            <p class="text-xs uppercase tracking-wider text-[var(--muted)] font-semibold mb-1">Jaar 3</p>
+            <p class="text-2xl font-bold" id="r-an3">0 €</p>
+            <p class="text-xs text-[var(--muted)] mt-1">netto winst</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-[var(--accent)]/10 border-2 border-[var(--accent)]/40">
+            <p class="text-xs uppercase tracking-wider text-[var(--accent-deep)] font-semibold mb-1">Jaar 5 — Totaal</p>
+            <p class="text-2xl font-bold text-[var(--accent-deep)]" id="r-an5">0 €</p>
+            <p class="text-xs text-[var(--muted)] mt-1">totale besparing</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <a href="#contact" class="btn-accent">
+          Vraag mijn offerte op maat
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <button type="button" class="btn-ghost" data-action="restart">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 1 3 6.7M3 21v-6h6"/></svg>
+          Opnieuw berekenen
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-14 lg:py-20 bg-[var(--paper)] border-t hairline">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center reveal mb-12">
+      <p class="eyebrow mb-4">Volgende stap</p>
+      <h2 class="display text-3xl lg:text-5xl mb-6">
+        15 minuten, en u weet<br/>of het iets voor u is.
+      </h2>
+      <p class="text-[var(--muted)] text-xl max-w-xl mx-auto">
+        Geen PowerPoint-presentatie. We praten over uw winkel, uw volumes, uw beperkingen.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-5 gap-6 reveal">
+      <!-- FORM -->
+      <div class="lg:col-span-3 card-elevated p-8 lg:p-10">
+        <div class="flex items-center gap-3 mb-1">
+          <span class="text-xs uppercase tracking-[0.15em] font-semibold text-[var(--accent-deep)]">Schrijf ons</span>
+          <span class="h-px flex-1 bg-[var(--line)]"></span>
+        </div>
+        <h3 class="display-md text-2xl mb-2">Beschrijf uw project</h3>
+        <p class="text-[var(--muted)] text-base mb-7 leading-relaxed">
+          Antwoord binnen <strong class="text-[var(--ink)]">4u op werkdagen</strong>.
+        </p>
+
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/nl/merci.html" class="space-y-4">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden"><label>Niet invullen: <input name="bot-field" /></label></p>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="nom" class="block text-sm font-semibold mb-1.5">Naam <span class="text-[var(--accent-deep)]">*</span></label>
+              <input type="text" id="nom" name="nom" required
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all"
+                placeholder="Jan Janssens" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-semibold mb-1.5">E-mail <span class="text-[var(--accent-deep)]">*</span></label>
+              <input type="email" id="email" name="email" required
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all"
+                placeholder="jan@bakkerij.be" />
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="telephone" class="block text-sm font-semibold mb-1.5">Telefoon</label>
+              <input type="tel" id="telephone" name="telephone"
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all"
+                placeholder="+32 ..." />
+            </div>
+            <div>
+              <label for="commerce-form" class="block text-sm font-semibold mb-1.5">Type winkel</label>
+              <select id="commerce-form" name="commerce"
+                class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all appearance-none pr-10"
+                style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%236b7280%22 stroke-width=%222%22><path d=%22M6 9l6 6 6-6%22/></svg>');background-size:18px;background-repeat:no-repeat;background-position:right 14px center;">
+                <option value="">Selecteren...</option>
+                <option>Bakkerij</option>
+                <option>Fastfood / Frituur</option>
+                <option>Horeca / Café</option>
+                <option>Restaurant</option>
+                <option>Boekhandel</option>
+                <option>Nachtwinkel / Superette</option>
+                <option>Andere winkel</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-semibold mb-1.5">Uw project <span class="text-[var(--accent-deep)]">*</span></label>
+            <textarea id="message" name="message" required rows="10"
+              class="w-full px-4 py-3 rounded-xl border hairline bg-white text-base focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40 focus:border-[var(--accent-deep)] transition-all resize-none"
+              placeholder="Beschrijf uw winkel en uw behoefte (maandelijks cashvolume, huidige situatie, beperkingen...)."></textarea>
+          </div>
+
+          <label class="flex items-start gap-3 text-sm text-[var(--muted)] cursor-pointer pt-1">
+            <input type="checkbox" name="rgpd" required class="mt-0.5 w-4 h-4 accent-[var(--accent)] cursor-pointer flex-shrink-0" />
+            <span>Ik ga akkoord dat CashSystem mij contacteert over mijn aanvraag. Uw gegevens worden nooit gedeeld.</span>
+          </label>
+
+          <button type="submit" class="btn-accent w-full justify-center text-base mt-2">
+            Mijn aanvraag versturen
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- ALTERNATIVES -->
+      <div class="lg:col-span-2 flex flex-col gap-4">
+        <div class="rounded-3xl p-7 ink relative overflow-hidden">
+          <div class="absolute inset-0 opacity-30 grain"></div>
+          <div class="relative">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="accent-dot"></span>
+              <span class="text-xs uppercase tracking-[0.15em] font-bold text-[var(--accent)]">&#9733; Het snelst</span>
+            </div>
+            <h4 class="text-2xl font-bold mb-3 text-white">WhatsApp</h4>
+            <p class="text-white/60 text-sm leading-relaxed mb-5">
+              Antwoord binnen enkele minuten op werkdagen. Rechtstreeks met het technisch team.
+            </p>
+            <a href="https://wa.me/32456407362" class="btn-accent w-full justify-center text-sm">
+              Start het gesprek
+            </a>
+          </div>
+        </div>
+
+        <div class="card-elevated p-7">
+          <div class="text-xs uppercase tracking-[0.15em] text-[var(--accent-deep)] font-semibold mb-3">Om verder te gaan</div>
+          <h4 class="text-2xl font-bold mb-3">Boek 30 minuten</h4>
+          <p class="text-[var(--muted)] text-sm leading-relaxed mb-5">
+            Persoonlijke demo bij u. We bekijken uw winkel, evalueren uw behoeften, bereiden uw aanbod op maat voor.
+          </p>
+          <a href="https://cashsystem.odoo.com/book/7ab74164" class="btn-ghost w-full justify-center text-sm">
+            Bekijk mijn slot
+          </a>
+        </div>
+
+        <div class="card-elevated p-7">
+          <div class="text-xs uppercase tracking-[0.15em] text-[var(--accent-deep)] font-semibold mb-3">Maandbudget</div>
+          <h4 class="text-2xl font-bold mb-3">Bereken mijn leasing</h4>
+          <p class="text-[var(--muted)] text-sm leading-relaxed mb-5">
+            Maandelijks vanaf 170 €/maand excl. btw. Offerte in 1 minuut, geen verplichting.
+          </p>
+          <a href="/nl/leasing/" class="btn-ghost w-full justify-center text-sm">
+            Bereken mijn maandbedrag
+          </a>
+        </div>
+
+        <div class="text-center text-sm text-[var(--muted)] py-2">
+          Direct telefonisch&nbsp;: <a href="tel:+32456407362" class="font-semibold text-[var(--ink)] underline underline-offset-4 hover:text-[var(--accent-deep)]">+32 456 40 73 62</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ink py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8 pb-12 border-b border-white/10">
+      <div>
+        <img src="/assets/logo-dark.png"
+             alt="CashSystem"
+             class="h-20 w-auto mb-5"
+             width="200" height="80"
+             loading="lazy" decoding="async"/>
+        <p class="text-[0.875rem] text-white/50 leading-relaxed">
+          Belgische fabrikant van automatische muntautomaten. Hardware + software ontworpen in België.
+        </p>
+      </div>
+      <div>
+        <p class="text-[0.75rem] uppercase tracking-wider text-white/40 mb-4 font-semibold">Producten</p>
+        <ul class="space-y-2 text-[0.875rem] text-white/70">
+          <li><a href="/nl/#produits" class="hover:text-[var(--accent)]">NewDelicia</a></li>
+          <li><a href="/nl/#produits" class="hover:text-[var(--accent)]">OneNight</a></li>
+          <li><a href="/nl/#produits" class="hover:text-[var(--accent)]">Olea (op maat)</a></li>
+          <li><a href="https://suiteplatform.com" class="hover:text-[var(--accent)]">Suite Platform</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-[0.75rem] uppercase tracking-wider text-white/40 mb-4 font-semibold">Per sector</p>
+        <ul class="space-y-2 text-[0.875rem] text-white/70">
+          <li><a href="/nl/muntautomaat-bakkerij/" class="hover:text-[var(--accent)]">Bakkerij</a></li>
+          <li><a href="/nl/muntautomaat-fastfood/" class="hover:text-[var(--accent)]">Fastfood &amp; frituur</a></li>
+          <li><a href="/nl/muntautomaat-horeca/" class="hover:text-[var(--accent)]">Horeca</a></li>
+          <li><a href="/nl/muntautomaat-restaurant/" class="hover:text-[var(--accent)]">Restaurant</a></li>
+          <li><a href="/nl/muntautomaat-boekhandel/" class="hover:text-[var(--accent)]">Boekhandel</a></li>
+          <li><a href="/nl/muntautomaat-voor-winkel/" class="hover:text-[var(--accent)]">Elke winkel</a></li>
+          <li><a href="/nl/muntautomaat-zonder-fouten/" class="hover:text-[var(--accent)]">Zonder kasfouten</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-[0.75rem] uppercase tracking-wider text-white/40 mb-4 font-semibold">Oplossingen</p>
+        <ul class="space-y-2 text-[0.875rem] text-white/70">
+          <li><a href="/nl/automatische-kassa/" class="hover:text-[var(--accent)]">Automatische kassa</a></li>
+          <li><a href="/nl/automatische-muntautomaat-belgie/" class="hover:text-[var(--accent)]">Muntautomaat België</a></li>
+          <li><a href="/nl/muntautomaat-brussel/" class="hover:text-[var(--accent)]">Muntautomaat Brussel</a></li>
+          <li><a href="/nl/cash-betaalkiosk/" class="hover:text-[var(--accent)]">Cash-betaalkiosk</a></li>
+          <li><a href="/nl/cash-incasso-oplossing/" class="hover:text-[var(--accent)]">Cash-incasso</a></li>
+          <li><a href="/nl/automatisch-kassabeheer/" class="hover:text-[var(--accent)]">Beheer op afstand</a></li>
+          <li><a href="/nl/prijs-muntautomaat/" class="hover:text-[var(--accent)]">Prijs &amp; leasing</a></li>
+          <li><a href="/nl/roi-calculator-muntautomaat/" class="hover:text-[var(--accent)]">ROI-calculator</a></li>
+          <li><a href="/nl/blog/" class="hover:text-[var(--accent)]">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-[0.75rem] uppercase tracking-wider text-white/40 mb-4 font-semibold">Contact</p>
+        <ul class="space-y-2 text-[0.875rem] text-white/70">
+          <li>Leuvensesteenweg 21/L</li>
+          <li>3070 Kortenberg, België</li>
+          <li><a href="tel:+32456407362" class="hover:text-[var(--accent)]">+32 456 40 73 62</a></li>
+          <li><a href="mailto:sales@cashsystem.be" class="hover:text-[var(--accent)]">sales@cashsystem.be</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-6 flex flex-wrap items-center justify-between gap-4 text-[0.75rem] text-white/40">
+      <p>&copy; 2025 CashSystem &middot; BTW BE1023776996 &middot; Made in Belgium</p>
+      <p>Nooit ver van u vandaan.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // GA4 conversion event tracking
+  document.addEventListener('click', function(e) {
+    const a = e.target.closest('a');
+    if (!a) return;
+    const href = a.href || '';
+    if (typeof gtag !== 'function') return;
+    if (href.includes('wa.me/')) {
+      gtag('event', 'click_whatsapp', { event_category: 'conversion', link_url: href });
+    } else if (href.includes('cashsystem.odoo.com/book')) {
+      gtag('event', 'click_book_appointment', { event_category: 'conversion', link_url: href });
+    } else if (href.startsWith('tel:')) {
+      gtag('event', 'click_phone', { event_category: 'conversion', link_url: href });
+    } else if (href.startsWith('mailto:')) {
+      gtag('event', 'click_email', { event_category: 'conversion', link_url: href });
+    }
+  });
+
+  /* ===========================
+     ROI CALCULATOR — JS VANILLA
+     =========================== */
+  (function(){
+    const COMMERCE_PARAMS = {
+      'bakkerij':   { tauxErreur: 0.004, tauxVol: 0.008, intensiteFile: 0.5, label: 'Bakkerij' },
+      'fastfood':   { tauxErreur: 0.005, tauxVol: 0.010, intensiteFile: 0.7, label: 'Fastfood of friterie' },
+      'restaurant': { tauxErreur: 0.004, tauxVol: 0.008, intensiteFile: 0.4, label: 'Restaurant' },
+      'bar':        { tauxErreur: 0.004, tauxVol: 0.010, intensiteFile: 0.6, label: 'Bar of café' },
+      'winkel':     { tauxErreur: 0.003, tauxVol: 0.005, intensiteFile: 0.3, label: 'Algemene winkel' },
+      'boekhandel': { tauxErreur: 0.003, tauxVol: 0.005, intensiteFile: 0.2, label: 'Boekhandel of pers' },
+    };
+
+    // State (numeric; labels stored separately for display)
+    const state = {
+      commerce: null,        // string key
+      volume: null,          // transactions/day (number)
+      ticket: null,          // avg ticket in €
+      temps: null,           // hours/day spent counting
+      employes: null,        // # of employees handling cash
+    };
+    const labels = { commerce: '', volume: '', ticket: '', temps: '', employes: '' };
+
+    let currentStep = 1;
+    const TOTAL_STEPS = 4;
+
+    const $ = (sel) => document.querySelector(sel);
+    const $$ = (sel) => document.querySelectorAll(sel);
+
+    // --- Step navigation ---
+    function showStep(n){
+      currentStep = n;
+      $$('.step').forEach(el => el.classList.remove('active'));
+      const stepEl = document.getElementById('step-' + n);
+      if (stepEl) stepEl.classList.add('active');
+      // Progress
+      const pct = Math.round((n / TOTAL_STEPS) * 100);
+      $('#progress-fill').style.width = pct + '%';
+      $('#progress-label').textContent = 'Stap ' + n + ' / ' + TOTAL_STEPS;
+      $('#progress-count').textContent = pct + '%';
+      // Hide progress on result
+      const wrap = $('#progress-wrap');
+      if (wrap) wrap.style.display = (n === 4) ? 'none' : '';
+      // Scroll into view smoothly
+      const cal = $('#calculator');
+      if (cal && n !== 1) {
+        cal.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function setNextEnabled(stepNum, enabled){
+      const btn = document.getElementById('next-' + stepNum);
+      if (!btn) return;
+      btn.disabled = !enabled;
+      btn.style.opacity = enabled ? '1' : '.45';
+      btn.style.cursor = enabled ? '' : 'not-allowed';
+    }
+
+    function checkStep2Ready(){
+      setNextEnabled(2, state.volume !== null && state.ticket !== null);
+    }
+    function checkStep3Ready(){
+      setNextEnabled(3, state.temps !== null && state.employes !== null);
+    }
+
+    // --- Click handlers on option buttons ---
+    $$('.opt-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const stepNum = parseInt(btn.dataset.step, 10);
+        const key = btn.dataset.key;
+        const value = btn.dataset.value;
+        const label = btn.dataset.label || btn.textContent.trim();
+
+        // Save
+        if (key === 'commerce') {
+          state.commerce = value;
+        } else {
+          state.commerce = state.commerce; // no-op, satisfies linter
+          state[key] = parseFloat(value);
+        }
+        labels[key] = label;
+
+        // Visual : deselect siblings of same data-key, mark this one
+        const sameGroup = document.querySelectorAll('.opt-btn[data-key="' + key + '"]');
+        sameGroup.forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+
+        // Step 1 = auto-advance after pick
+        if (stepNum === 1) {
+          setTimeout(() => showStep(2), 250);
+        } else if (stepNum === 2) {
+          checkStep2Ready();
+        } else if (stepNum === 3) {
+          checkStep3Ready();
+        }
+      });
+    });
+
+    // --- Action buttons (back / next / result / restart) ---
+    $$('[data-action]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const action = btn.dataset.action;
+        if (action === 'next') {
+          if (currentStep === 2 && state.volume !== null && state.ticket !== null) {
+            showStep(3);
+          }
+        } else if (action === 'back') {
+          if (currentStep > 1) showStep(currentStep - 1);
+        } else if (action === 'result') {
+          if (state.temps !== null && state.employes !== null) {
+            calculer();
+            showStep(4);
+            if (typeof gtag === 'function') {
+              gtag('event', 'roi_calculator_completed', {
+                event_category: 'engagement',
+                commerce: state.commerce,
+                volume: state.volume,
+                ticket: state.ticket,
+              });
+            }
+          }
+        } else if (action === 'restart') {
+          // reset state
+          state.commerce = null; state.volume = null; state.ticket = null;
+          state.temps = null; state.employes = null;
+          $$('.opt-btn').forEach(b => b.classList.remove('selected'));
+          setNextEnabled(2, false);
+          setNextEnabled(3, false);
+          showStep(1);
+          window.scrollTo({ top: $('#calculator').offsetTop - 80, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // --- Calculation ---
+    function calculer(){
+      const params = COMMERCE_PARAMS[state.commerce];
+      if (!params) return;
+
+      // Days/year
+      const joursOuvrables = 300;
+
+      // Daily revenue (cash)
+      const caCashJour = state.volume * state.ticket;
+
+      // 1. Errors : tauxErreur * cash daily revenue * days
+      const pertesErreurs = caCashJour * params.tauxErreur * joursOuvrables;
+
+      // 2. Theft / shrinkage : tauxVol * cash daily revenue * days
+      const pertesVol = caCashJour * params.tauxVol * joursOuvrables;
+
+      // 3. Time lost in counting : temps (hours/day) * employes * hourly cost (~ 22 €/h loaded) * days
+      // We assume one counting session/day involving all listed employees for portion of `temps` hours,
+      // approximated as employes * temps * cost / day
+      const coutHoraire = 22; // € loaded
+      const pertesTemps = state.temps * Math.max(1, state.employes * 0.6) * coutHoraire * joursOuvrables;
+
+      // 4. Queue not collected : intensiteFile * % of daily revenue lost
+      // intensiteFile is a 0..1 coefficient applied to a base of 2% missed revenue
+      const pertesFile = caCashJour * 0.02 * params.intensiteFile * joursOuvrables;
+
+      const totalPertes = pertesErreurs + pertesVol + pertesTemps + pertesFile;
+
+      // ROI machine = 9900 € HT
+      const machinePrice = 9900;
+      const recuperation = totalPertes; // assumed 100% recovery
+      const roiYears = machinePrice / recuperation;
+      const roiTotalDays = roiYears * 365;
+      const roiMois = Math.floor(roiTotalDays / 30);
+      const roiJours = Math.round(roiTotalDays - roiMois * 30);
+
+      // 5-year savings
+      const an2 = recuperation;
+      const an3 = recuperation;
+      const an5Total = (recuperation * 5) - machinePrice;
+
+      // --- Render ---
+      $('#r-erreurs').textContent = formatEuro(pertesErreurs) + '/jaar';
+      $('#r-vol').textContent = formatEuro(pertesVol) + '/jaar';
+      $('#r-temps').textContent = formatEuro(pertesTemps) + '/jaar';
+      $('#r-file').textContent = formatEuro(pertesFile) + '/jaar';
+      $('#r-total').textContent = formatEuro(totalPertes);
+      $('#r-total-2').textContent = formatEuro(totalPertes) + '/jaar';
+      $('#r-recup').textContent = formatEuro(recuperation);
+      $('#r-roi-mois').textContent = roiMois;
+      $('#r-roi-jours').textContent = roiJours;
+      $('#r-an2').textContent = formatEuro(an2);
+      $('#r-an3').textContent = formatEuro(an3);
+      $('#r-an5').textContent = formatEuro(an5Total);
+
+      // Pre-fill the contact textarea
+      const recap = [
+        'ROI-calculator ingevuld:',
+        '• Type winkel: ' + labels.commerce,
+        '• Cashvolume: ' + labels.volume + ' transacties/dag',
+        '• Gemiddeld ticket: ' + labels.ticket,
+        '• Telling-tijd vandaag: ' + labels.temps,
+        '• Medewerkers aan kassa: ' + labels.employes,
+        '',
+        'Geschatte verliezen: ' + formatEuro(totalPertes) + '/jaar',
+        'Machine ROI: ' + roiMois + ' maanden en ' + roiJours + ' dagen',
+        'Besparing op 5 jaar: ' + formatEuro(an5Total),
+        '',
+        '[Verduidelijk uw situatie, beperkingen of vragen]'
+      ].join('\n');
+
+      const messageEl = $('#message');
+      if (messageEl) messageEl.value = recap;
+
+      // Try to pre-select the form's commerce select
+      const formSelect = $('#commerce-form');
+      if (formSelect) {
+        const map = {
+          'bakkerij': 'Bakkerij',
+          'fastfood': 'Fastfood / Frituur',
+          'restaurant': 'Restaurant',
+          'bar': 'Horeca / Café',
+          'winkel': 'Andere winkel',
+          'boekhandel': 'Boekhandel',
+        };
+        const target = map[state.commerce];
+        if (target) {
+          for (const opt of formSelect.options) {
+            if (opt.text === target) { formSelect.value = opt.value || opt.text; break; }
+          }
+        }
+      }
+    }
+
+    function formatEuro(n){
+      const rounded = Math.round(n);
+      return rounded.toLocaleString('nl-BE', { minimumFractionDigits: 0, maximumFractionDigits: 0 }) + ' €';
+    }
+  })();
+</script>
+
+</body>
+</html>

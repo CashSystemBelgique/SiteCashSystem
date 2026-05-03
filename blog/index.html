@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CQLB8S547L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CQLB8S547L');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NSFKT4JV');</script>
+<!-- End Google Tag Manager -->
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="/vertigo-favicon-16.png?v=3">
+<link rel="icon" type="image/png" sizes="32x32" href="/vertigo-favicon-32.png?v=3">
+<link rel="icon" type="image/png" sizes="48x48" href="/vertigo-favicon-48.png?v=3">
+<link rel="icon" type="image/png" sizes="64x64" href="/vertigo-favicon-64.png?v=3">
+<link rel="icon" type="image/png" sizes="192x192" href="/vertigo-favicon-192.png?v=3">
+<link rel="icon" type="image/png" sizes="512x512" href="/vertigo-favicon-512.png?v=3">
+<link rel="shortcut icon" href="/favicon.ico?v=3">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#00C58E">
+
+<title>Blog CashSystem — Le guide du monnayeur automatique en Belgique</title>
+<link rel="canonical" href="https://www.cashsystem.be/blog/">
+<link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/blog/">
+<link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/blog/">
+<link rel="alternate" hreflang="x-default" href="https://www.cashsystem.be/blog/">
+<meta name="description" content="Guides, conseils et études de cas sur les monnayeurs automatiques en Belgique. Par CashSystem, fabricant belge. Mises à jour régulières.">
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="CashSystem">
+<meta property="og:title" content="Blog CashSystem — Le guide du monnayeur automatique en Belgique">
+<meta property="og:description" content="Guides, conseils et études de cas sur les monnayeurs automatiques en Belgique. Par CashSystem, fabricant belge.">
+<meta property="og:url" content="https://www.cashsystem.be/blog/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.cashsystem.be/assets/banniere-poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Blog CashSystem — guide du monnayeur automatique en Belgique">
+<meta property="og:locale" content="fr_BE">
+
+<!-- Twitter equivalents -->
+<meta name="twitter:title" content="Blog CashSystem — Le guide du monnayeur automatique en Belgique">
+<meta name="twitter:description" content="Guides, conseils et études de cas sur les monnayeurs automatiques en Belgique. Par CashSystem, fabricant belge.">
+<meta name="twitter:image" content="https://www.cashsystem.be/assets/banniere-poster.jpg">
+
+<meta content="#ffffff" name="theme-color"/>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#0a0e0d;
+    --paper:#fafaf7;
+    --accent:#00C58E;
+    --accent-deep:#009d72;
+    --muted:#6b7280;
+    --line:rgba(10,14,13,.08);
+  }
+  *{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale }
+  html{ scroll-behavior:smooth }
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    font-feature-settings:"ss01","cv11";
+    zoom:0.75;
+  }
+  .display{ font-weight:800; letter-spacing:-0.035em; line-height:.98 }
+  .display-md{ font-weight:700; letter-spacing:-0.025em; line-height:1.05 }
+  .eyebrow{
+    font-size:.8125rem; font-weight:600; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent-deep);
+  }
+  .ink{ background:var(--ink); color:#f5f5f0 }
+  .accent-dot{
+    display:inline-block; width:.55rem; height:.55rem; border-radius:9999px;
+    background:var(--accent); box-shadow:0 0 0 4px rgba(0,197,142,.18);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse{
+    0%,100%{ box-shadow:0 0 0 4px rgba(0,197,142,.18) }
+    50%{ box-shadow:0 0 0 8px rgba(0,197,142,.08) }
+  }
+  .hairline{ border-color:var(--line) }
+  .grain{
+    background-image:
+      radial-gradient(ellipse 800px 400px at 80% 20%, rgba(0,197,142,.10), transparent 60%),
+      radial-gradient(ellipse 600px 300px at 0% 100%, rgba(0,197,142,.06), transparent 60%);
+  }
+  .card-elevated{
+    background:#fff; border:1px solid var(--line);
+    border-radius:20px; transition:transform .35s ease, box-shadow .35s ease;
+  }
+  .card-elevated:hover{ transform:translateY(-4px); box-shadow:0 24px 48px -20px rgba(10,14,13,.18) }
+  .badge{
+    display:inline-flex; align-items:center; gap:.4rem;
+    padding:.35rem .75rem; border-radius:9999px;
+    font-size:.78rem; font-weight:500;
+    background:rgba(0,197,142,.08); color:var(--accent-deep);
+    border:1px solid rgba(0,197,142,.18);
+  }
+  .btn-primary{
+    display:inline-flex; align-items:center; gap:.5rem;
+    padding:.85rem 1.4rem; border-radius:9999px;
+    background:var(--ink); color:#fff; font-weight:600;
+    transition:transform .2s ease, background .2s ease;
+  }
+  .btn-primary:hover{ background:#1a1f1d; transform:translateY(-1px) }
+  .btn-ghost{
+    display:inline-flex; align-items:center; gap:.5rem;
+    padding:.85rem 1.4rem; border-radius:9999px;
+    border:1px solid var(--line); font-weight:600;
+    transition:background .2s ease;
+  }
+  .btn-ghost:hover{ background:rgba(10,14,13,.04) }
+  .btn-accent{
+    display:inline-flex; align-items:center; gap:.5rem;
+    padding:.95rem 1.6rem; border-radius:9999px;
+    background:var(--accent); color:var(--ink); font-weight:700;
+    transition:transform .2s ease, background .2s ease;
+  }
+  .btn-accent:hover{ background:#00d99d; transform:translateY(-1px) }
+  .reveal{ opacity:0; transform:translateY(20px); transition:opacity .8s ease, transform .8s ease }
+  .reveal.in{ opacity:1; transform:none }
+  .article-card{
+    background:#fff; border:1px solid var(--line);
+    border-radius:20px; overflow:hidden;
+    transition:transform .35s ease, box-shadow .35s ease;
+    display:flex; flex-direction:column; height:100%;
+  }
+  .article-card:hover{ transform:translateY(-4px); box-shadow:0 24px 48px -20px rgba(10,14,13,.18) }
+  .article-card-img{
+    aspect-ratio: 16 / 10;
+    width:100%; object-fit:cover; display:block;
+    background:#eee;
+  }
+  .skeleton-card{
+    background:#fff; border:1px dashed rgba(10,14,13,.18);
+    border-radius:20px; padding:1.5rem;
+    display:flex; flex-direction:column; gap:.75rem;
+    opacity:.85;
+  }
+  .skeleton-thumb{
+    aspect-ratio: 16 / 10; width:100%;
+    border-radius:12px;
+    background: linear-gradient(110deg, #f0efe9 30%, #f7f6f0 50%, #f0efe9 70%);
+    background-size:200% 100%;
+    animation: shimmer 2.5s ease-in-out infinite;
+  }
+  @keyframes shimmer{
+    0%{ background-position:100% 0 }
+    100%{ background-position:-100% 0 }
+  }
+  .cat-tag{
+    display:inline-block;
+    padding:.3rem .7rem; border-radius:9999px;
+    font-size:.72rem; font-weight:600; letter-spacing:.04em;
+    background:rgba(0,197,142,.10); color:var(--accent-deep);
+    text-transform:uppercase;
+  }
+</style>
+
+<!-- JSON-LD : WebSite + Organization/LocalBusiness + CollectionPage + Breadcrumb + ItemList -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.cashsystem.be/#website","url":"https://www.cashsystem.be/","name":"CashSystem","alternateName":"CashSystem Belgique","inLanguage":"fr-BE","publisher":{"@id":"https://www.cashsystem.be/#organization"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["Organization","LocalBusiness"],"@id":"https://www.cashsystem.be/#organization","name":"CashSystem","alternateName":"CashSystem Belgique","url":"https://www.cashsystem.be/","logo":"https://www.cashsystem.be/assets/logo.png","image":"https://www.cashsystem.be/assets/logo.png","telephone":"+32456407362","email":"sales@cashsystem.be","vatID":"BE1023776996","priceRange":"€€€","description":"Fabricant belge de monnayeurs automatiques et caisses automatiques de paiement cash. Support Platinum 24/7 via WhatsApp.","slogan":"Jamais loin de chez vous","address":{"@type":"PostalAddress","streetAddress":"Leuvensesteenweg 21/L","postalCode":"3070","addressLocality":"Kortenberg","addressCountry":"BE"},"areaServed":["Belgique","Luxembourg","France","Pays-Bas"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"sameAs":["https://www.youtube.com/@cashsystem","https://www.linkedin.com/in/kaanyilmaz-cashsystem"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","@id":"https://www.cashsystem.be/blog/#collectionpage","url":"https://www.cashsystem.be/blog/","name":"Blog CashSystem — Le guide du monnayeur automatique en Belgique","description":"Guides, conseils et études de cas sur les monnayeurs automatiques en Belgique. Par CashSystem, fabricant belge.","inLanguage":"fr-BE","isPartOf":{"@id":"https://www.cashsystem.be/#website"},"about":{"@type":"Thing","name":"Monnayeur automatique"},"publisher":{"@id":"https://www.cashsystem.be/#organization"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.cashsystem.be/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.cashsystem.be/blog/"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"Articles publiés sur le blog CashSystem","itemListElement":[{"@type":"ListItem","position":1,"url":"https://www.cashsystem.be/blog/comment-choisir-monnayeur-automatique/","name":"Comment choisir un monnayeur automatique : 7 critères pour un commerçant belge"}]}
+</script>
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "tpyxaeb76z");
+</script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-[rgba(250,250,247,.85)] backdrop-blur-md border-b hairline">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-3">
+      <img src="/assets/logo-h.png"
+           alt="CashSystem — fabricant belge de monnayeurs automatiques"
+           class="h-9 w-auto"
+           width="160" height="36"
+           loading="eager" decoding="async"/>
+      <span class="hidden sm:inline-flex badge">Made in Belgium</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-base font-medium">
+      <a href="/caisse-automatique/" class="hover:text-[var(--accent-deep)]">Caisse automatique</a>
+      <a href="/monnayeur-automatique-belgique/" class="hover:text-[var(--accent-deep)]">Monnayeur</a>
+      <a href="/prix-monnayeur-automatique/" class="hover:text-[var(--accent-deep)]">Prix</a>
+      <a href="/blog/" class="hover:text-[var(--accent-deep)] text-[var(--accent-deep)]">Blog</a>
+      <a href="/#contact" class="hover:text-[var(--accent-deep)]">Contact</a>
+    </nav>
+    <a href="/#contact" class="btn-primary text-sm lg:text-base whitespace-nowrap px-3 lg:px-5 py-2 lg:py-3">
+      <span class="lg:hidden">Devis</span>
+      <span class="hidden lg:inline">Demander un devis</span>
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</header>
+
+<!-- HERO BLOG -->
+<section class="relative grain overflow-hidden">
+  <div class="max-w-5xl mx-auto px-6 pt-12 pb-14 lg:pt-20 lg:pb-20">
+    <nav aria-label="fil d'ariane" class="text-sm text-[var(--muted)] mb-6 reveal">
+      <a href="/" class="hover:text-[var(--accent-deep)]">Accueil</a>
+      <span class="mx-2">/</span>
+      <span class="text-[var(--ink)] font-semibold">Blog</span>
+    </nav>
+
+    <div class="reveal">
+      <p class="eyebrow mb-4">Blog CashSystem</p>
+      <h1 class="display text-[clamp(2rem,4.5vw,3.5rem)] mb-5 max-w-3xl">
+        Le guide du monnayeur automatique <br/>
+        <span class="text-[var(--accent-deep)]">en Belgique.</span>
+      </h1>
+      <p class="text-[1.125rem] lg:text-[1.25rem] text-[var(--muted)] max-w-3xl leading-relaxed">
+        Tout ce qu'il faut savoir avant de choisir, installer et entretenir un monnayeur dans votre commerce. Articles écrits par l'équipe CashSystem, fabricant belge depuis 2017.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLES RÉCENTS -->
+<section class="py-14 lg:py-20 border-t hairline">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-end justify-between flex-wrap gap-4 mb-10 reveal">
+      <div>
+        <p class="eyebrow mb-3">À lire maintenant</p>
+        <h2 class="display text-3xl lg:text-5xl">Articles récents</h2>
+      </div>
+      <p class="text-[var(--muted)] max-w-md text-base">
+        Nos guides pratiques pour les commerçants belges qui envisagent un monnayeur automatique.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+
+      <!-- ARTICLE 1 -->
+      <a href="/blog/comment-choisir-monnayeur-automatique/" class="article-card group">
+        <img src="/assets/monnayeur-hero.jpg"
+             alt="Monnayeur automatique CashSystem chez un commerçant belge — guide d'achat"
+             class="article-card-img"
+             loading="lazy" decoding="async"
+             width="800" height="500"/>
+        <div class="p-6 flex-1 flex flex-col">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="cat-tag">Guide d'achat</span>
+            <span class="text-xs text-[var(--muted)]">8 min de lecture</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3 leading-tight group-hover:text-[var(--accent-deep)] transition-colors">
+            Comment choisir un monnayeur automatique : 7 critères pour un commerçant belge
+          </h3>
+          <p class="text-[var(--muted)] text-sm leading-relaxed mb-5 flex-1">
+            Avant d'investir 10 000 €, voici les 7 critères que tout commerçant doit examiner pour ne pas se tromper.
+          </p>
+          <div class="flex items-center justify-between text-xs text-[var(--muted)] pt-4 border-t hairline">
+            <time datetime="2026-05-03">3 mai 2026</time>
+            <span class="font-semibold text-[var(--accent-deep)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+              Lire l'article
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- BIENTÔT EN LIGNE -->
+<section class="py-14 lg:py-20 border-t hairline bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center reveal mb-12">
+      <p class="eyebrow mb-3">En préparation</p>
+      <h2 class="display text-3xl lg:text-5xl mb-4">Bientôt en ligne</h2>
+      <p class="text-[var(--muted)] max-w-2xl mx-auto text-base">
+        Nos prochains articles, en cours de rédaction par l'équipe technique.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+
+      <article class="skeleton-card">
+        <div class="skeleton-thumb"></div>
+        <div class="pt-2">
+          <span class="cat-tag">Maintenance</span>
+        </div>
+        <h3 class="text-lg font-bold leading-tight">
+          Quand remplacer son monnayeur automatique ? 5 signaux à surveiller
+        </h3>
+        <p class="text-[var(--muted)] text-sm">À paraître prochainement.</p>
+      </article>
+
+      <article class="skeleton-card">
+        <div class="skeleton-thumb"></div>
+        <div class="pt-2">
+          <span class="cat-tag">Prix &amp; budget</span>
+        </div>
+        <h3 class="text-lg font-bold leading-tight">
+          Combien coûte un monnayeur automatique en Belgique en 2026 ?
+        </h3>
+        <p class="text-[var(--muted)] text-sm">À paraître prochainement.</p>
+      </article>
+
+      <article class="skeleton-card">
+        <div class="skeleton-thumb"></div>
+        <div class="pt-2">
+          <span class="cat-tag">Étude de cas</span>
+        </div>
+        <h3 class="text-lg font-bold leading-tight">
+          ROI d'un monnayeur automatique en boulangerie
+        </h3>
+        <p class="text-[var(--muted)] text-sm">À paraître prochainement.</p>
+      </article>
+
+    </div>
+
+    <div class="text-center mt-12 reveal">
+      <p class="text-[var(--muted)] text-sm">
+        Vous voulez être prévenu de la sortie d'un article ?
+        <a href="/#contact" class="font-semibold text-[var(--ink)] underline underline-offset-4 hover:text-[var(--accent-deep)]">Écrivez-nous</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- MAILLAGE INTERNE / EXPLORER -->
+<section class="py-14 lg:py-20 border-t hairline">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="reveal mb-10">
+      <p class="eyebrow mb-3">En attendant</p>
+      <h2 class="display text-3xl lg:text-5xl mb-4">Explorer nos pages</h2>
+      <p class="text-[var(--muted)] max-w-2xl text-base">
+        Si vous cherchez des informations concrètes maintenant, voici les pages les plus consultées.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+      <a href="/caisse-automatique/" class="card-elevated p-7 group">
+        <p class="cat-tag mb-3">Page pilier</p>
+        <h3 class="text-xl font-bold mb-2 group-hover:text-[var(--accent-deep)] transition-colors">Caisse automatique</h3>
+        <p class="text-[var(--muted)] text-sm leading-relaxed mb-4">
+          Tout sur la caisse automatique CashSystem : fonctionnement, avantages, intégrations.
+        </p>
+        <span class="font-semibold text-[var(--accent-deep)] text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+          Voir la page
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+
+      <a href="/prix-monnayeur-automatique/" class="card-elevated p-7 group">
+        <p class="cat-tag mb-3">Tarifs</p>
+        <h3 class="text-xl font-bold mb-2 group-hover:text-[var(--accent-deep)] transition-colors">Prix d'un monnayeur</h3>
+        <p class="text-[var(--muted)] text-sm leading-relaxed mb-4">
+          Achat, leasing, frais d'installation et coût total sur 5 ans en Belgique.
+        </p>
+        <span class="font-semibold text-[var(--accent-deep)] text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+          Voir les prix
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+
+      <a href="/monnayeur-fastfood/" class="card-elevated p-7 group">
+        <p class="cat-tag mb-3">Métier</p>
+        <h3 class="text-xl font-bold mb-2 group-hover:text-[var(--accent-deep)] transition-colors">Monnayeur fastfood</h3>
+        <p class="text-[var(--muted)] text-sm leading-relaxed mb-4">
+          Le monnayeur pensé pour les friteries, snacks, kebabs et burgers.
+        </p>
+        <span class="font-semibold text-[var(--accent-deep)] text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+          Voir la solution
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+
+      <a href="/monnayeur-boulangerie/" class="card-elevated p-7 group">
+        <p class="cat-tag mb-3">Métier</p>
+        <h3 class="text-xl font-bold mb-2 group-hover:text-[var(--accent-deep)] transition-colors">Monnayeur boulangerie</h3>
+        <p class="text-[var(--muted)] text-sm leading-relaxed mb-4">
+          Hygiène totale, rapidité aux heures de pointe, fin de journée en 2 minutes.
+        </p>
+        <span class="font-semibold text-[var(--accent-deep)] text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+          Voir la solution
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+
+      <a href="/monnayeur-horeca/" class="card-elevated p-7 group">
+        <p class="cat-tag mb-3">Métier</p>
+        <h3 class="text-xl font-bold mb-2 group-hover:text-[var(--accent-deep)] transition-colors">Monnayeur HoReCa</h3>
+        <p class="text-[var(--muted)] text-sm leading-relaxed mb-4">
+          Cafés, brasseries, restaurants : encaissement cash sécurisé et rapide.
+        </p>
+        <span class="font-semibold text-[var(--accent-deep)] text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+          Voir la solution
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+
+      <a href="/monnayeur-automatique-belgique/" class="card-elevated p-7 group">
+        <p class="cat-tag mb-3">Page pilier</p>
+        <h3 class="text-xl font-bold mb-2 group-hover:text-[var(--accent-deep)] transition-colors">Monnayeur Belgique</h3>
+        <p class="text-[var(--muted)] text-sm leading-relaxed mb-4">
+          Pourquoi choisir un fabricant belge plutôt qu'un revendeur étranger.
+        </p>
+        <span class="font-semibold text-[var(--accent-deep)] text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+          Voir la page
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="contact" class="py-14 lg:py-20 ink relative overflow-hidden">
+  <div class="absolute inset-0 opacity-30 grain"></div>
+  <div class="relative max-w-4xl mx-auto px-6 text-center reveal">
+    <p class="eyebrow mb-4 text-[var(--accent)]">Une question ?</p>
+    <h2 class="display text-3xl lg:text-5xl mb-5 text-white">
+      Une question urgente sur les monnayeurs ?
+    </h2>
+    <p class="text-white/70 text-lg lg:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+      Pas envie d'attendre la sortie d'un article ? L'équipe CashSystem répond en direct, sans intermédiaire, sur WhatsApp ou par téléphone.
+    </p>
+
+    <div class="flex flex-wrap items-center justify-center gap-4">
+      <a href="https://wa.me/32456407362" class="btn-accent text-base">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.6 6.3A8 8 0 0 0 4 12.4c0 1.4.4 2.8 1 4L4 21l4.7-1.2a8 8 0 0 0 11.7-7c0-2.1-.8-4.1-2.3-5.6Zm-5.6 12.3a6.6 6.6 0 0 1-3.4-.9l-.2-.1-2.8.7.8-2.7-.2-.3a6.7 6.7 0 1 1 5.8 3.3Z"/></svg>
+        Parler sur WhatsApp
+      </a>
+      <a href="tel:+32456407362" class="btn-ghost text-white/90 border-white/20 hover:bg-white/10 text-base">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        +32 456 40 73 62
+      </a>
+    </div>
+
+    <p class="text-white/50 text-sm mt-8">
+      Support Platinum 7j/7 — réponse en quelques minutes en jours ouvrés.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ink py-16 border-t border-white/10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8 pb-12 border-b border-white/10">
+      <div>
+        <img src="/assets/logo-dark.png"
+             alt="CashSystem"
+             class="h-20 w-auto mb-5"
+             width="200" height="80"
+             loading="lazy" decoding="async"/>
+        <p class="text-[0.875rem] text-white/50 leading-relaxed">
+          Fabricant belge de monnayeurs automatiques. Hardware + logiciel conçus en Belgique.
+        </p>
+      </div>
+      <div>
+        <p class="text-[0.75rem] uppercase tracking-wider text-white/40 mb-4 font-semibold">Produits</p>
+        <ul class="space-y-2 text-[0.875rem] text-white/70">
+          <li><a href="/#produits" class="hover:text-[var(--accent)]">NewDelicia</a></li>
+          <li><a href="/#produits" class="hover:text-[var(--accent)]">OneNight</a></li>
+          <li><a href="/#produits" class="hover:text-[var(--accent)]">Olea (sur mesure)</a></li>
+          <li><a href="https://suiteplatform.com" class="hover:text-[var(--accent)]">Suite Platform</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-[0.75rem] uppercase tracking-wider text-white/40 mb-4 font-semibold">Par métier</p>
+        <ul class="space-y-2 text-[0.875rem] text-white/70">
+          <li><a href="/monnayeur-boulangerie/" class="hover:text-[var(--accent)]">Boulangerie</a></li>
+          <li><a href="/monnayeur-fastfood/" class="hover:text-[var(--accent)]">Fastfood &amp; friterie</a></li>
+          <li><a href="/monnayeur-horeca/" class="hover:text-[var(--accent)]">HoReCa</a></li>
+          <li><a href="/monnayeur-restaurant/" class="hover:text-[var(--accent)]">Restaurant</a></li>
+          <li><a href="/monnayeur-librairie/" class="hover:text-[var(--accent)]">Librairie</a></li>
+          <li><a href="/monnayeur-pour-commerce/" class="hover:text-[var(--accent)]">Tout commerce</a></li>
+          <li><a href="/monnayeur-sans-erreur/" class="hover:text-[var(--accent)]">Sans erreur</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-[0.75rem] uppercase tracking-wider text-white/40 mb-4 font-semibold">Solutions</p>
+        <ul class="space-y-2 text-[0.875rem] text-white/70">
+          <li><a href="/caisse-automatique/" class="hover:text-[var(--accent)]">Caisse automatique</a></li>
+          <li><a href="/monnayeur-automatique-belgique/" class="hover:text-[var(--accent)]">Monnayeur Belgique</a></li>
+          <li><a href="/kiosque-de-paiement-cash/" class="hover:text-[var(--accent)]">Kiosque de paiement</a></li>
+          <li><a href="/solution-encaissement-cash/" class="hover:text-[var(--accent)]">Encaissement cash</a></li>
+          <li><a href="/gestion-caisse-automatique/" class="hover:text-[var(--accent)]">Gestion à distance</a></li>
+          <li><a href="/prix-monnayeur-automatique/" class="hover:text-[var(--accent)]">Prix &amp; leasing</a></li>
+          <li><a href="/blog/" class="hover:text-[var(--accent)]">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-[0.75rem] uppercase tracking-wider text-white/40 mb-4 font-semibold">Contact</p>
+        <ul class="space-y-2 text-[0.875rem] text-white/70">
+          <li>Leuvensesteenweg 21/L</li>
+          <li>3070 Kortenberg, Belgique</li>
+          <li><a href="tel:+32456407362" class="hover:text-[var(--accent)]">+32 456 40 73 62</a></li>
+          <li><a href="mailto:sales@cashsystem.be" class="hover:text-[var(--accent)]">sales@cashsystem.be</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-6 flex flex-wrap items-center justify-between gap-4 text-[0.75rem] text-white/40">
+      <p>© 2025 CashSystem · TVA BE1023776996 · Made in Belgium</p>
+      <p>Jamais loin de chez vous.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // GA4 conversion event tracking
+  document.addEventListener('click', function(e) {
+    const a = e.target.closest('a');
+    if (!a) return;
+    const href = a.href || '';
+    if (typeof gtag !== 'function') return;
+    if (href.includes('wa.me/')) {
+      gtag('event', 'click_whatsapp', { event_category: 'conversion', link_url: href });
+    } else if (href.includes('cashsystem.odoo.com/book')) {
+      gtag('event', 'click_book_appointment', { event_category: 'conversion', link_url: href });
+    } else if (href.startsWith('tel:')) {
+      gtag('event', 'click_phone', { event_category: 'conversion', link_url: href });
+    } else if (href.startsWith('mailto:')) {
+      gtag('event', 'click_email', { event_category: 'conversion', link_url: href });
+    }
+  });
+</script>
+
+</body>
+</html>

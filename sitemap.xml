@@ -256,4 +256,36 @@
     <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/monnayeur-automatique-bruxelles/"/>
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/muntautomaat-brussel/"/>
   </url>
+  <url>
+    <loc>https://www.cashsystem.be/blog/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/blog/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/blog/"/>
+  </url>
+  <url>
+    <loc>https://www.cashsystem.be/nl/blog/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/blog/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/blog/"/>
+  </url>
+  <url>
+    <loc>https://www.cashsystem.be/blog/comment-choisir-monnayeur-automatique/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/blog/comment-choisir-monnayeur-automatique/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/blog/muntautomaat-kiezen/"/>
+  </url>
+  <url>
+    <loc>https://www.cashsystem.be/nl/blog/muntautomaat-kiezen/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/blog/comment-choisir-monnayeur-automatique/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/blog/muntautomaat-kiezen/"/>
+  </url>
 </urlset>

@@ -4,6 +4,9 @@
   "private": true,
   "type": "module",
   "description": "Site cashsystem.be — Netlify deploy + Functions",
+  "scripts": {
+    "notify": "node scripts/notify-search-engines.mjs"
+  },
   "dependencies": {
     "nodemailer": "^6.9.16"
   }

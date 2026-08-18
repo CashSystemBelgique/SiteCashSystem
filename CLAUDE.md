@@ -33,7 +33,9 @@ Document de contexte pour Claude Code. À lire en premier à chaque session sur 
 **Produit logiciel** : Suite Platform — POS Blazor Server (landing dédiée : `https://suiteplatform.com`). ⚠️ Le nom commercial sur le site web et en communication client est **Suite Platform** (et non "CashSystem Suite", qui est le nom interne du repo `CashSystemSuite`).
 **Siège / zone d'action** : Belgique
 **Base clients actuelle** : 65+ établissements (affiché sur le site)
-**Tarification indicative** (affichée sur le site) : Suite 50 €/mois, leasing ~170 €/mois HT
+**Tarification indicative** (affichée sur le site) : achat clé-en-main 9 900 € HT avec **2 ans de Maintenance Platinum offerte**, Suite 50 €/mois (1ʳᵉ année offerte), leasing ~170 €/mois HT (uniquement sur `/leasing/` et `/prix-monnayeur-automatique/`)
+
+> ⚠️ **Mise à jour 18/08/2026** : la maintenance offerte est passée de 3 ans à **2 ans**, et la carte "Pack engagement 5 ans — 170 €/mois" a été retirée du bloc prix de toutes les pages (accueil + landings FR/NL). Le bloc prix n'affiche plus qu'une offre : l'achat clé-en-main. Les mentions marketing "leasing dès 170 €/mois" ont été retirées des landings ; la page `/leasing/` (et `/nl/leasing/`) reste en ligne.
 
 ### Positionnement business
 > **Le seul fabricant belge de monnayeurs automatiques de A à Z (hardware + logiciel), avec le meilleur service/maintenance du marché.**

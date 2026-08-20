@@ -27,6 +27,12 @@ https://cashsystem.be/*           https://www.cashsystem.be/:splat   301!
 /suite                            https://suiteplatform.com          301!
 /suite/*                          https://suiteplatform.com/:splat   301!
 
+# Odoo Experience 2026 — URLs courtes pour QR code, flyers, kakemono, cartes
+/odoo                             /odoo-experience-2026/             301!
+/oxp                              /odoo-experience-2026/             301!
+/nl/odoo                          /nl/odoo-experience-2026/          301!
+/nl/oxp                           /nl/odoo-experience-2026/          301!
+
 # Static pages (direct serves)
 /merci      /merci.html   200
 

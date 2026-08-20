@@ -34,7 +34,8 @@ const ROWS = {
   fr: [
     ['Fabriqué en',              'Japon, Espagne, Royaume-Uni', 'Belgique'],
     ['Commercialisé et installé', 'Par un revendeur',           'Par nous-mêmes (fabricant)'],
-    ['Prix',                     'À partir de 12 000 € HTVA',   '9 900 € HTVA'],
+    ['Prix',                     'À partir de 12 000 € HTVA<span class="block text-[0.8125rem] opacity-70 mt-0.5">machine seule</span>',
+                                                                '9 900 € HTVA<span class="block text-[0.8125rem] font-normal text-[var(--muted)] mt-0.5">kit complet, 2 ans de maintenance incluse</span>'],
     ['Délai de livraison',       '4 à 10 semaines',             '2 semaines'],
     ["Délai d'intervention",     '2 à 5 jours',                 '&lt; 24 h'],
     ['Logiciel intégré',         'À part',                      'Suite Platform inclus'],
@@ -45,7 +46,8 @@ const ROWS = {
   nl: [
     ['Gemaakt in',               'Japan, Spanje, Verenigd Koninkrijk', 'België'],
     ['Verkocht en geïnstalleerd', 'Door een dealer',            'Door onszelf (fabrikant)'],
-    ['Prijs',                    'Vanaf 12.000 € excl. btw',    '9.900 € excl. btw'],
+    ['Prijs',                    'Vanaf 12.000 € excl. btw<span class="block text-[0.8125rem] opacity-70 mt-0.5">enkel het toestel</span>',
+                                                                '9.900 € excl. btw<span class="block text-[0.8125rem] font-normal text-[var(--muted)] mt-0.5">volledige kit, 2 jaar onderhoud inbegrepen</span>'],
     ['Levertijd',                '4 tot 10 weken',              '2 weken'],
     ['Interventietijd',          '2 tot 5 dagen',               '&lt; 24 u'],
     ['Geïntegreerde software',   'Apart',                       'Suite Platform inbegrepen'],
@@ -58,8 +60,8 @@ const ROWS = {
 const HEAD = { fr: ['Concurrents', 'CashSystem'], nl: ['Concurrenten', 'CashSystem'] };
 
 const FOOTNOTE = {
-  fr: 'Comparaison établie en 08/2026 sur la base des tarifs et conditions de service publiés par les principaux fabricants de monnayeurs automatiques, et de notre expérience d\'installation sur le terrain. Prix concurrents indicatifs pour une configuration équivalente à notre kit complet.',
-  nl: 'Vergelijking opgemaakt in 08/2026 op basis van de gepubliceerde tarieven en servicevoorwaarden van de belangrijkste fabrikanten van muntautomaten, en van onze eigen installatie-ervaring. Prijzen van concurrenten zijn indicatief voor een configuratie die gelijkwaardig is aan ons volledige kit.',
+  fr: 'Comparaison établie en 08/2026 sur la base des tarifs et conditions de service publiés par les principaux fabricants de monnayeurs automatiques, et de notre expérience d\'installation sur le terrain. Le prix concurrent indiqué correspond à la machine seule : installation, formation et maintenance sont facturées en plus. Notre prix comprend l\'ensemble.',
+  nl: 'Vergelijking opgemaakt in 08/2026 op basis van de gepubliceerde tarieven en servicevoorwaarden van de belangrijkste fabrikanten van muntautomaten, en van onze eigen installatie-ervaring. De vermelde prijs van de concurrent geldt voor het toestel alleen: installatie, opleiding en onderhoud worden apart gefactureerd. Onze prijs omvat alles.',
 };
 
 function buildTable(lang) {
@@ -144,8 +146,11 @@ for (const file of files) {
   // GARDE-FOU : on ne remplace que les tableaux "Asie / Europe du Sud / CashSystem".
   // Exclut le tableau de financement de /prix-monnayeur-automatique/ et les
   // tableaux 2 colonnes propres aux pages Bruxelles (contenu unique par page).
-  if (!/>\s*(Asie|Azië)\s*</.test(block0)) {
-    if (!AUDIT) console.log(`      ignoré (pas un tableau Asie/Europe du Sud) : ${rel}`);
+  // GARDE-FOU : soit le tableau d'origine (colonne Asie/Azië), soit un tableau
+  // déjà régénéré par ce script (en-tête Concurrents/Concurrenten). Tout le
+  // reste est du contenu propre à la page : on n'y touche pas.
+  if (!/>\s*(Asie|Azië|Concurrents|Concurrenten)\s*</.test(block0)) {
+    if (!AUDIT) console.log(`      ignoré (pas un tableau Concurrents/CashSystem) : ${rel}`);
     continue;
   }
   if (EXCLUDE.has(rel)) {

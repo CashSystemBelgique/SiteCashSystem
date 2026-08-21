@@ -38,7 +38,7 @@ Checklist d'actions à réaliser **par l'utilisateur** (CashSystem) directement 
    - **Nom** : CashSystem
    - **Catégorie principale** : "Magasin d'équipement de bureau" ou "Fabricant" (vérifier les options)
    - **Catégories secondaires** : "Service de maintenance d'équipement", "Magasin de matériel d'encaissement"
-   - **Adresse** : Leuvensesteenweg 21/L, 3070 Kortenberg, Belgique
+   - **Adresse** : Avenue de la Couronne 452, 1050 Ixelles, Belgique
    - **Téléphone** : +32 456 40 73 62
    - **Site web** : https://www.cashsystem.be
    - **Horaires** : décider si on affiche 24/7 (cohérent avec Schema) ou heures bureau réelles → recommandation = horaires bureau **réels** + mention "Support WhatsApp 24/7" en description

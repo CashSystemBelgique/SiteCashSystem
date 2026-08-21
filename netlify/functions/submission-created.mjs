@@ -196,7 +196,7 @@ function baseTemplate({ preheader, heading, intro, extraSection }) {
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;margin-top:16px;">
           <tr>
             <td align="center" style="padding:8px 16px;color:#9ca3af;font-size:12px;line-height:1.5;">
-              CashSystem · Leuvensesteenweg 21/L, 3070 Kortenberg, Belgique<br>
+              CashSystem · Avenue de la Couronne 452, 1050 Ixelles, Belgique<br>
               <a href="https://www.cashsystem.be" style="color:#9ca3af;text-decoration:underline;">www.cashsystem.be</a> · <a href="mailto:sales@cashsystem.be" style="color:#9ca3af;text-decoration:underline;">sales@cashsystem.be</a>
             </td>
           </tr>

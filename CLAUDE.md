@@ -308,7 +308,8 @@ Les commits existants sont courts ("mod", "modifs", "mails"). Je recommande d'am
 
 ### Identité légale
 - **Raison sociale** : CashSystem
-- **Adresse siège** : Leuvensesteenweg 21/L, 3070 Kortenberg, Belgique
+- **Adresse siège** : Avenue de la Couronne 452, 1050 Ixelles, Belgique (déménagement depuis Kortenberg — acté le 21/08/2026)
+- **Adresse siège (NL)** : Kroonlaan 452, 1050 Elsene, België
 - **N° TVA** : BE1023776996
 - **Pays** : BE
 
@@ -320,7 +321,7 @@ Les commits existants sont courts ("mod", "modifs", "mails"). Je recommande d'am
 
 ### Horaires (pour Schema.org LocalBusiness)
 - **openingHours** : `Mo-Su 00:00-23:59` (24/7)
-- **⚠️ Clarification importante** : le 24/7 concerne la **maintenance Platinum via WhatsApp** (support technique toujours joignable). Le bureau physique à Kortenberg n'est pas ouvert en permanence. Dans le schema on affiche 24/7 car c'est l'engagement de service. Mettre en évidence dans le contenu : "Support 24/7 via WhatsApp Platinum".
+- **⚠️ Clarification importante** : le 24/7 concerne la **maintenance Platinum via WhatsApp** (support technique toujours joignable). Le bureau physique à Ixelles n'est pas ouvert en permanence. Dans le schema on affiche 24/7 car c'est l'engagement de service. Mettre en évidence dans le contenu : "Support 24/7 via WhatsApp Platinum".
 
 ### Réseaux sociaux
 - **YouTube** : https://www.youtube.com/@cashsystem
@@ -347,9 +348,9 @@ Les commits existants sont courts ("mod", "modifs", "mails"). Je recommande d'am
   "email": "sales@cashsystem.be",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Leuvensesteenweg 21/L",
-    "postalCode": "3070",
-    "addressLocality": "Kortenberg",
+    "streetAddress": "Avenue de la Couronne 452",
+    "postalCode": "1050",
+    "addressLocality": "Ixelles",
     "addressCountry": "BE"
   },
   "vatID": "BE1023776996",

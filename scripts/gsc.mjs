@@ -37,7 +37,7 @@ const args = Object.fromEntries(
 );
 const TYPE = args.type || 'query';
 const DAYS = parseInt(args.days || '28', 10);
-const COUNTRY = args.country || 'BEL';
+const COUNTRY = (args.country === 'all' || args.country === true) ? null : (args.country || 'BEL');
 const URL_FILTER = args.url || null;
 const SITE = args.site || SITE_URL;
 const LIMIT = parseInt(args.limit || '500', 10);

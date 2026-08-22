@@ -6,6 +6,22 @@ Checklist d'actions à réaliser **par l'utilisateur** (CashSystem) directement 
 
 ---
 
+## 0. Préalable — adresse légale à la Banque-Carrefour (BLOQUANT pour le point 3)
+
+Le siège et l'atelier ont déménagé à **Avenue de la Couronne 452, 1050 Ixelles** le 21/08/2026. Le site, les modèles de devis et les contrats sont à jour, mais **la Banque-Carrefour des Entreprises (BCE/KBO) ne l'est pas** : ICM INVEST SRL y figure toujours à Kortenberg (3070).
+
+C'est le point de départ de tout le reste : Trends Top, Kompass et une partie des annuaires **recopient la BCE**. Les corriger un par un avant que la source le soit ne sert à rien — ils se resynchroniseront sur l'ancienne adresse.
+
+> Vérifié le 22/08/2026 : https://trendstop.levif.be/fr/detail/1023776996/icm-invest.aspx affiche encore Kortenberg (3070).
+
+**À faire trancher par le comptable ou le notaire** : le déménagement fait passer la société de la **Région flamande** à la **Région de Bruxelles-Capitale**. Selon la rédaction des statuts, un changement de Région peut exiger une modification statutaire par acte notarié et une publication au Moniteur belge, avec un effet possible sur le régime linguistique. Ce n'est pas un simple changement d'adresse administratif — à clarifier avant de soumettre quoi que ce soit aux annuaires.
+
+**Aussi à mettre à jour, hors annuaires** :
+- **Odoo** (paramètres de société) — c'est lui qui génère les devis `S000xx` et les factures. Tant qu'il n'est pas corrigé, chaque nouveau document part avec Kortenberg, même si les modèles Word sont à jour.
+- Assurances, banque, contrats fournisseurs, en-têtes de facture.
+
+---
+
 ## 1. Google Search Console — resoumettre le sitemap
 
 **Pourquoi** : Google a actuellement les anciennes 3 URLs en mémoire. Il faut lui signaler les 13 URLs actuelles (toutes les pages FR du site).
@@ -34,11 +50,11 @@ Checklist d'actions à réaliser **par l'utilisateur** (CashSystem) directement 
 **Comment** :
 1. Aller sur https://www.google.com/business/
 2. Connexion avec ton compte Google `k77nylmz@gmail.com`
-3. Créer (ou réclamer) la fiche **CashSystem** :
+3. Créer la fiche **CashSystem** (vérifié le 22/08/2026 : aucune fiche n'existe pour CashSystem — c'est une création, pas une revendication) :
    - **Nom** : CashSystem
    - **Catégorie principale** : "Magasin d'équipement de bureau" ou "Fabricant" (vérifier les options)
    - **Catégories secondaires** : "Service de maintenance d'équipement", "Magasin de matériel d'encaissement"
-   - **Adresse** : Avenue de la Couronne 452, 1050 Ixelles, Belgique
+   - **Adresse** : Avenue de la Couronne 452, 1050 Ixelles, Belgique (NL : Kroonlaan 452, 1050 Elsene) — doit correspondre au mot près à celle du site et du JSON-LD
    - **Téléphone** : +32 456 40 73 62
    - **Site web** : https://www.cashsystem.be
    - **Horaires** : décider si on affiche 24/7 (cohérent avec Schema) ou heures bureau réelles → recommandation = horaires bureau **réels** + mention "Support WhatsApp 24/7" en description
@@ -63,7 +79,7 @@ Checklist d'actions à réaliser **par l'utilisateur** (CashSystem) directement 
 
 ### Généralistes
 - **Pages d'Or / Gouden Gids** (https://www.pagesdor.be) — incontournable Belgique
-- **Trends Top** (https://www.trendstop.be) — annuaire entreprises belges
+- **Trends Top** (https://www.trendstop.be) — annuaire entreprises belges. **Fiche déjà existante et encore à Kortenberg**, alimentée par la BCE : corriger la BCE d'abord (point 0), sinon la correction sera écrasée
 - **Kompass Belgique** (https://be.kompass.com)
 
 ### Sectoriels horeca/commerce (clients cibles)

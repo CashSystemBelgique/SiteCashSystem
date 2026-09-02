@@ -352,4 +352,10 @@
     <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.cashsystem.be/calculateur-roi-monnayeur/"/>
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.cashsystem.be/nl/roi-calculator-muntautomaat/"/>
   </url>
+  <url>
+    <loc>https://www.cashsystem.be/installations/boulangerie-du-theeroir/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

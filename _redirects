@@ -20,8 +20,9 @@ https://cashsystem.be/*           https://www.cashsystem.be/:splat   301!
 /solutions                        /                                  301!
 /produits                         /#produits                         301!
 /contact                          /#contact                          301!
-/monnayeur-automatique-belgique   /monnayeur-automatique-belgique/   301!
-/caisse-automatique               /caisse-automatique/               301!
+# Pas de règle /x → /x/ ici : Netlify ignore le slash final au matching,
+# la règle se rappliquait à /x/ et bouclait (caisse-automatique, monnayeur-automatique-belgique).
+# Le slash final est déjà ajouté par Netlify (pretty URLs).
 
 # Suite moved to dedicated domain suiteplatform.com
 /suite                            https://suiteplatform.com          301!

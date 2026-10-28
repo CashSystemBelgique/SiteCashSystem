@@ -189,31 +189,6 @@
 </head>
 <body>
 
-<!-- OXP-BANNER-START -->
-<div id="oxp-banner" style="background:#0a0e0d;color:#f5f5f0;border-bottom:1px solid rgba(255,255,255,.1)">
-  <div style="max-width:80rem;margin:0 auto;padding:.6rem 1.5rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.35rem 1rem;text-align:center">
-    <span style="display:inline-flex;align-items:center;gap:.45rem;flex-shrink:0">
-      <span style="width:.375rem;height:.375rem;border-radius:9999px;background:#00C58E;display:inline-block"></span>
-      <span style="font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#00C58E">Odoo Experience 2026</span>
-    </span>
-    <span style="font-size:.9375rem;color:rgba(255,255,255,.8)">Wij staan er op <strong style="color:#fff">26 september</strong> in Brussels Expo — muntautomaat live op Odoo POS.</span>
-    <a href="/nl/odoo-experience-2026/" style="font-size:.9375rem;font-weight:600;color:#00C58E;flex-shrink:0;text-decoration:none" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Slot op de stand reserveren →</a>
-    <button type="button" id="oxp-banner-close" aria-label="Sluiten" title="Sluiten" style="background:none;border:0;color:rgba(255,255,255,.4);font-size:1.15rem;line-height:1;cursor:pointer;padding:0 .25rem;flex-shrink:0">&times;</button>
-  </div>
-</div>
-<script>
-(function(){
-  var b=document.getElementById('oxp-banner');
-  if(!b)return;
-  var over=Date.now()>=new Date('2026-09-27T00:00:00+02:00').getTime();
-  var closed=false;
-  try{closed=sessionStorage.getItem('oxpBannerClosed')==='1';}catch(e){}
-  if(over||closed){b.parentNode.removeChild(b);return;}
-  var c=document.getElementById('oxp-banner-close');
-  if(c)c.addEventListener('click',function(){try{sessionStorage.setItem('oxpBannerClosed','1');}catch(e){}b.parentNode.removeChild(b);});
-})();
-</script>
-<!-- OXP-BANNER-END -->
 
 <!-- HEADER -->
 <header class="sticky top-0 z-50 bg-[rgba(250,250,247,.85)] backdrop-blur-md border-b hairline">
@@ -357,24 +332,34 @@
     <div class="ticker">
       <!-- list 1 -->
       <div class="flex items-center gap-12 text-2xl font-semibold text-[var(--muted)] whitespace-nowrap">
-        <span>Olea Zaventem</span><span>•</span>
-        <span>NewDelicia</span><span>•</span>
-        <span>OneNight</span><span>•</span>
-        <span>Boulangerie Léonard</span><span>•</span>
-        <span>Frida Kahlo Café</span><span>•</span>
-        <span>Le Comptoir</span><span>•</span>
-        <span>Kebab Royal</span><span>•</span>
-      </div>
+          <span>Belgian Beer World</span><span>•</span>
+          <span>The Liman Hotel</span><span>•</span>
+          <span>Nisa Laken</span><span>•</span>
+          <span>Pâtisseries Paris</span><span>•</span>
+          <span>Boulangerie du t’Heeroir</span><span>•</span>
+          <span>Olea Zaventem</span><span>•</span>
+          <span>NewDelicia</span><span>•</span>
+          <span>OneNight</span><span>•</span>
+          <span>Boulangerie Léonard</span><span>•</span>
+          <span>Frida Kahlo Café</span><span>•</span>
+          <span>Le Comptoir</span><span>•</span>
+          <span>Kebab Royal</span>
+        </div>
       <!-- list 2 (duplicate for loop) -->
       <div class="flex items-center gap-12 text-2xl font-semibold text-[var(--muted)] whitespace-nowrap">
-        <span>Olea Zaventem</span><span>•</span>
-        <span>NewDelicia</span><span>•</span>
-        <span>OneNight</span><span>•</span>
-        <span>Boulangerie Léonard</span><span>•</span>
-        <span>Frida Kahlo Café</span><span>•</span>
-        <span>Le Comptoir</span><span>•</span>
-        <span>Kebab Royal</span><span>•</span>
-      </div>
+          <span>Belgian Beer World</span><span>•</span>
+          <span>The Liman Hotel</span><span>•</span>
+          <span>Nisa Laken</span><span>•</span>
+          <span>Pâtisseries Paris</span><span>•</span>
+          <span>Boulangerie du t’Heeroir</span><span>•</span>
+          <span>Olea Zaventem</span><span>•</span>
+          <span>NewDelicia</span><span>•</span>
+          <span>OneNight</span><span>•</span>
+          <span>Boulangerie Léonard</span><span>•</span>
+          <span>Frida Kahlo Café</span><span>•</span>
+          <span>Le Comptoir</span><span>•</span>
+          <span>Kebab Royal</span>
+        </div>
     </div>
   </div>
 </section>
@@ -986,6 +971,134 @@
 
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
       <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/installations/bbw-entree.webp"
+             alt="Ingang van het museum Belgian Beer World in Brussel, uitgerust met automatische muntautomaten van CashSystem"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Belgian Beer World — Bruxelles</figcaption>
+      </figure>
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/installations/bbw-billetterie.webp"
+             alt="Zwarte automatische muntautomaat aan de ticketbalie van Belgian Beer World, voor de koperen ketels"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Belgian Beer World — Billetterie</figcaption>
+      </figure>
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/installations/bbw-ecran.webp"
+             alt="Scherm van de CashSystem muntautomaat in Belgian Beer World in Brussel"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Belgian Beer World — Écran client</figcaption>
+      </figure>
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/installations/liman-hotel-1.webp"
+             alt="Toog van The Liman Hotel in Sint-Joost uitgerust met de automatische muntautomaat van CashSystem"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">The Liman Hotel — Saint-Josse</figcaption>
+      </figure>
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/installations/liman-hotel-2.webp"
+             alt="Muntautomaat in donker hout, afgestemd op de geribde toog van The Liman Hotel in Sint-Joost"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">The Liman Hotel — Comptoir</figcaption>
+      </figure>
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/installations/nisa-laeken.webp"
+             alt="Automatische muntautomaat met lichte eiken afwerking in de rekken van buurtsupermarkt Nisa in Laken"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Nisa — Laeken</figcaption>
+      </figure>
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/installations/nisa-caisse.webp"
+             alt="Muntautomaat met lichte eiken afwerking aan het einde van de kassalijn bij buurtsupermarkt Nisa"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Nisa — Ligne de caisse</figcaption>
+      </figure>
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/installations/nisa-ecran.webp"
+             alt="Scherm van de automatische muntautomaat in de huisstijl van buurtsupermarkt Nisa in Laken"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Nisa — Écran client</figcaption>
+      </figure>
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/installations/patisseries-paris-1.webp"
+             alt="Automatische muntautomaat met lichte eiken afwerking tussen de toonbanken van Boulangerie Pâtisseries Paris in Brussel"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Boulangerie Pâtisseries Paris — Bruxelles</figcaption>
+      </figure>
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/installations/patisseries-paris-2.webp"
+             alt="Scherm van de CashSystem muntautomaat bij Boulangerie Pâtisseries Paris in Brussel"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Pâtisseries Paris — Écran client</figcaption>
+      </figure>
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/installations/patisseries-paris-3.webp"
+             alt="Automatische muntautomaat langs de gebakstoonbank van Boulangerie Pâtisseries Paris in Brussel"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Pâtisseries Paris — Vitrine</figcaption>
+      </figure>
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/installations/theeroir-1.webp"
+             alt="Automatische muntautomaat met eiken afwerking voor de toog van Boulangerie du t’Heeroir in Hastière"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Boulangerie du t’Heeroir — Hastière</figcaption>
+      </figure>
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/installations/theeroir-2.webp"
+             alt="Automatische muntautomaat in gebruik in Boulangerie du t’Heeroir in Hastière"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">t’Heeroir — En service</figcaption>
+      </figure>
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/installations/theeroir-3.webp"
+             alt="Klant betaalt aan de automatische muntautomaat van Boulangerie du t’Heeroir"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">t’Heeroir — Cliente au paiement</figcaption>
+      </figure>
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/installations/theeroir-4.webp"
+             alt="Overzicht van Boulangerie du t’Heeroir in Hastière met zijn automatische muntautomaat"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">t’Heeroir — Vue d’ensemble</figcaption>
+      </figure>
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
+        <img src="/assets/installations/theeroir-5.webp"
+             alt="Klanten aan de toog van Boulangerie du t’Heeroir, met de automatische muntautomaat"
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+             loading="lazy" decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
+        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">t’Heeroir — Heure de pointe</figcaption>
+      </figure>
+      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
         <img src="/assets/olea/olea-3.jpg"
              alt="Muntautomaat met eikenhouten afwerking geïnstalleerd bij Olea, brunch-bakkerij in Zaventem"
              class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
@@ -1030,14 +1143,6 @@
         <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Olea — Suite-tablet</figcaption>
       </figure>
 
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/newdelicia-2.jpg"
-             alt="Automatische kassa NewDelicia geïnstalleerd in een Belgische bakkerij"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">NewDelicia — Tweede zicht</figcaption>
-      </figure>
 
       <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
         <img src="/assets/frida.jpg"
@@ -1048,14 +1153,6 @@
         <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Frida Kahlo — Speciale editie</figcaption>
       </figure>
 
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/olea/olea-5.jpg"
-             alt="Algemeen overzicht van de volledige CashSystem-installatie bij Olea Zaventem"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Olea — Algemeen overzicht</figcaption>
-      </figure>
 
       <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
         <img src="/assets/monnayeur-automatique-belgique.jpeg"

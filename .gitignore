@@ -8,3 +8,8 @@ node_modules/
 credentials.json
 token.json
 gsc-data/
+
+# Demos locales (ne jamais publier)
+_demo-*.html
+_demo-*.cjs
+_demo-*.js

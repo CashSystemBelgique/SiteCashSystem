@@ -194,7 +194,7 @@
            class="h-9 w-auto"
            width="160" height="36"
            loading="eager" decoding="async"/>
-      <span class="hidden sm:inline-flex badge">Made in Belgium</span>
+      <span class="hidden lg:inline-flex badge whitespace-nowrap shrink-0">Made in Belgium</span>
     </a>
     <nav class="hidden md:flex items-center gap-7 text-base font-medium">
       <a href="#service" class="hover:text-[var(--accent-deep)]">Service</a>
@@ -207,11 +207,11 @@
       <a href="/nl/" hreflang="nl-BE" lang="nl" class="hover:text-[var(--accent-deep)] font-semibold" title="Nederlandse versie">NL</a>
     </nav>
     <div class="flex items-center gap-2 lg:gap-4">
-      <a href="tel:+32456407362" class="hidden xl:inline-flex items-center gap-2 text-base font-bold text-[var(--ink)] hover:text-[var(--accent-deep)] whitespace-nowrap transition-colors" title="Appeler CashSystem">
+      <a href="tel:+32456407362" class="hidden items-center gap-2 text-base font-bold text-[var(--ink)] hover:text-[var(--accent-deep)] whitespace-nowrap transition-colors" title="Appeler CashSystem">
         <svg class="w-4 h-4 text-[var(--accent-deep)]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
         +32 456 40 73 62
       </a>
-      <a href="tel:+32456407362" class="xl:hidden inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[var(--accent)] text-[var(--ink)] flex-shrink-0" aria-label="Appeler CashSystem au +32 456 40 73 62" title="Appeler CashSystem">
+      <a href="tel:+32456407362" class="inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[var(--accent)] text-[var(--ink)] flex-shrink-0" aria-label="Appeler CashSystem au +32 456 40 73 62" title="Appeler CashSystem">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
       </a>
       <a href="#contact" class="btn-primary text-sm lg:text-base whitespace-nowrap px-3 lg:px-5 py-2 lg:py-3">
@@ -282,10 +282,10 @@
       <div class="relative">
         <div class="absolute -inset-6 bg-gradient-to-br from-[var(--accent)]/25 via-transparent to-[var(--accent)]/10 rounded-[32px] blur-3xl"></div>
         <div class="relative rounded-[28px] overflow-hidden shadow-[0_40px_80px_-20px_rgba(10,14,13,.35)] ring-1 ring-black/5">
-          <img src="/assets/monnayeur-hero.jpg"
-               alt="Monnayeur automatique CashSystem installé chez un commerce belge — kiosque blanc avec écran tactile et tiroir billets"
+          <img src="/assets/odoo-hero.webp"
+               alt="Borne CashSystem présentée sur le stand de l'Odoo Experience 2026, écran dynamique et habillage premium"
                class="w-full h-auto block"
-               width="900" height="1200"
+               width="1200" height="1600"
                loading="eager" decoding="async"
                fetchpriority="high"/>
         </div>
@@ -657,249 +657,122 @@
 </section>
 
 <!-- GALERIE INSTALLATIONS -->
+<style>
+  .bento{ display:grid; grid-template-columns:repeat(4,1fr); grid-auto-rows:190px; gap:14px; }
+  .tile{ position:relative; overflow:hidden; border-radius:22px; }
+  .tile img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .9s cubic-bezier(.2,.7,.2,1); }
+  .tile:hover img{ transform:scale(1.06); }
+  .tile .scrim{ position:absolute; inset:0; background:linear-gradient(to top, rgba(8,11,10,.82) 0%, rgba(8,11,10,.25) 42%, rgba(8,11,10,0) 70%); }
+  .tile .cap{ position:absolute; left:0; right:0; bottom:0; padding:18px 20px; color:#fff; }
+  .tile .cap h3{ font-weight:700; letter-spacing:-.02em; line-height:1.1; }
+  .tile .cap p{ color:rgba(255,255,255,.72); font-size:.8rem; margin-top:3px; }
+  .tile .tags{ position:absolute; top:14px; left:14px; display:flex; gap:6px; flex-wrap:wrap; }
+  .tbadge{ display:inline-flex; align-items:center; gap:.4rem; padding:.3rem .7rem; border-radius:9999px; font-size:.72rem; font-weight:600; background:rgba(255,255,255,.14); color:#fff; border:1px solid rgba(255,255,255,.28); backdrop-filter:blur(6px); }
+  .b-feature{ grid-column:span 2; grid-row:span 2; } .b-tall{ grid-row:span 2; } .b-wide{ grid-column:span 2; }
+  @media(max-width:860px){ .bento{ grid-template-columns:repeat(2,1fr); grid-auto-rows:160px; gap:10px; } .b-feature{ grid-column:span 2; grid-row:span 2; } .b-tall{ grid-row:span 2; } .b-wide{ grid-column:span 2; grid-row:span 1; } }
+
+  .masonry{ column-count:4; column-gap:14px; margin-top:14px; }
+  @media(max-width:1100px){ .masonry{ column-count:3; } }
+  @media(max-width:760px){ .masonry{ column-count:2; column-gap:10px; } }
+  .m-item{ break-inside:avoid; margin:0 0 14px; position:relative; border-radius:16px; overflow:hidden; cursor:zoom-in; background:#ececec; }
+  .m-item img{ width:100%; display:block; transition:transform .6s ease; }
+  .m-item:hover img{ transform:scale(1.045); }
+  .m-item figcaption{ position:absolute; left:0; right:0; bottom:0; padding:26px 14px 11px; color:#fff; font-size:.8rem; font-weight:600; letter-spacing:-.01em; background:linear-gradient(to top, rgba(8,11,10,.82), rgba(8,11,10,0)); opacity:0; transition:opacity .3s ease; }
+  .m-item:hover figcaption{ opacity:1; }
+  .m-item.extra{ display:none; }
+  .masonry.expanded .m-item.extra{ display:block; }
+
+  .lb{ position:fixed; inset:0; background:rgba(8,11,10,.95); display:grid; place-items:center; z-index:2147483000; padding:24px; }
+  .lb[hidden]{ display:none; }
+  .lb img{ max-width:92vw; max-height:88vh; border-radius:12px; box-shadow:0 30px 80px rgba(0,0,0,.5); }
+  .lb-close{ position:absolute; top:14px; right:22px; font-size:2.4rem; line-height:1; color:#fff; background:none; border:none; cursor:pointer; }
+  .lb-nav{ position:absolute; top:50%; transform:translateY(-50%); font-size:2.6rem; color:#fff; background:none; border:none; cursor:pointer; padding:10px 18px; opacity:.8; }
+  .lb-nav:hover{ opacity:1; } .lb-prev{ left:6px; } .lb-next{ right:6px; }
+</style>
 <section id="galerie" class="py-14 lg:py-20 bg-[var(--paper)]">
   <div class="max-w-7xl mx-auto px-6">
     <div class="flex items-end justify-between flex-wrap gap-6 mb-12 reveal">
       <div>
-        <p class="eyebrow mb-3">Installations clients</p>
-        <h2 class="display text-3xl lg:text-4xl">65 commerces. Aucune ne se ressemble.</h2>
+        <p class="eyebrow mb-3">Nos installations</p>
+        <h2 class="display text-3xl lg:text-4xl" style="max-width:16ch;">De la boulangerie de quartier au Belgian&nbsp;Beer&nbsp;World.</h2>
       </div>
       <p class="text-[var(--muted)] max-w-md">
-        Chaque machine est habillée sur mesure pour s'intégrer dans son commerce. Voici quelques-unes des dernières installations livrées en Belgique.
+        65&nbsp;commerces équipés, un stand remarqué à l'Odoo&nbsp;Experience, et des bornes intégrées
+        jusque dans les lieux les plus exigeants de Bruxelles. Chaque machine est habillée sur mesure.
       </p>
     </div>
 
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/installations/bbw-entree.webp"
-             alt="Entrée du musée Belgian Beer World à Bruxelles, équipé en monnayeurs automatiques CashSystem"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Belgian Beer World — Bruxelles</figcaption>
-      </figure>
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/installations/bbw-billetterie.webp"
-             alt="Monnayeur automatique noir à la billetterie du Belgian Beer World, devant les cuves en cuivre"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Belgian Beer World — Billetterie</figcaption>
-      </figure>
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/installations/bbw-ecran.webp"
-             alt="Écran du monnayeur automatique CashSystem installé au Belgian Beer World à Bruxelles"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Belgian Beer World — Écran client</figcaption>
-      </figure>
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/installations/liman-hotel-1.webp"
-             alt="Comptoir de The Liman Hotel à Saint-Josse équipé du monnayeur automatique CashSystem"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">The Liman Hotel — Saint-Josse</figcaption>
-      </figure>
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/installations/liman-hotel-2.webp"
-             alt="Monnayeur bois foncé assorti au comptoir cannelé de The Liman Hotel à Saint-Josse"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">The Liman Hotel — Comptoir</figcaption>
-      </figure>
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/installations/nisa-laeken.webp"
-             alt="Monnayeur automatique habillage chêne clair dans les rayons de la superette Nisa à Laeken"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Nisa — Laeken</figcaption>
-      </figure>
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/installations/nisa-caisse.webp"
-             alt="Monnayeur habillage chêne clair en bout de ligne de caisse à la superette Nisa"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Nisa — Ligne de caisse</figcaption>
-      </figure>
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/installations/nisa-ecran.webp"
-             alt="Écran du monnayeur automatique aux couleurs de la superette Nisa à Laeken"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Nisa — Écran client</figcaption>
-      </figure>
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/installations/patisseries-paris-1.webp"
-             alt="Monnayeur automatique habillage chêne clair entre les vitrines de la Boulangerie Pâtisseries Paris à Bruxelles"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Boulangerie Pâtisseries Paris — Bruxelles</figcaption>
-      </figure>
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/installations/patisseries-paris-2.webp"
-             alt="Écran du monnayeur automatique CashSystem à la Boulangerie Pâtisseries Paris, à Bruxelles"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Pâtisseries Paris — Écran client</figcaption>
-      </figure>
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/installations/patisseries-paris-3.webp"
-             alt="Monnayeur automatique installé le long de la vitrine à pâtisseries de la Boulangerie Pâtisseries Paris à Bruxelles"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Pâtisseries Paris — Vitrine</figcaption>
-      </figure>
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/installations/theeroir-1.webp"
-             alt="Monnayeur automatique habillage chêne devant le comptoir de la Boulangerie du t’Heeroir à Hastière"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Boulangerie du t’Heeroir — Hastière</figcaption>
-      </figure>
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/installations/theeroir-2.webp"
-             alt="Monnayeur automatique en service dans la Boulangerie du t’Heeroir à Hastière"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">t’Heeroir — En service</figcaption>
-      </figure>
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/installations/theeroir-3.webp"
-             alt="Cliente réglant ses achats au monnayeur automatique de la Boulangerie du t’Heeroir"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">t’Heeroir — Cliente au paiement</figcaption>
-      </figure>
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/installations/theeroir-4.webp"
-             alt="Vue d’ensemble de la Boulangerie du t’Heeroir à Hastière avec son monnayeur automatique"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">t’Heeroir — Vue d’ensemble</figcaption>
-      </figure>
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/installations/theeroir-5.webp"
-             alt="Clients servis à la Boulangerie du t’Heeroir, monnayeur automatique en bout de comptoir"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">t’Heeroir — Heure de pointe</figcaption>
-      </figure>
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/olea/olea-3.jpg"
-             alt="Monnayeur automatique habillage chêne installé chez Olea, brunch boulangerie à Zaventem"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Olea — Zaventem</figcaption>
-      </figure>
-
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/onenight-1.jpg"
-             alt="Monnayeur OneNight noir mat avec LED cyan dans un night shop belge"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">OneNight — Night shop</figcaption>
-      </figure>
-
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/newdelicia-1.jpg"
-             alt="Monnayeur NewDelicia habillage bois en boulangerie artisanale"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">NewDelicia — Boulangerie</figcaption>
-      </figure>
-
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/compactwood-1.jpeg"
-             alt="Monnayeur CompactWood habillage bois affichant le menu buffet 8h-13h"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">CompactWood — Restauration</figcaption>
-      </figure>
-
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/olea/olea-1.jpg"
-             alt="Tablette Suite Platform en main devant le monnayeur Olea pour la prise de commande"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Olea — Tablette Suite</figcaption>
-      </figure>
-
-
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/frida.jpg"
-             alt="Monnayeur édition spéciale Frida Kahlo — covering personnalisé jaune avec portrait"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Frida Kahlo — Édition spéciale</figcaption>
-      </figure>
-
-
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/monnayeur-automatique-belgique.jpeg"
-             alt="Monnayeur automatique CashSystem fabriqué à Ixelles en Belgique"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Atelier Ixelles</figcaption>
-      </figure>
-
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/monnayeur-automatique.jpeg"
-             alt="Vue produit du monnayeur automatique CashSystem"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Kit standard</figcaption>
-      </figure>
-
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/monnayeur-automatique-coffre-fort.jpg"
-             alt="Coffre-fort sécurisé intégré au monnayeur CashSystem"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Coffre-fort intégré</figcaption>
-      </figure>
-
-      <figure class="relative overflow-hidden rounded-2xl aspect-[3/4] group reveal">
-        <img src="/assets/kiosk-white-1.webp"
-             alt="Monnayeur automatique habillage blanc finition épurée"
-             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-             loading="lazy" decoding="async"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
-        <figcaption class="absolute bottom-3 left-4 text-white text-base font-semibold">Habillage blanc</figcaption>
-      </figure>
-
+    <div class="bento reveal">
+      <figure class="tile b-feature"><img src="/assets/installations/bourse/beerlab.webp" alt="Borne CashSystem dorée au Beer Lab du Belgian Beer World, à la Bourse de Bruxelles" loading="lazy" decoding="async"><div class="scrim"></div><div class="tags"><span class="tbadge">&#9733; Attraction touristique</span><span class="tbadge">La Bourse · Bruxelles</span></div><figcaption class="cap"><h3 style="font-size:1.6rem;">Belgian Beer World</h3><p>Billetterie, Skybar &amp; Beer Lab — plusieurs bornes en libre-service à la Bourse.</p></figcaption></figure>
+      <figure class="tile b-tall"><img src="/assets/installations/odoo-experience-2026.webp" alt="Borne CashSystem sur le stand de l'Odoo Experience 2026" loading="lazy" decoding="async"><div class="scrim"></div><div class="tags"><span class="tbadge">Salon</span></div><figcaption class="cap"><h3 style="font-size:1.15rem;">Odoo Experience 2026</h3><p>Notre borne au Startup&nbsp;Village.</p></figcaption></figure>
+      <figure class="tile b-tall"><img src="/assets/installations/snack-zellige.webp" alt="Borne CashSystem habillage bois foncé dans un snack aux faïences orange" loading="lazy" decoding="async"><div class="scrim"></div><div class="tags"><span class="tbadge">Horeca</span></div><figcaption class="cap"><h3 style="font-size:1.15rem;">The Liman Hotel</h3><p>Comptoir intégré, habillage assorti au décor — Saint-Josse.</p></figcaption></figure>
+      <figure class="tile b-wide"><img src="/assets/installations/boulangerie-service.webp" alt="Clients réglant leurs achats à la borne CashSystem dans une boulangerie" loading="lazy" decoding="async"><div class="scrim"></div><figcaption class="cap"><h3 style="font-size:1.15rem;">Boulangerie — en pleine journée</h3><p>Les clients paient seuls, l'équipe reste au service.</p></figcaption></figure>
+      <figure class="tile"><img src="/assets/installations/theeroir-3.webp" alt="Cliente réglant ses achats au monnayeur CashSystem de la Boulangerie du t’Heeroir" loading="lazy" decoding="async"><div class="scrim"></div><figcaption class="cap"><h3 style="font-size:1.05rem;">Boulangerie du t’Heeroir</h3></figcaption></figure>
+      <figure class="tile"><img src="/assets/installations/patisseries-paris-1.webp" alt="Monnayeur CashSystem à la Boulangerie Pâtisseries Paris à Bruxelles" loading="lazy" decoding="async"><div class="scrim"></div><figcaption class="cap"><h3 style="font-size:1.05rem;">Pâtisseries Paris</h3></figcaption></figure>
     </div>
 
-    <div class="mt-10 text-center reveal">
-      <a href="#contact" class="btn-ghost">
-        Voir une installation chez nous
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-      </a>
+    <div class="mt-16 mb-6 reveal">
+      <p class="eyebrow mb-2">Lieu phare</p>
+      <h3 class="display-md text-2xl lg:text-3xl">Belgian Beer World — La Bourse</h3>
+      <p class="text-[var(--muted)] mt-3 max-w-2xl">L'attraction touristique brassicole de Bruxelles, dans l'ancienne Bourse : billetterie, Skybar, Beer Lab et borne photo « Say Cheeeers » — plusieurs bornes CashSystem en libre-service, habillées sur mesure.</p>
+    </div>
+
+    <div id="bbwgrid" class="masonry reveal">
+        <figure class="m-item" data-full="/assets/installations/bourse/skybar.webp"><img src="/assets/installations/bourse/skybar.webp" alt="Le Skybar — monnayeur automatique CashSystem" loading="lazy" decoding="async"><figcaption>Le Skybar</figcaption></figure>
+        <figure class="m-item" data-full="/assets/installations/bourse/bar.webp"><img src="/assets/installations/bourse/bar.webp" alt="Le bar — monnayeur automatique CashSystem" loading="lazy" decoding="async"><figcaption>Le bar</figcaption></figure>
+        <figure class="m-item" data-full="/assets/installations/bourse/bar-glasses.webp"><img src="/assets/installations/bourse/bar-glasses.webp" alt="Le Beer Lab — monnayeur automatique CashSystem" loading="lazy" decoding="async"><figcaption>Le Beer Lab</figcaption></figure>
+        <figure class="m-item" data-full="/assets/installations/bourse/beerlab-staff.webp"><img src="/assets/installations/bourse/beerlab-staff.webp" alt="Beer Lab — en service — monnayeur automatique CashSystem" loading="lazy" decoding="async"><figcaption>Beer Lab — en service</figcaption></figure>
+        <figure class="m-item" data-full="/assets/installations/bourse/saycheeers.webp"><img src="/assets/installations/bourse/saycheeers.webp" alt="Borne photo « Say Cheeeers » — monnayeur automatique CashSystem" loading="lazy" decoding="async"><figcaption>Borne photo « Say Cheeeers »</figcaption></figure>
+        <figure class="m-item" data-full="/assets/installations/bourse/photobooth.webp"><img src="/assets/installations/bourse/photobooth.webp" alt="Boutique photo — monnayeur automatique CashSystem" loading="lazy" decoding="async"><figcaption>Boutique photo</figcaption></figure>
+        <figure class="m-item" data-full="/assets/installations/bourse/billetterie.webp"><img src="/assets/installations/bourse/billetterie.webp" alt="Billetterie — monnayeur automatique CashSystem" loading="lazy" decoding="async"><figcaption>Billetterie</figcaption></figure>
+        <figure class="m-item" data-full="/assets/installations/bourse/billetterie-couple.webp"><img src="/assets/installations/bourse/billetterie-couple.webp" alt="Billetterie — accueil — monnayeur automatique CashSystem" loading="lazy" decoding="async"><figcaption>Billetterie — accueil</figcaption></figure>
+        <figure class="m-item" data-full="/assets/installations/bourse/encaissement.webp"><img src="/assets/installations/bourse/encaissement.webp" alt="Encaissement en libre-service — monnayeur automatique CashSystem" loading="lazy" decoding="async"><figcaption>Encaissement en libre-service</figcaption></figure>
+        <figure class="m-item" data-full="/assets/installations/recent/r01.webp"><img src="/assets/installations/recent/r01.webp" alt="La boutique — monnayeur automatique CashSystem" loading="lazy" decoding="async"><figcaption>La boutique</figcaption></figure>
+    </div>
+
+    <div class="mt-16 mb-6 reveal">
+      <p class="eyebrow mb-2">Un aperçu</p>
+      <h3 class="display-md text-2xl lg:text-3xl">Quelques-unes de nos installations</h3>
+      <p class="text-[var(--muted)] mt-3 max-w-xl">Un échantillon parmi les 65&nbsp;commerces équipés en Belgique — bornes habillées sur mesure.</p>
+    </div>
+
+    <div id="allgrid" class="masonry reveal">
+        <figure class="m-item" data-full="/assets/installations/nisa-laeken.webp"><img src="/assets/installations/nisa-laeken.webp" alt="Nisa — Laeken — monnayeur automatique CashSystem" loading="lazy" decoding="async"><figcaption>Nisa — Laeken</figcaption></figure>
+        <figure class="m-item" data-full="/assets/olea/olea-3.jpg"><img src="/assets/olea/olea-3.jpg" alt="Olea — Zaventem — monnayeur automatique CashSystem" loading="lazy" decoding="async"><figcaption>Olea — Zaventem</figcaption></figure>
+        <figure class="m-item" data-full="/assets/onenight-1.jpg"><img src="/assets/onenight-1.jpg" alt="OneNight — Night shop — monnayeur automatique CashSystem" loading="lazy" decoding="async"><figcaption>OneNight — Night shop</figcaption></figure>
+        <figure class="m-item" data-full="/assets/newdelicia-1.jpg"><img src="/assets/newdelicia-1.jpg" alt="NewDelicia — Boulangerie — monnayeur automatique CashSystem" loading="lazy" decoding="async"><figcaption>NewDelicia — Boulangerie</figcaption></figure>
+        <figure class="m-item" data-full="/assets/compactwood-1.jpeg"><img src="/assets/compactwood-1.jpeg" alt="CompactWood — Restauration — monnayeur automatique CashSystem" loading="lazy" decoding="async"><figcaption>CompactWood — Restauration</figcaption></figure>
+        <figure class="m-item" data-full="/assets/monnayeur-automatique.jpeg"><img src="/assets/monnayeur-automatique.jpeg" alt="Frida Kahlo — Night-shop — monnayeur automatique CashSystem" loading="lazy" decoding="async"><figcaption>Frida Kahlo — Night-shop</figcaption></figure>
+        <figure class="m-item" data-full="/assets/monnayeur-automatique-belgique.jpeg"><img src="/assets/monnayeur-automatique-belgique.jpeg" alt="Frida Kahlo — Écran « Encaissez » — monnayeur automatique CashSystem" loading="lazy" decoding="async"><figcaption>Frida Kahlo — Écran « Encaissez »</figcaption></figure>
     </div>
   </div>
 </section>
+
+<!-- LIGHTBOX -->
+<div id="lb" class="lb" hidden>
+  <button class="lb-close" aria-label="Fermer">&times;</button>
+  <button class="lb-nav lb-prev" aria-label="Précédent">&#8249;</button>
+  <img alt="">
+  <button class="lb-nav lb-next" aria-label="Suivant">&#8250;</button>
+</div>
+<script>
+(function(){
+  var lb=document.getElementById('lb'), lbimg=lb.querySelector('img');
+  var figs=[].slice.call(document.querySelectorAll('#bbwgrid .m-item, #allgrid .m-item')); var cur=0;
+  var hdr=document.querySelector('header');
+  function show(i){ cur=(i+figs.length)%figs.length; lbimg.src=figs[cur].getAttribute('data-full'); }
+  function open(i){ show(i); lb.hidden=false; document.body.style.overflow='hidden'; if(hdr) hdr.style.visibility='hidden'; }
+  function close(){ lb.hidden=true; lbimg.src=''; document.body.style.overflow=''; if(hdr) hdr.style.visibility=''; }
+  figs.forEach(function(f,i){ f.addEventListener('click',function(){ open(i); }); });
+  lb.querySelector('.lb-close').addEventListener('click',close);
+  lb.querySelector('.lb-prev').addEventListener('click',function(e){ e.stopPropagation(); show(cur-1); });
+  lb.querySelector('.lb-next').addEventListener('click',function(e){ e.stopPropagation(); show(cur+1); });
+  lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
+  document.addEventListener('keydown',function(e){ if(lb.hidden) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') show(cur-1); if(e.key==='ArrowRight') show(cur+1); });
+  var btn=document.getElementById('seemore'), grid=document.getElementById('allgrid');
+  if(btn) btn.addEventListener('click',function(){ grid.classList.add('expanded'); document.getElementById('seemore-wrap').style.display='none'; });
+})();
+</script>
 
 <!-- TESTIMONIAL -->
 <section class="py-14 lg:py-20">
